@@ -12,7 +12,7 @@ import IMG1 from '../img/slider/img1.jpg'
 import IMG2 from '../img/slider/img2.jpg'
 import IMG3 from '../img/slider/img3.jpg'
 import COLOMBIA from '../img/img6.jpg'
-
+import IMG_MAP from '../img/cur/cur_mapa.png'
 
 
 // Logos Carousel
@@ -477,7 +477,7 @@ class Home extends Component {
         <h2 className='text-center' id='ubicacion'> Ubicación {<Button_navigation Iddown={null} Idup={'news'} />}</h2>
         <div class="row justify-content-center px-4 mx-4 px-4 mb-5">
           <div class="col-lg-12 justify-content-center">
-            <Map></Map>
+          <img src={IMG_MAP} width="100%" />
           </div>
         </div>
 
