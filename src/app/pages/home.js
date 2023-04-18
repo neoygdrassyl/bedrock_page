@@ -7,7 +7,7 @@ import NEW_2_ING from '../img/news_inclusivity.jpg'
 import NEW_3_ING from '../img/news_certificate.jpg'
 import LGOG16 from '../img/contacts/Icon2.png'
 import LGOG15 from '../img/contacts/Icon.png'
-import LGOG13 from '../img/pse.jpg'
+import LGOG13 from '../img/pse.png'
 import IMG1 from '../img/slider/img1.jpg'
 import IMG2 from '../img/slider/img2.jpg'
 import IMG3 from '../img/slider/img3.jpg'
@@ -26,7 +26,7 @@ import { infoCud } from '../components/jsons/vars';
 import Map from '../components/map';
 import { _news } from '../components/jsons/_news';
 
-import { IconButton, ButtonToolbar, ButtonGroup } from 'rsuite';
+import { IconButton, ButtonToolbar, ButtonGroup, Row, Col, Panel, FlexboxGrid } from 'rsuite';
 import ArrowDownIcon from '@rsuite/icons/ArrowDown';
 import { Button_navigation } from '../components/button.component';
 //import { useLocation } from 'react-router-dom';
@@ -107,7 +107,16 @@ class Home extends Component {
     //console.log(Redirect())
 
 
-
+    let HOME_PAGE_SERVICE_PANEL = (icon, lb, to) => {
+      return <Panel shaded bordered bodyFill className='border border-dark text-center' style={{ width: 160, height: 160, display: 'inline-block', backgroundColor: "#1B83C4", borderRadius: "80px" }}>
+        <Panel>
+          <Link to={to}>
+            {icon}
+            <h5 className='text-white fw-bold'>{lb}</h5>
+          </Link>
+        </Panel>
+      </Panel>
+    }
 
     // let location = this.props.location
     // const Redirect = (id)=> {
@@ -196,32 +205,31 @@ class Home extends Component {
                       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
-                    <div class="carousel-inner ">
-                      <div class="carousel-item active" data-bs-interval="11000">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="11000" style={{ height: '275px' }}>
                         <img src={COLOMBIA} class="d-block w-100" alt="Bucaramanga santander y sus hermosos paisajes." style={{ height: '275px' }} />
-                        <div class="carousel-caption d-none d-md-block" style={{ height: '240px' }}>
-                          <p className='text-light  text-end' style={{ width: '800px' }}>Creditos: Daniel Beltran.</p>
+                        <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
+                          <p className='text-light  text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: Daniel Beltran</p>
                         </div>
                       </div>
-                      <div class="carousel-item" data-bs-interval="9000">
+                      <div class="carousel-item" data-bs-interval="9000" style={{ height: '275px' }}>
                         <img src={IMG1} class="d-block w-100" alt="Bucaramanga santander y sus hermosos paisajes." style={{ height: '275px' }} />
-                        <div class="carousel-caption d-none d-md-block" style={{ height: '240px' }}>
-                          <p className='text-light text-end ' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>
+                        <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
+                          <p className='text-light text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>
                         </div>
                       </div>
-                      <div class="carousel-item" data-bs-interval="9000">
+                      <div class="carousel-item" data-bs-interval="9000" style={{ height: '275px' }}>
                         <img src={IMG2} class="d-block w-100" alt="Bucaramanga santander la ciudad de los parques." style={{ height: '275px' }} />
-                        <div class="carousel-caption d-none d-md-block" style={{ height: '240px' }}>
-                          <p className='text-light text-end' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>
+                        <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
+                          <p className='text-light text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>
                         </div>
                       </div>
-                      <div class="carousel-item" data-bs-interval="9000">
+                      <div class="carousel-item" data-bs-interval="9000" style={{ height: '275px' }}>
                         <img src={IMG3} class="d-block w-100" alt="Bucaramanga santander la ciudad bonita." style={{ height: '275px' }} />
-                        <div class="carousel-caption d-none d-md-block" style={{ height: '240px' }}>
-                          <p className='text-light text-end' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>
+                        <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
+                          <p className='text-light text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>
                         </div>
                       </div>
-
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -233,6 +241,8 @@ class Home extends Component {
                     </button>
                   </div>
                 </div>
+
+
                 <div className='col-lg-3 py-1' >
                   <div className='py-1'>
                     <Link style={{ color: 'white', backgroundImage: 'white' }} to="/normogram">
@@ -273,54 +283,34 @@ class Home extends Component {
                 </div>
               </div>
             </div>
+
             <hr className='bg-info py-0'></hr>
             <h2 className='text-center' id='services'>Servicios <Button_navigation Iddown={'process'} Idup={null} /> </h2>
-            <div className='col-lg col-mb-10 justify-content-center d-flex mx-0 px-0 ' style={{ borderRadius: '8px' }}>
-              <div class="row align-items-center py-0 my-0" style={{ borderRadius: '20px', }}>
-                <div class="col-2  text-center  px-2 mx-2" style={{ backgroundColor: '#1B83C4', paddingTop: '20px', paddingBottom: '20px', borderRadius: '120px', width: '130px', height: '130px' }}>
-                  <Link className='text-light' to={'/payments'}>
-                  <img src={LGOG13} class="d-block w-100" alt="pse." style={{ width: '8px', height: '70px'}} />
-                  <h5 className='py-1 text-white fw-normal'>Pagos pse</h5>
-                  </Link>
-                </div>
-                <div class="col-2  text-center border border-dark px-2 mx-2" style={{ backgroundColor: '#1B83C4', paddingTop: '20px', paddingBottom: '20px', borderRadius: '120px', width: '130px', height: '130px' }}>
-                  <Link className='text-light' to={'/inclusivity'}>
-                    <i class="fas fa-sign-language fa-3x fa-lg-4"></i>
-                    <h5 className='py-1 text-white fw-normal'>Curaduria inclusiva</h5>
-                  </Link>
-                </div>
-                <div class="col-2 text-center border border-dark  px-2 mx-2" style={{ backgroundColor: '#1B83C4', paddingTop: '20px', paddingBottom: '20px', borderRadius: '120px', width: '130px', height: '130px' }}>
-                  <Link className='text-light' to={'/file'}>
-                    <i class="fas fa-file-alt fa-3x fa-lg-4"></i>
-                    <h5 className='py-1 text-white fw-normal'>Instrumentos de apoyo</h5>
-                  </Link>
-                </div>
-                <div class="col-2 text-center border border-dark  px-2 mx-2" style={{ backgroundColor: '#1B83C4', paddingTop: '20px', paddingBottom: '20px', borderRadius: '120px', width: '130px', height: '130px' }}>
-                  <Link className='text-light' to={'/liquidator'}>
-                    <i class="fas fa-calculator fa-3x fa-lg-4"></i>
-                    <h5 className='py-1 text-white fw-normal'>Calculadora liquidación expensa</h5>
-                  </Link>
-                </div>
-                <div class="col-2 text-center  border border-dark  mx-2" style={{ backgroundColor: '#1B83C4', paddingTop: '20px', paddingBottom: '20px', borderRadius: '120px', width: '130px', height: '130px' }}>
-                  <Link className='text-light' to={'/pqrs'}>
-                    <i class="fas fa-envelope-square fa-3x fa-lg-4"></i>
-                    <h5 className='py-1 text-white fw-normal'>Radicacion (pqrs)</h5>
-                  </Link>
-                </div>
-                <div class="col-2 text-center  border border-dark  mx-2" style={{ backgroundColor: '#1B83C4', paddingTop: '20px', paddingBottom: '20px', borderRadius: '120px', width: '130px', height: '130px' }}>
-                  <Link className='text-light' to={'/scheduling'}>
-                    <i class="fas fa-calendar-check fa-3x fa-lg-4"></i>
-                    <h5 className='py-1 text-white fw-normal'>Agendamiento de citas</h5>
-                  </Link>
-                </div>
-                <div class="col-2 text-center  border border-dark  mx-2" style={{ backgroundColor: '#1B83C4', paddingTop: '27px', paddingBottom: '15px', borderRadius: '120px', width: '130px', height: '130px' }}>
-                  <Link className='text-light' to={'/certificacion'}>
-                    <i class="fas fa-file-pdf fa-3x fa-lg-4"></i>
-                    <h5 className='py-1 text-white fw-normal'>Certificacion en linea </h5>
-                  </Link>
-                </div>
-              </div>
-            </div>
+
+            <FlexboxGrid justify="space-around">
+              <FlexboxGrid.Item>
+                {HOME_PAGE_SERVICE_PANEL(<img src={LGOG13} height={"100px"} alt="pse" />, "Pagos PSE", '/payments')}
+              </FlexboxGrid.Item>
+              <FlexboxGrid.Item>
+                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-sign-language fa-5x fa-lg-4 text-white"></i>, "Curaduria inclusiva", '/inclusivity')}
+              </FlexboxGrid.Item>
+              <FlexboxGrid.Item>
+                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-alt fa-5x fa-lg-4 text-white"></i>, "Instrumentos de apoyo", '/file')}
+              </FlexboxGrid.Item>
+              <FlexboxGrid.Item>
+                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-calculator fa-5x fa-lg-4 text-white"></i>, "Calculadora de expensa", '/liquidator')}
+              </FlexboxGrid.Item>
+              <FlexboxGrid.Item>
+                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-envelope-square fa-5x fa-lg-4 text-white"></i>, "Radicacion (pqrs)", '/pqrs')}
+              </FlexboxGrid.Item>
+              <FlexboxGrid.Item>
+                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-calendar-check fa-5x fa-lg-4 text-white"></i>, "Agendamiento de citas", '/scheduling')}
+              </FlexboxGrid.Item>
+              <FlexboxGrid.Item>
+                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-pdf fa-5x fa-lg-4 text-white"></i>, "Certificacion en linea", '/certificacion')}
+              </FlexboxGrid.Item>
+            </FlexboxGrid>
+
             <hr className='bg-info'></hr>
             <div class="px-0 py-0 my-0 text-center">
               <i class="fas fa-search-location fa-4x"></i>
@@ -477,11 +467,11 @@ class Home extends Component {
         <h2 className='text-center' id='ubicacion'> Ubicación {<Button_navigation Iddown={null} Idup={'news'} />}</h2>
         <div class="row justify-content-center px-4 mx-4 px-4 mb-5">
           <div class="col-lg-12 justify-content-center">
-          <img src={IMG_MAP} width="100%" />
+            <img src={IMG_MAP} width="100%" />
           </div>
         </div>
 
-       
+
         {/*<Modal contentLabel="FRONT PAGE MODAL"
           isOpen={modal}
           style={modalStyle}
