@@ -121,7 +121,7 @@ class Scheduling extends Component {
         role: "CURADOR",
         id: '0',
         daysOn: [1, 2, 3, 4, 5],
-        hoursOn: ["7:20 am", "7:40 am", "8:00 am", "8:20 am", "8:40 am", "9:00 am", "9:20 am", "9:40 am", "10:00 am", "10:20 am", "10:40 am", "11:00 am", "11:20 am", "11:40 am",]
+        hoursOn: ["7:20 am", "7:40 am", "8:00 am", "8:20 am", "8:40 am", "9:00 am", "9:20 am", "9:40 am", "10:00 am", "10:20 am", "10:40 am", "11:00 am", "11:20 am", "11:40 am", "2:00 pm", "2:30 pm", "3:00 pm", "3:30 pm", "4:00 pm"]
       }
     })
     this.setCalendar()
@@ -145,8 +145,8 @@ class Scheduling extends Component {
         name: 'MARIA MARGARITA',
         role: "ABOGADA",
         id: '2',
-        daysOn: [2, 3, 4],
-        hoursOn: ["1:00 pm", "1:20 pm", "1:40 pm", "2:00 pm", "2:20 pm", "2:40 pm", "3:00 pm", "3:20 pm", "3:40 pm",]
+        daysOn: [2, 3, 4, 5],
+        hoursOn: ["1:00 pm", "1:20 pm", "1:40 pm", "2:00 pm", "2:20 pm", "2:40 pm", "3:00 pm", "3:20 pm", "3:40 pm", "4:00 pm"]
       }
     })
     this.setCalendar()
@@ -195,7 +195,7 @@ class Scheduling extends Component {
         role: "ARQUITECTA",
         id: '3',
         daysOn: [1, 2, 3, 4, 5],
-        hoursOn: ["7:00 am", "7:20 am", "7:40 am", "8:00 am", "11:30 am", "11:50 am", "12:10 pm", "12:30 pm",  "1:00 pm", "1:20 pm", "1:40 pm", "2:00 pm", "2:20 pm", "2:40 pm", "3:00 pm", "3:20 pm", "3:40 pm"],
+        hoursOn: ["7:00 am", "7:20 am", "7:40 am", "8:00 am", "8:20 am", "8:40 am", "9:00 am", "9:30 am", "10:00 am", "10:30 am", "11:00 am", "11:30 am", "11:50 am", "12:10 pm", "12:30 pm",  "1:00 pm", "1:20 pm", "1:40 pm", "2:00 pm", "2:20 pm", "2:40 pm", "3:00 pm", "3:20 pm", "3:40 pm"],
         blockOffHours: true,
       }
     })
