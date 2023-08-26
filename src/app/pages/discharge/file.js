@@ -414,6 +414,14 @@ class File extends Component {
                   </a>
                   </td>
                 </tr>
+                <tr>
+                  <td><label className="app-p lead text-justify fw-normal text-uppercase">INFORME DE DEMOLICIÓN</label></td>
+                  <td><a className="btn btn-danger"
+                    href={homepath + "Informe de demolicion.docx"} target="_blank">
+                    <i class="fas fa-cloud-download-alt"></i> Descargar
+                  </a>
+                  </td>
+                </tr>
               </tbody>
             </table>
             <hr />

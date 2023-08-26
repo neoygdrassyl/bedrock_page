@@ -100,6 +100,12 @@ import PROFESIONALS_EMAIL from './pages/others/email.page';
 import { Payments } from './pages/ita/Payments';
 import { Policies } from './pages/curator/normativity/policies';
 import { Participate } from './pages/ita/participate';
+import Duty from './pages/curator/duty';
+import Maps from './pages/curator/maps';
+import { MinorEntities } from './pages/ita/minor_entities';
+import Atention from './pages/curator/atention';
+import Calendar from './pages/curator/calendar';
+import Desitions from './pages/curator/desitions';
 
 
 const MySwal = withReactContent(Swal);
@@ -174,6 +180,28 @@ export default function App() {
                             />
                           )}
                         />
+
+                        <Route path='/duty'
+                          render={(props) => (
+                            <Duty {...props}
+                              translation={t("curatorship.mision", { returnObjects: true })}
+                              swaMsg={t("swa_messages", { returnObjects: true })}
+                              breadCrums={t("breadCrums", { returnObjects: true })}
+                            />
+                          )}
+                        />
+
+
+                        <Route path='/atention'
+                          render={(props) => (
+                            <Atention {...props}
+                              translation={t("curatorship.mision", { returnObjects: true })}
+                              swaMsg={t("swa_messages", { returnObjects: true })}
+                              breadCrums={t("breadCrums", { returnObjects: true })}
+                            />
+                          )}
+                        />
+
                         <Route path='/curator'
                           render={(props) => (
                             <Curator {...props}
@@ -192,6 +220,37 @@ export default function App() {
                             />
                           )}
                         />
+
+                        <Route path='/minor_entities'
+                          render={(props) => (
+                            <MinorEntities {...props}
+                              translation={t("title", { returnObjects: true })}
+                              swaMsg={t("swa_messages", { returnObjects: true })}
+                              breadCrums={t("breadCrums", { returnObjects: true })}
+                            />
+                          )}
+                        />
+
+                        <Route path='/calendar'
+                          render={(props) => (
+                            <Calendar {...props}
+                              translation={t("title", { returnObjects: true })}
+                              swaMsg={t("swa_messages", { returnObjects: true })}
+                              breadCrums={t("breadCrums", { returnObjects: true })}
+                            />
+                          )}
+                        />
+
+                        <Route path='/desitions'
+                          render={(props) => (
+                            <Desitions {...props}
+                              translation={t("title", { returnObjects: true })}
+                              swaMsg={t("swa_messages", { returnObjects: true })}
+                              breadCrums={t("breadCrums", { returnObjects: true })}
+                            />
+                          )}
+                        />
+
                         <Route path='/reports'
                           render={(props) => (
                             <Reports {...props}
@@ -237,6 +296,17 @@ export default function App() {
                             />
                           )}
                         />
+
+                        <Route path='/maps'
+                          render={(props) => (
+                            <Maps {...props}
+                              translation={t("title", { returnObjects: true })}
+                              swaMsg={t("swa_messages", { returnObjects: true })}
+                              breadCrums={t("breadCrums", { returnObjects: true })}
+                            />
+                          )}
+                        />
+
                         <Route path='/resolutions'
                           render={(props) => (
                             <Resolutions {...props}
@@ -475,7 +545,7 @@ export default function App() {
                           )}
                         />
 
-                      
+
                         <Route exact path='/'
                           render={(props) => (
                             <Home {...props}

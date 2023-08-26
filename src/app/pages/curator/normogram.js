@@ -105,7 +105,6 @@ class Normogram extends Component {
                   </Link>
                 </div>
 
-
               </div>
             </div>
 

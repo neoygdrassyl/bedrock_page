@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import IMG from '../img/ita.gif'
 // Logos Carousel
 import CarouselLogos from '../components/carousel.component'
+import LGOG8 from '../img/contacts/Colombia.png'
+import moment from 'moment';
 
 class Footer extends Component {
   render() {
@@ -26,6 +28,12 @@ class Footer extends Component {
                       <i class="fas fa-phone-alt"></i>
                     </span>
                     Linea de servicio a la ciudadanía: {translation.str_item_2}
+                  </p></li>
+                  <li><p>
+                    <span class="fa-stack fa-lg">
+                      <i class="fas fa-phone-alt"></i>
+                    </span>
+                    Linea anticorrupción: {translation.str_item_2}
                   </p></li>
                   <li><p>
                     <span class="fa-stack fa-lg">
@@ -70,6 +78,13 @@ class Footer extends Component {
 
                   <li><p className="pt-3">
                     <span class="fa-stack fa-lg">
+                      <img src={LGOG8} alt="PaisCO" height={50} />
+                    </span>  <a className="text-white" href="http://www.colombia.co/">País Colombia</a>
+                  </p>
+                  </li>
+
+                  <li><p className="pt-3">
+                    <span class="fa-stack fa-lg">
                       <i class="fab fa-whatsapp fa-2x"></i>
                     </span>  {translation.str_p_2}
                     <a className="btn btn-success mt-3" target="_blank" href="https://web.whatsapp.com/send?phone=+573162795010">{translation.str_btn}</a></p>
@@ -84,12 +99,8 @@ class Footer extends Component {
               <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href="https://www.curaduria1bucaramanga.com/public_docs/OTHERS/POL%C3%8DTICA%20DE%20SEGURIDAD%20DE%20LA%20INFORMACI%C3%93N.pdf">Politica general de seguridad de la informacion</a> / <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href="https://www.curaduria1bucaramanga.com/public_docs/OTHERS/POL%C3%8DTICA%20TRATAMIENTO%20DE%20DATOS%20PERSONALES%20CURADOR%20URBANO%20UNO%20DE%20BUCARAMANGA.pdf">Politica tratamiento de datos personales</a></p>
           </div>
 
-          <section id='entities'>
-            <CarouselLogos />
-          </section>
-
-          <div class="text-center p-1">
-            {translation.str_cr}
+        <div class="text-center p-1">
+              © {moment().format('YYYY')} Curaduría Urbana No.1 de Bucaramanga. Desarrollado po
             <a target="_blank" href="//devnatriana.com" className="text-white"> Nestor Triana</a>
           </div>
         </footer>

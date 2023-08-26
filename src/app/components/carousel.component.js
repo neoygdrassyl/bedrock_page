@@ -48,6 +48,8 @@ class CarouselITems extends Component {
         }
       };
 
+      // <div style={commonStyle}><a class="" href="//www.colombia.co" target="_blank"><img src={LGOG8} class="logo-img" alt="..." /></a></div>
+
     let commonStyle = {backgroundColor: 'white'};
     return (
       <div className="Carousel Items">
@@ -62,7 +64,7 @@ class CarouselITems extends Component {
               <div style={commonStyle}><a class="" href="//www.supernotariado.gov.co" target="_blank"><img src={LGOG20} class="logo-img" alt="..." /></a></div>
               <div style={commonStyle}><a class="" href="//www.arcgis.com/apps/webappviewer/index.html?id=5c32765bb4d544d1a20182ca13fc16b1" target="_blank"><img src={LGOG16} class="logo-img" alt="..." /></a></div>
               <div style={commonStyle}><a class="" href="//www.asosismica.org.co" target="_blank"><img src={LGOG3} class="logo-img" alt="..." /></a></div>
-              <div style={commonStyle}><a class="" href="//www.colombia.co" target="_blank"><img src={LGOG8} class="logo-img" alt="..." /></a></div>
+              
               <div style={commonStyle}><a class="" href="//www.copnia.gov.co" target="_blank"><img src={LGOG9} class="logo-img" alt="..." /></a></div>
               <div style={commonStyle}><a class="" href="//sci.org.co" target="_blank"><img src={LGOG14} class="logo-img" alt="..." /></a></div>
               <div style={commonStyle}><a class="" href="//www.curadoresurbanos.org" target="_blank"><img src={LGOG7} class="logo-img" alt="..." /></a></div>

@@ -50,44 +50,9 @@ class Mision extends Component {
               </ul>
             </p>
             <hr />
-            <h2 className='text-uppercase text-center pb-2' id='politica'>POLITICA DE CALIDAD {<Button_navigation Iddown={'deberes'} Idup={'valores'} />}</h2>
+            <h2 className='text-uppercase text-center pb-2' id='politica'>POLITICA DE CALIDAD {<Button_navigation Iddown={null} Idup={'valores'} />}</h2>
             <p className='text-justify'>
               Prestar el mejor servicio al usuario en la expedición de licencias urbanísticas y demás actuaciones que le competen al curador urbano, de manera ágil, confiable, efectiva, comprometidos con el mejoramiento continuo y apoyados en un recurso humano altamente competente y la mejor herramienta tecnológica.
-            </p>
-
-            <hr />
-            <h2 className='text-uppercase text-center pb-2' id='deberes'>FUNCIONES Y DEBERES {<Button_navigation Iddown={'proto'} Idup={'politica'} />}</h2>
-            <p className='text-justify'>
-              Seung el Decreto 1077 de 2015 artículo 2.2.6.6.1.1: El curador urbano es un particular encargado de estudiar, tramitar y expedir licencias de parcelación, urbanización, construcción y subdivisión de predios, a petición del interesado en adelantar proyectos de esa índole.
-              El Curador debe asistir en las siguientes funciones:
-              <ul>
-                <li>Orientación sobre aplicación de normas urbanísticas</li>
-                <li>Expedición de conceptos de uso y norma</li>
-                <li>Estudio, trámite y expedición de licencias urbanísticas</li>
-                <li>Ajuste de cotas y áreas</li>
-                <li>Aprobación planos propiedad horizontal</li>
-                <li>Copia certificada de planos</li>
-                <li>Autorización para el movimiento de tierras</li>
-                <li>Aprobación de piscinas</li>
-                <li>Modificación de Planos Urbanísticos</li>
-                <li>Prórrogas y Revalidaciones de licencias urbanísticas</li>
-              </ul>
-            </p>
-
-            <hr />
-            <h2 className='text-uppercase text-center pb-2' id='proto'>PROTOCOLOS DE ATENCIÓN {<Button_navigation Iddown={null} Idup={'deberes'} />}</h2>
-            <p className='text-justify'>
-              La atención se realiza de manera presencial y virtual a través de nuestros canales de atención. Es
-              importante mencionar que contamos con el sistema de agendamiento de citas al cual puede
-              acceder a través de este <a href='https://www.curaduria1bucaramanga.com/scheduling'>link</a>, dejando a salvo
-              que no es requisito para ser atendido tener una cita.
-              Respecto de la documentación radicada a las solicitudes de licencias, actos de reconocimiento,
-              otras actuaciones; así como las PQRS, se radican a través de la ventanilla única de radicación,
-              generando un numero de radicado con el cual puede hacer seguimiento a través de nuestra
-              página.
-              La atención se realiza según el orden de llegada y radicación, salvo los sujetos de especial
-              protección constitucional, así como la respuesta requerida en las acciones constitucionales y
-              demás peticiones que tienen un término especial.
             </p>
           </div>
         </div>

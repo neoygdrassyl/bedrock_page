@@ -33,6 +33,8 @@ export default function Navbar1(props) {
         <Nav activeKey={activeKey} >
           <Nav.Item eventKey="1" as={MyLink} href="/home"> <i class="fas fa-home px-1"></i> Inicio</Nav.Item>
           <Nav.Item eventKey="2" as={MyLink} href="/transparency" ><i class="fas fa-list-ol px-2"></i> Transparencia</Nav.Item>
+          <Nav.Item eventKey="2" as={MyLink} href="/participate" ><i class="fas fa-hand-paper"></i> Participa</Nav.Item>
+          <Nav.Item eventKey="2" as={MyLink} href="/participate" ><i class="fas fa-id-card-alt"></i> Atención y Servicio a la ciudadanía</Nav.Item>
           <Nav.Menu title={<label><i class="fas fa-bookmark"></i> Curaduria</label>}>
             <Nav.Item eventKey="5" as={MyLink} href="/mision"> Misión y visión</Nav.Item>
             <Nav.Item eventKey="6" as={MyLink} href="/curator">La curaduria</Nav.Item>
@@ -55,10 +57,7 @@ export default function Navbar1(props) {
             <Nav.Item eventKey="20" as={MyLink} href="/data">Normatividad especial</Nav.Item>
             <Nav.Item eventKey="20" as={MyLink} href="/reports">Informes a organismos de inspección, vigilancia y control</Nav.Item>
             <Nav.Item eventKey="22" as={MyLink} href="/liquidator">Calculadora liquidacion Expensa</Nav.Item>
-          </Nav.Menu>
-          <Nav.Menu title={<label><i class="fas fa-id-card-alt"></i> Atención y Servicio al ciudadano</label>}>
             <Nav.Item eventKey="23" as={MyLink} href="/pqrs">Radicacion de pqrs</Nav.Item>
-            <Nav.Item eventKey="40" as={MyLink} href="/participate">Paticipa</Nav.Item>
             <Nav.Item eventKey="21" as={MyLink} href="/scheduling">Agendamiento de citas</Nav.Item>
             <Nav.Item eventKey="24" as={MyLink} href="/mailbox">Contáctenos</Nav.Item>
             <Nav.Item eventKey="16" as={MyLink} href="/status">Consulta estado de proceso</Nav.Item>

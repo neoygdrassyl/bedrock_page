@@ -25,18 +25,19 @@ export const Open_data = (props) => {
                     </div>
                     <hr />
                     <PanelGroup accordion defaultActiveKey={1} bordered>
-                        <Panel header="7.1 instrumentos de gestión de la información" eventKey={1} id="panel1">
+                        <Panel header="Instrumentos de gestión de la información" eventKey={1} id="panel1">
                             <List size="sm" bordered>
                                 <List.Item><a className='text-dark' href={url + 'REGISTRO DE ACTIVOS DE INFORMACION.xlsx.pdf'} target="_blank" ><i class="fas fa-caret-right"></i> Registro de activos de información</a></List.Item>
                                 <List.Item><a className='text-dark' href={url + 'INDICE INFORMACION CLASIFICADA Y RESERVADA.xlsx.pdf'} target="_blank"><i class="fas fa-caret-right"></i> Índice de información clasificada y reservada</a></List.Item>
                                 <List.Item><a className='text-dark' href='#' target="_blank"><i class="fas fa-caret-right"></i> Esquema de publicación</a></List.Item>
                                 <List.Item><a className='text-dark' href='#' target="_blank"><i class="fas fa-caret-right"></i>  Programa de gestión documental</a></List.Item>
                                 <List.Item><a className='text-dark' href='#' target="_blank"><i class="fas fa-caret-right"></i>  Tablas de retención documental</a></List.Item>
+                                <List.Item><a className='text-dark' href='https://www.datos.gov.co/' target="_blank" ><i class="fas fa-caret-right"></i>  www.datos.gov.co. (Datos abiertos)</a></List.Item>
                             </List>
                         </Panel>
-                        <Panel header="7.2 sección de datos abiertos" eventKey={2} id="panel2">
+                        <Panel header="Sección de datos abiertos" eventKey={2} id="panel2">
                             <List size="sm" bordered>
-                                <List.Item><a className='text-dark' href='https://www.datos.gov.co/' target="_blank" ><i class="fas fa-caret-right"></i> Datos abiertos</a></List.Item>
+                                <List.Item><a className='text-dark' href='https://www.datos.gov.co/' target="_blank" ><i class="fas fa-caret-right"></i>  www.datos.gov.co. (Datos abiertos)</a></List.Item>
                             </List>
                         </Panel>
                     </PanelGroup>
