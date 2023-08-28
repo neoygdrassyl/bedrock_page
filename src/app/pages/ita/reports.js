@@ -26,7 +26,7 @@ export const Reports = (props) => {
                     '/2022/CAMACOL/Reporte SEPTIEMBRE 2022.xlsx',
                     '/2022/CAMACOL/Reporte OCTUBRE 2022.xlsx',
                     '/2022/CAMACOL/Reporte NOVIEMBRE 2022.xlsx',
-                    false,
+                    '/2022/CAMACOL/Reporte DICIEMBRE 2022.xlsx',
                 ],
                 dane: [
                     '/2022/DANE/MES DE ENERO 2022.xlsx',

@@ -10,9 +10,9 @@ class Title extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          //modal: true
+            //modal: true
         };
-      }
+    }
     render() {
         const { translation } = this.props;
         const styles = {
@@ -21,47 +21,43 @@ class Title extends Component {
         };
         let _CHECK_STATUS = () => {
             let searchValue = this.inputSearch.value;
-            this.props.history.push('/search/'+ searchValue );
-          }
+            this.props.history.push('/search/' + searchValue);
+        }
         return <>
 
             <div className="Title container-primary">
-                <div>
-                    <div className='col-lg col-mb-8 justify-content-around d-flex mx-0 px-0 py-2' style={{ backgroundColor: '#3366CC' }}>
-                        <div className=''>
 
-                        </div>
-                        <div className='text-center' style={{ marginLeft: 230 }}>
-                            <a className='' href="https://www.gov.co" target="_blank" rel="nofollow" data-uw-styling-context="true">
+                <div className='row mx-0' style={{ backgroundColor: '#3366CC' }}>
+                    <div className='col-9 mx-0 px-0 py-2'>
+                        <div className='ps-4'>
+                            <a chref="https://www.gov.co" target="_blank" rel="nofollow" >
                                 <img src={infoCud.icon2} alt="Imagen logo GovCo" style={{ height: '20px' }} class="img-responsive" />
                             </a>
                         </div>
-                        <div className='text-find px-0'>
-                            <InputGroup inside style={styles}>
-                                <Input size="xs"  inputRef={ref => this.inputSearch = ref} />
-                                <button className=' btn-white btn-sm' onClick={() => _CHECK_STATUS()} >
-                                    <SearchIcon />
-                                </button>
-                            </InputGroup>
-                        </div>
+
                     </div>
-                    <div class="row justify-content-md-center d-flex align-items-center mb-3">
-                        <div class="col-lg-1  d-flex justify-content-center">
-                            <a href='/home'>
-                                <img src={infoCud.icon} height="66px" />
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-md-2 mb-4 mt-3 mb-md-0">
-                            <h3 class="text-uppercase text-center pb-0" >{infoCud.titles} {infoCud.dir}</h3>
-                            <h3 class="text-uppercase text-center pb-0" >CURADOR URBANO N°{infoCud.nomens} DE {infoCud.city}</h3>
-                        </div>
-                        {/*  <div class="col-lg-12 col-md-8 mb-0 mt-0 mb-md-0 d-flex justify-content-center">
-                            <span className='col-lg-12 bg-white col-mb-8 text-center  mx-0 px-0 py-2'>
-                                <h5 className='text-dark'><b> <a href='https://www.google.es/maps/place/Curaduria+Urbana+No.+1+de+Bucaramanga/@7.1236512,-73.1155874,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683f0ec6e6ea35:0xd99c4a977df44614!8m2!3d7.1236459!4d-73.1133987?hl=es' target="_blank" > <i class="fas fa-map-marker-alt text-success"></i></a> {infoCud.address} - <a href="https://web.whatsapp.com/send?phone=+573162795010" className='text-dark' target="_blank" > <i class="fas fa-mobile-alt text-success"></i> {infoCud.number1}</a> </b></h5>
-                            </span>
-                        </div>*/}
+                    <div className='col-3 px-0 pt-1 text-right'>
+                        <InputGroup inside style={styles}>
+                            <Input size="xs" inputRef={ref => this.inputSearch = ref} />
+                            <button className=' btn-white btn-sm' onClick={() => _CHECK_STATUS()} >
+                                <SearchIcon />
+                            </button>
+                        </InputGroup>
                     </div>
                 </div>
+
+                <div class="row justify-content-md-center d-flex align-items-center mb-3">
+                    <div class="col-lg-1  d-flex justify-content-center">
+                        <a href='/home'>
+                            <img src={infoCud.icon} height="66px" />
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-2 mb-4 mt-3 mb-md-0">
+                        <h3 class="text-uppercase text-center pb-0" >{infoCud.titles} {infoCud.dir}</h3>
+                        <h3 class="text-uppercase text-center pb-0" >CURADOR URBANO N°{infoCud.nomens} DE {infoCud.city}</h3>
+                    </div>
+                </div>
+
             </div >
         </>;
     }

@@ -34,7 +34,7 @@ export default function Navbar1(props) {
           <Nav.Item eventKey="1" as={MyLink} href="/home"> <i class="fas fa-home px-1"></i> Inicio</Nav.Item>
           <Nav.Item eventKey="2" as={MyLink} href="/transparency" ><i class="fas fa-list-ol px-2"></i> Transparencia</Nav.Item>
           <Nav.Item eventKey="2" as={MyLink} href="/participate" ><i class="fas fa-hand-paper"></i> Participa</Nav.Item>
-          <Nav.Item eventKey="2" as={MyLink} href="/participate" ><i class="fas fa-id-card-alt"></i> Atención y Servicio a la ciudadanía</Nav.Item>
+          <Nav.Item eventKey="2" as={MyLink} href="/pqrs" ><i class="fas fa-id-card-alt"></i> Atención y Servicio a la ciudadanía</Nav.Item>
           <Nav.Menu title={<label><i class="fas fa-bookmark"></i> Curaduria</label>}>
             <Nav.Item eventKey="5" as={MyLink} href="/mision"> Misión y visión</Nav.Item>
             <Nav.Item eventKey="6" as={MyLink} href="/curator">La curaduria</Nav.Item>
@@ -73,7 +73,6 @@ export default function Navbar1(props) {
     const [activeKey, setActiveKey] = useState(false);
     return (
       <div className="nav-wrapper">
-        <hr />
         <NavBarInstance activeKey={activeKey} onSelect={setActiveKey} />
       </div>
     );

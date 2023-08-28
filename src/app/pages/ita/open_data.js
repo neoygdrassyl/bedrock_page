@@ -30,8 +30,8 @@ export const Open_data = (props) => {
                                 <List.Item><a className='text-dark' href={url + 'REGISTRO DE ACTIVOS DE INFORMACION.xlsx.pdf'} target="_blank" ><i class="fas fa-caret-right"></i> Registro de activos de información</a></List.Item>
                                 <List.Item><a className='text-dark' href={url + 'INDICE INFORMACION CLASIFICADA Y RESERVADA.xlsx.pdf'} target="_blank"><i class="fas fa-caret-right"></i> Índice de información clasificada y reservada</a></List.Item>
                                 <List.Item><a className='text-dark' href='#' target="_blank"><i class="fas fa-caret-right"></i> Esquema de publicación</a></List.Item>
-                                <List.Item><a className='text-dark' href='#' target="_blank"><i class="fas fa-caret-right"></i>  Programa de gestión documental</a></List.Item>
-                                <List.Item><a className='text-dark' href='#' target="_blank"><i class="fas fa-caret-right"></i>  Tablas de retención documental</a></List.Item>
+                                <List.Item><a className='text-dark' href={url + 'MANUAL ORGANIZACION ARCHIVOS DE GESTION CURADURIA.pdf'} target="_blank"><i class="fas fa-caret-right"></i>  Programa de gestión documental</a></List.Item>
+                                <List.Item><a className='text-dark' href={url + 'TABLA DE RETENCION DOCUMENTAL.pdf'} target="_blank"><i class="fas fa-caret-right"></i>  Tablas de retención documental</a></List.Item>
                                 <List.Item><a className='text-dark' href='https://www.datos.gov.co/' target="_blank" ><i class="fas fa-caret-right"></i>  www.datos.gov.co. (Datos abiertos)</a></List.Item>
                             </List>
                         </Panel>
