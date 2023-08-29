@@ -32,6 +32,9 @@ export const Open_data = (props) => {
                                 <List.Item><a className='text-dark' href='#' target="_blank"><i class="fas fa-caret-right"></i> Esquema de publicación</a></List.Item>
                                 <List.Item><a className='text-dark' href={url + 'MANUAL ORGANIZACION ARCHIVOS DE GESTION CURADURIA.pdf'} target="_blank"><i class="fas fa-caret-right"></i>  Programa de gestión documental</a></List.Item>
                                 <List.Item><a className='text-dark' href={url + 'TABLA DE RETENCION DOCUMENTAL.pdf'} target="_blank"><i class="fas fa-caret-right"></i>  Tablas de retención documental</a></List.Item>
+                                <List.Item><a className='text-dark' href={url + 'CUADRO DE CLASIFICACION DOCUMENTAL CCD CURADURIA URBANA 1.pdf'} target="_blank"><i class="fas fa-caret-right"></i>  Cuadro clasificación documental</a></List.Item>
+                                <List.Item><a className='text-dark' href={url + 'ACTAS DE COMITE INTERNO.pdf'} target="_blank"><i class="fas fa-caret-right"></i>  Actas de comité interno</a></List.Item>
+                                <List.Item><a className='text-dark' href={url + 'INVENTARIO ACTIVOS.pdf'} target="_blank"><i class="fas fa-caret-right"></i>  Inventario de activos</a></List.Item>
                                 <List.Item><a className='text-dark' href='https://www.datos.gov.co/' target="_blank" ><i class="fas fa-caret-right"></i>  www.datos.gov.co. (Datos abiertos)</a></List.Item>
                             </List>
                         </Panel>

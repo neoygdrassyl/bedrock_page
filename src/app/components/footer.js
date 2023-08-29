@@ -8,6 +8,7 @@ import moment from 'moment';
 class Footer extends Component {
   render() {
     const { translation } = this.props;
+    const FOOTER_URL = 'https://www.curaduria1bucaramanga.com/public_docs/OTHERS/footer/'
     return (
       <div className="Footer" style={{ backgroundColor: '#7A7A7A', color: '#e5e5e5' }}>
         <footer class="">
@@ -96,7 +97,14 @@ class Footer extends Component {
           </div>
           <div className='text-center'>
             <p className="pt-0">
-              <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href="https://www.curaduria1bucaramanga.com/public_docs/OTHERS/POL%C3%8DTICA%20DE%20SEGURIDAD%20DE%20LA%20INFORMACI%C3%93N.pdf">Politica general de seguridad de la informacion</a> / <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href="https://www.curaduria1bucaramanga.com/public_docs/OTHERS/POL%C3%8DTICA%20TRATAMIENTO%20DE%20DATOS%20PERSONALES%20CURADOR%20URBANO%20UNO%20DE%20BUCARAMANGA.pdf">Politica tratamiento de datos personales</a></p>
+              <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href={`${FOOTER_URL}POLÍTICA DE SEGURIDAD DE LA INFORMACIÓN (1).pdf`}>Política general de seguridad de la información</a> 
+              / <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href={`${FOOTER_URL}POLITICA DE DATOS PERSONALES.pdf`}>Política tratamiento de datos personales</a>
+              / <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href={`${FOOTER_URL}POLITICA DE TERMINOS Y CONDICIONES.pdf`}>Política Términos y Condiciones</a>
+              </p>
+              <p className="pt-0">
+              <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href={`${FOOTER_URL}POLÍTICA DE DERECHOS DE AUTOR Y.pdf`}>Política Derechos de autor</a> 
+              / <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href={`${FOOTER_URL}Otras politicas POLÍTICA DE PUBLICACION REPOSITORIO DE LICENCIAS URBANISTICAS.pdf`}>Otras olíticas</a>
+              </p>
           </div>
 
         <div class="text-center p-1">

@@ -160,8 +160,14 @@ export const Transparency = (props) => {
                             <Panel header="8. Información específica para grupos de interés." eventKey={8} id="panel9">
                                 <ul>
                                     <dl>
-                                        <p className='fw-normal'>8.1 <Link className='text-info' to={'/kids'}> Información para niños, niñas y adolescentes</Link></p>
-                                        <p className='fw-normal'>8.2 <Link className='text-info' to={'/inclusivity'}> Otros de grupos de interés</Link></p>
+                                        <p className='fw-normal'>8.1 Información para  Grupos Específicos</p>
+                                        <ul >
+                                            <dl >
+                                                <p className='fw-normal'>8.1.1. <Link className='text-info' to={'/kids'}>   Información para niños, niñas y adolescentes</Link></p>
+                                                <p className='fw-normal'>8.1.2. <Link className='text-info' to={'/inclusivity/#women'}>  Información para Mujeres</Link></p>
+                                                <p className='fw-normal'>8.1.3. <Link className='text-info' to={'/inclusivity'}> Otros de grupos de interés</Link></p>
+                                            </dl>
+                                        </ul>
                                     </dl>
                                 </ul>
                             </Panel>

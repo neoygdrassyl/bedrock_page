@@ -295,11 +295,11 @@ class File extends Component {
             <div className='' style={{ backgroundColor: '#1b83c4', borderRadius: '2px' }}>
               <div class="row justify-content-center px-4 mx-2">
                 <div class="col-11 text-center py-1" style={{ color: ' white ' }}>
-                  <h2 className='px-2 py-0 fw-normal'>Documentos de apoyo.</h2>
+                  <h2 className='px-2 py-0 fw-normal'>Documentos de apoyo</h2>
                 </div>
               </div>
             </div>
-            <h2 class="text-uppercase text-center pb-2 py-2" id='title'>Instructivos {<Button_navigation Iddown={'herramientas'} Idup={null} />}</h2>
+            <h2 class="text-uppercase text-center pb-2 py-2" id='title'>FORMATOS {<Button_navigation Iddown={'herramientas'} Idup={null} />}</h2>
             <hr />
 
             <table className="table table-bordered table-sm table-hover text-start">
@@ -314,15 +314,6 @@ class File extends Component {
                 </tr>
 
                 <tr>
-                  <td><label className="app-p lead text-justify fw-normal text-uppercase">MANUAL DE ESPACIO PÚBLICO DE BUCARAMANGA MEPB</label></td>
-                  <td><a className="btn btn-danger"
-                    href={homepath + "MEPB versión1.0.pdf"} target="_blank">
-                    <i class="fas fa-cloud-download-alt"></i> Descargar
-                  </a>
-                  </td>
-                </tr>
-
-                <tr>
                   <td><label className="app-p lead text-justify fw-normal text-uppercase">FORMATO OTRAS ACTUACIONES</label></td>
                   <td><a className="btn btn-danger"
                     href={homepath + "FORMATO OTRAS ACTUACIONES.pdf"} target="_blank">
@@ -330,14 +321,7 @@ class File extends Component {
                   </a>
                   </td>
                 </tr>
-                <tr>
-                  <td><label className="app-p lead text-justify fw-normal text-uppercase">DECLARACIÓN DE ANTIGÜEDAD DE LA CONSTRUCCIÓN</label></td>
-                  <td><a className="btn btn-danger"
-                    href={homepath + "DECLARACION DE ANTIGÜEDAD DE LA PROPIEDAD (F-DAC-012).docx"} target="_blank">
-                    <i class="fas fa-cloud-download-alt"></i> Descargar
-                  </a>
-                  </td>
-                </tr>
+
                 <tr>
                   <td><label className="app-p lead text-justify fw-normal text-uppercase">Poder Licencia Urbanística Persona Jurídica</label></td>
                   <td><a className="btn btn-danger"
@@ -355,17 +339,63 @@ class File extends Component {
                   </td>
                 </tr>
                 <tr>
-                  <td><label className="app-p lead text-justify fw-normal text-uppercase">Códigos de uso del suelo asociados a normas urbanas</label></td>
+                  <td><label className="app-p lead text-justify fw-normal text-uppercase">DECLARACIÓN DE ANTIGÜEDAD DE LA CONSTRUCCIÓN</label></td>
                   <td><a className="btn btn-danger"
-                    href={homepath + "CODIGO DE USOS - CONSULTAS NORMA URBANISTICA.pdf"} target="_blank">
+                    href={homepath + "DECLARACION DE ANTIGÜEDAD DE LA PROPIEDAD (F-DAC-012).docx"} target="_blank">
                     <i class="fas fa-cloud-download-alt"></i> Descargar
                   </a>
                   </td>
                 </tr>
-                <hr />
-                <tr className="app-p lead text-center fw-bold text-uppercase">
-                  <td colSpan={'2'} id='herramientas'><label>Herramientas {<Button_navigation Iddown={'norms'} Idup={'title'} />}</label></td>
+                <tr>
+                  <td><label className="app-p lead text-justify fw-normal text-uppercase">RETIE</label></td>
+                  <td><a className="btn btn-danger"
+                    href={homepath + "RETIE.pdf"} target="_blank">
+                    <i class="fas fa-cloud-download-alt"></i> Descargar
+                  </a>
+                  </td>
                 </tr>
+
+                <tr>
+                  <td><label className="app-p lead text-justify fw-normal text-uppercase">MANUAL DE ESPACIO PÚBLICO DE BUCARAMANGA MEPB</label></td>
+                  <td><a className="btn btn-danger"
+                    href={homepath + "MEPB versión1.0.pdf"} target="_blank">
+                    <i class="fas fa-cloud-download-alt"></i> Descargar
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label className="app-p lead text-justify fw-normal text-uppercase">INFORME DE DEMOLICIÓN</label></td>
+                  <td><a className="btn btn-danger"
+                    href={homepath + "Informe de demolicion.docx"} target="_blank">
+                    <i class="fas fa-cloud-download-alt"></i> Descargar
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label className="app-p lead text-justify fw-normal text-uppercase">FORMATO VALLA / <b>AVISO INFORMATIVO</b> </label></td>
+                  <td><a className="btn btn-danger"
+                    href={homepath + "FORMATO VALLA INFORMATIVA.docx"} target="_blank">
+                    <i class="fas fa-cloud-download-alt"></i> Descargar
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label className="app-p lead text-justify fw-normal text-uppercase">OFICIO RADICACIÓN VALLA INFORMATIVA </label></td>
+                  <td><a className="btn btn-danger"
+                    href={homepath + "OFICIO RADICACIÓN VALLA INFORMATIVA.docx"} target="_blank">
+                    <i class="fas fa-cloud-download-alt"></i> Descargar
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label className="app-p lead text-justify fw-normal text-uppercase">EDIFICIO PROPIEDAD HORIZONTAL </label></td>
+                  <td><a className="btn btn-danger"
+                    href={homepath + "EDIFICIO PROPIEDAD HORIZONTAL (F-PH-013) (2).docx"} target="_blank">
+                    <i class="fas fa-cloud-download-alt"></i> Descargar
+                  </a>
+                  </td>
+                </tr>
+
                 <tr>
                   <td><label className="app-p lead text-justify fw-normal text-uppercase">GUÍA ACTA DE ASAMBLEA</label></td>
                   <td><a className="btn btn-danger"
@@ -374,13 +404,54 @@ class File extends Component {
                   </a>
                   </td>
                 </tr>
+
                 <tr>
-                  <td><label className="app-p lead text-justify fw-normal text-uppercase">GUÍA FORMATO PLANO DE GEOREFERENCIACIÓN EJEMPLO</label></td>
+                  <td><label className="app-p lead text-justify fw-normal text-uppercase">Autorización notificación por correo electrónico</label></td>
                   <td><a className="btn btn-danger"
-                    href={homepath + "Plano de localizacion.pdf"} target="_blank">
+                    href={homepath + "Autorización notificación por correo electrónico.pdf"} target="_blank">
                     <i class="fas fa-cloud-download-alt"></i> Descargar
                   </a>
                   </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr />
+            <table className="table table-bordered table-sm table-hover text-start">
+              <tbody>
+                <tr className="app-p lead text-center fw-bold text-uppercase">
+                  <td colSpan={'2'}> <label className='text-justify fw-normal ' id='norms'><b>GUIAS</b> {<Button_navigation Iddown={'aviso'} Idup={'herramientas'} />}</label></td>
+                </tr>
+                <tr>
+                  <td><label className="app-p lead text-justify fw-normal text-uppercase">MANUAL ESPACIO PUBLICO BUCARAMANGA</label></td>
+                  <td><a className="btn btn-danger"
+                    href={homepath + "MEPB versión1.0.pdf"} target="_blank">
+                    <i class="fas fa-cloud-download-alt"></i> Descargar
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label className="app-p lead text-justify fw-normal text-uppercase">NORMAS DE ACCESIBILIDAD, REQUISITOS SUPERINTENDENCIA</label></td>
+                  <td><a className="btn btn-danger"
+                    href={homepath + "CARTILLA SENTENCIA 333.pdf"} target="_blank">
+                    <i class="fas fa-cloud-download-alt"></i> Descargar
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label className="app-p lead text-justify fw-normal text-uppercase">Códigos de uso del suelo asociados a normas urbanas</label></td>
+                  <td><a className="btn btn-danger"
+                    href={homepath + "CODIGO DE USOS - CONSULTAS NORMA URBANISTICA.pdf"} target="_blank">
+                    <i class="fas fa-cloud-download-alt"></i> Descargar
+                  </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr />
+            <table className="table table-bordered table-sm table-hover text-start">
+              <tbody>
+                <tr className="app-p lead text-center fw-bold text-uppercase">
+                  <td colSpan={'2'}> <label className='text-justify fw-normal fw-bold ' id='aviso'>PROCEDIMIENTOS {<Button_navigation Iddown={null} Idup={'norms'} />}</label></td>
                 </tr>
                 <tr>
                   <td><label className="app-p lead text-justify fw-normal text-uppercase">PROPIEDAD HORIZONTAL EJEMPLO 1</label></td>
@@ -399,57 +470,14 @@ class File extends Component {
                   </td>
                 </tr>
                 <tr>
-                  <td><label className="app-p lead text-justify fw-normal text-uppercase">NORMAS DE ACCESIBILIDAD, REQUISITOS SUPERINTENDENCIA</label></td>
+                  <td><label className="app-p lead text-justify fw-normal text-uppercase">GUÍA FORMATO PLANO DE GEOREFERENCIACIÓN EJEMPLO</label></td>
                   <td><a className="btn btn-danger"
-                    href={homepath + "CARTILLA SENTENCIA 333.pdf"} target="_blank">
+                    href={homepath + "Plano de localizacion.pdf"} target="_blank">
                     <i class="fas fa-cloud-download-alt"></i> Descargar
                   </a>
                   </td>
                 </tr>
-                <tr>
-                  <td><label className="app-p lead text-justify fw-normal text-uppercase">MANUAL ESPACIO PUBLIC BUCARAMANGA</label></td>
-                  <td><a className="btn btn-danger"
-                    href={homepath + "MEPB versión1.0.pdf"} target="_blank">
-                    <i class="fas fa-cloud-download-alt"></i> Descargar
-                  </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td><label className="app-p lead text-justify fw-normal text-uppercase">INFORME DE DEMOLICIÓN</label></td>
-                  <td><a className="btn btn-danger"
-                    href={homepath + "Informe de demolicion.docx"} target="_blank">
-                    <i class="fas fa-cloud-download-alt"></i> Descargar
-                  </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <hr />
-            <table className="table table-bordered table-sm table-hover text-start">
-              <tbody>
-                <tr className="app-p lead text-center fw-bold text-uppercase">
-                  <td colSpan={'2'}> <label className='text-justify fw-normal ' id='norms'><b>NORMATIVDAD</b> {<Button_navigation Iddown={'aviso'} Idup={'herramientas'} />}</label></td>
-                </tr>
-                <tr>
-                  <td><label className="app-p lead text-justify fw-normal text-uppercase">Consulte la normatividad dando click <Link to={'/normogram'}><label className="text-uppercase">aqui</label></Link></label>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <hr />
-            <table className="table table-bordered table-sm table-hover text-start">
-              <tbody>
-                <tr className="app-p lead text-center fw-bold text-uppercase">
-                  <td colSpan={'2'}> <label className='text-justify fw-normal ' id='aviso'>VALLA / <b>AVISO INFORMATIVO</b> {<Button_navigation Iddown={null} Idup={'norms'} />}</label></td>
-                </tr>
-                <tr>
-                  <td><label className="app-p lead text-justify fw-normal text-uppercase">FORMATO VALLA / <b>AVISO INFORMATIVO</b> </label></td>
-                  <td><a className="btn btn-danger"
-                    href={homepath + "FORMATO VALLA INFORMATIVA.docx"} target="_blank">
-                    <i class="fas fa-cloud-download-alt"></i> Descargar
-                  </a>
-                  </td>
-                </tr>
+
               </tbody>
             </table>
             <Collapsible className='text-center' openedClassName='text-center' trigger={<><label className="m-2 fw-normal text-center" id='vaya'>GENERAR VALLA / <b>AVISO INFORMATIVO</b></label> <button className="btn btn-warning btn-sm my-2 text-center"><i class="fas fa-plus"></i> GENERAR</button></>}>
