@@ -5,28 +5,8 @@ import { Panel, PanelGroup, List } from 'rsuite';
 
 export const MinorEntities = (props) => {
     const { breadCrums } = props;
-    return <>
-        <div className='container'>
-            <div className='row py-4 d-flex justify-content-center'>
-                <MDBBreadcrumb className="mx-5">
-                    <MDBBreadcrumbItem>
-                        <Link to={'/home'}><i class="fas fa-home"></i> <label className="text-uppercase">{breadCrums.bc_01}</label></Link>
-                    </MDBBreadcrumbItem>
-                    <MDBBreadcrumbItem active><i class="far fa-bookmark"></i> <label className="text-uppercase">Directorio de otros grupos de interés</label></MDBBreadcrumbItem>
-                </MDBBreadcrumb>
-                <div className="col-lg-10">
-                    <div className='' style={{ backgroundColor: '#1b83c4', borderRadius: '2px' }}>
-                        <div class="row justify-content-center px-4 mx-2">
-                            <div class="col-11 text-center py-1" style={{ color: ' white ' }}>
-                                <h2 className='px-2 py-0 fw-normal'>Directorio de otros grupos de interés</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <hr />
-                    <div className=''>
-                        <h3 className='text-center py-2'>Directorio de agremiaciones, asociaciones y otros grupos de interés</h3>
-                        <PanelGroup accordion defaultActiveKey={1} bordered>
-                            <Panel header="MINISTERIO DE VIVIENDA, CIUDAD Y TERRITORIO DE COLOMBIA" eventKey={1} id="panel1">
+    let otherEntities = <>
+    <Panel header="MINISTERIO DE VIVIENDA, CIUDAD Y TERRITORIO DE COLOMBIA" eventKey={1} id="panel1">
                                 <p className='text-justify'>
                                     <ul>
                                         <li>Línea gratuita 018000413664 y fija +57 (1) 4197099</li>
@@ -175,6 +155,30 @@ export const MinorEntities = (props) => {
                                     </ul>
                                 </p>
                             </Panel>
+    
+    </>
+    return <>
+        <div className='container'>
+            <div className='row py-4 d-flex justify-content-center'>
+                <MDBBreadcrumb className="mx-5">
+                    <MDBBreadcrumbItem>
+                        <Link to={'/home'}><i class="fas fa-home"></i> <label className="text-uppercase">{breadCrums.bc_01}</label></Link>
+                    </MDBBreadcrumbItem>
+                    <MDBBreadcrumbItem active><i class="far fa-bookmark"></i> <label className="text-uppercase">Directorio de otros grupos de interés</label></MDBBreadcrumbItem>
+                </MDBBreadcrumb>
+                <div className="col-lg-10">
+                    <div className='' style={{ backgroundColor: '#1b83c4', borderRadius: '2px' }}>
+                        <div class="row justify-content-center px-4 mx-2">
+                            <div class="col-11 text-center py-1" style={{ color: ' white ' }}>
+                                <h2 className='px-2 py-0 fw-normal'>Directorio de otros grupos de interés</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div className=''>
+                        <h3 className='text-center py-2'>Directorio de agremiaciones, asociaciones y otros grupos de interés</h3>
+                        <PanelGroup accordion defaultActiveKey={1} bordered>
+                            
                             <Panel header="COLEGIO NACIONAL DE CURADORES URBANOS" eventKey={13} id="panel13">
                                 <p className='text-justify'>
                                     <ul>
