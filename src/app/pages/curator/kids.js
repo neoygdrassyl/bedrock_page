@@ -29,10 +29,12 @@ export const Kids = (props) => {
             </p>
           </MDBTypography>
           <List size="sm" bordered>
-            <List.Item><a className='text-dark' href='https://www.youtube.com/watch?v=lb2YqdLc0QE' target="_blank"><i class="fab fa-youtube"></i> Historia de Bucaramanga parte 1 "surgió el pueblo de indios"</a></List.Item>
-
-            <List.Item><a className='text-dark' href='https://www.youtube.com/watch?v=JzpeLNfA0rk' target="_blank"><i class="fab fa-youtube"></i>  Historia de Bucaramanga parte 2 "con los mestizos somos parroquia"</a></List.Item>
-            <List.Item><a className='text-dark' href='https://www.youtube.com/watch?v=Q6uJ2WQX_9c' target="_blank"><i class="fab fa-youtube"></i>  Historia de Bucaramanga parte 3 "nos vamos creciendo de villa a ciudad"</a></List.Item>
+            <List.Item><i class="fab fa-youtube"></i> Historia de Bucaramanga parte 1 "surgió el pueblo de indios"</List.Item>
+            <iframe width="1519" height="542" src="https://www.youtube.com/embed/lb2YqdLc0QE" title="HISTORIA DE BUCARAMANGA PARTE 1 &quot;SURGIÓ EL PUEBLO DE INDIOS&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <List.Item><i class="fab fa-youtube"></i>  Historia de Bucaramanga parte 2 "con los mestizos somos parroquia"</List.Item>
+            <iframe width="1519" height="542" src="https://www.youtube.com/embed/JzpeLNfA0rk" title="HISTORIA DE BUCARAMANGA PARTE 2 &quot;CON LOS MESTIZOS SOMOS PARROQUIA&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <List.Item><i class="fab fa-youtube"></i>  Historia de Bucaramanga parte 3 "nos vamos creciendo de villa a ciudad"</List.Item>
+            <iframe width="1519" height="542" src="https://www.youtube.com/embed/Q6uJ2WQX_9c" title="HISTORIA DE BUCARAMANGA PARTE  5 &quot;NOS VAMOS CRECIENDO DE VILLA A CIUDAD&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </List>
         </div>
       </div>

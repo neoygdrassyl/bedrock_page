@@ -106,6 +106,10 @@ import { MinorEntities } from './pages/ita/minor_entities';
 import Atention from './pages/curator/atention';
 import Calendar from './pages/curator/calendar';
 import Desitions from './pages/curator/desitions';
+import { ReportsEnpalem } from './pages/ita/report_empalme';
+import { ReportsControl } from './pages/ita/report_control';
+import { ReportsDefence } from './pages/ita/report_defense';
+import { ReportsPQRS } from './pages/ita/report_pqrs';
 
 
 const MySwal = withReactContent(Swal);
@@ -260,6 +264,47 @@ export default function App() {
                             />
                           )}
                         />
+
+                        <Route path='/reports_enpalme'
+                          render={(props) => (
+                            <ReportsEnpalem {...props}
+                              translation={t("title", { returnObjects: true })}
+                              swaMsg={t("swa_messages", { returnObjects: true })}
+                              breadCrums={t("breadCrums", { returnObjects: true })}
+                            />
+                          )}
+                        />
+
+                        <Route path='/reports_control'
+                          render={(props) => (
+                            <ReportsControl {...props}
+                              translation={t("title", { returnObjects: true })}
+                              swaMsg={t("swa_messages", { returnObjects: true })}
+                              breadCrums={t("breadCrums", { returnObjects: true })}
+                            />
+                          )}
+                        />
+
+                        <Route path='/reports_defence'
+                          render={(props) => (
+                            <ReportsDefence {...props}
+                              translation={t("title", { returnObjects: true })}
+                              swaMsg={t("swa_messages", { returnObjects: true })}
+                              breadCrums={t("breadCrums", { returnObjects: true })}
+                            />
+                          )}
+                        />
+
+                        <Route path='/reports_pqrs'
+                          render={(props) => (
+                            <ReportsPQRS {...props}
+                              translation={t("title", { returnObjects: true })}
+                              swaMsg={t("swa_messages", { returnObjects: true })}
+                              breadCrums={t("breadCrums", { returnObjects: true })}
+                            />
+                          )}
+                        />
+
                         <Route path='/opendata'
                           render={(props) => (
                             <Open_data {...props}

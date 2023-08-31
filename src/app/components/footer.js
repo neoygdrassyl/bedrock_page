@@ -79,13 +79,6 @@ class Footer extends Component {
 
                   <li><p className="pt-3">
                     <span class="fa-stack fa-lg">
-                      <img src={LGOG8} alt="PaisCO" height={50} />
-                    </span>  <a className="text-white" href="http://www.colombia.co/">País Colombia</a>
-                  </p>
-                  </li>
-
-                  <li><p className="pt-3">
-                    <span class="fa-stack fa-lg">
                       <i class="fab fa-whatsapp fa-2x"></i>
                     </span>  {translation.str_p_2}
                     <a className="btn btn-success mt-3" target="_blank" href="https://web.whatsapp.com/send?phone=+573162795010">{translation.str_btn}</a></p>
@@ -97,18 +90,31 @@ class Footer extends Component {
           </div>
           <div className='text-center'>
             <p className="pt-0">
-              <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href={`${FOOTER_URL}POLÍTICA DE SEGURIDAD DE LA INFORMACIÓN (1).pdf`}>Política general de seguridad de la información</a> 
+              <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href={`${FOOTER_URL}POLÍTICA DE SEGURIDAD DE LA INFORMACIÓN (1).pdf`}>Política general de seguridad de la información</a>
               / <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href={`${FOOTER_URL}POLITICA DE DATOS PERSONALES.pdf`}>Política tratamiento de datos personales</a>
               / <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href={`${FOOTER_URL}POLITICA DE TERMINOS Y CONDICIONES.pdf`}>Política Términos y Condiciones</a>
-              </p>
-              <p className="pt-0">
-              <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href={`${FOOTER_URL}POLÍTICA DE DERECHOS DE AUTOR Y.pdf`}>Política Derechos de autor</a> 
-              / <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href={`${FOOTER_URL}Otras politicas POLÍTICA DE PUBLICACION REPOSITORIO DE LICENCIAS URBANISTICAS.pdf`}>Otras olíticas</a>
-              </p>
+            </p>
+            <p className="pt-0">
+              <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href={`${FOOTER_URL}POLÍTICA DE DERECHOS DE AUTOR Y.pdf`}>Política Derechos de autor</a>
+              / <i class="far fa-file-alt"></i> <a className="text-white" target="_blank" href={`${FOOTER_URL}Otras politicas POLÍTICA DE PUBLICACION REPOSITORIO DE LICENCIAS URBANISTICAS.pdf`}>Otras políticas</a>
+            </p>
           </div>
 
-        <div class="text-center p-1">
-              © {moment().format('YYYY')} Curaduría Urbana No.1 de Bucaramanga. Desarrollado po
+          <div className='row m-0 py-0' style={{ backgroundColor: '#3366CC' }}>
+            <div className='col-12 mx-0 px-0 py-0'>
+              <div className='ps-4 py-0 my-0'>
+                <p className="py-0 my-0">
+                  <span class="fa-stack fa-lg">
+                    <img src={LGOG8} alt="PaisCO" height={35} />
+                  </span>  <a className="text-white" href="http://www.colombia.co/">País Colombia</a>
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="text-center p-1">
+            © {moment().format('YYYY')} Curaduría Urbana No.1 de Bucaramanga. Desarrollado po
             <a target="_blank" href="//devnatriana.com" className="text-white"> Nestor Triana</a>
           </div>
         </footer>

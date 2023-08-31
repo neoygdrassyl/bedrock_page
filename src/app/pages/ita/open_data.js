@@ -29,7 +29,7 @@ export const Open_data = (props) => {
                             <List size="sm" bordered>
                                 <List.Item><a className='text-dark' href={url + 'REGISTRO DE ACTIVOS DE INFORMACION.xlsx.pdf'} target="_blank" ><i class="fas fa-caret-right"></i> Registro de activos de información</a></List.Item>
                                 <List.Item><a className='text-dark' href={url + 'INDICE INFORMACION CLASIFICADA Y RESERVADA.xlsx.pdf'} target="_blank"><i class="fas fa-caret-right"></i> Índice de información clasificada y reservada</a></List.Item>
-                                <List.Item><a className='text-dark' href='#' target="_blank"><i class="fas fa-caret-right"></i> Esquema de publicación</a></List.Item>
+                                <List.Item><a className='text-dark' href={url + 'INVENTARIO ACTIVOS.pdf'} target="_blank"><i class="fas fa-caret-right"></i> Esquema de publicación</a></List.Item>
                                 <List.Item><a className='text-dark' href={url + 'MANUAL ORGANIZACION ARCHIVOS DE GESTION CURADURIA.pdf'} target="_blank"><i class="fas fa-caret-right"></i>  Programa de gestión documental</a></List.Item>
                                 <List.Item><a className='text-dark' href={url + 'TABLA DE RETENCION DOCUMENTAL.pdf'} target="_blank"><i class="fas fa-caret-right"></i>  Tablas de retención documental</a></List.Item>
                                 <List.Item><a className='text-dark' href={url + 'CUADRO DE CLASIFICACION DOCUMENTAL CCD CURADURIA URBANA 1.pdf'} target="_blank"><i class="fas fa-caret-right"></i>  Cuadro clasificación documental</a></List.Item>

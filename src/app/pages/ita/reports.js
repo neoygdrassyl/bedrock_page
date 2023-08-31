@@ -76,14 +76,14 @@ export const Reports = (props) => {
                         </p>
                     </MDBTypography>
                     <List size="sm" bordered>
-                        <List.Item><a className='text-dark' href='https://curaduria1bucaramanga.com/public_docs/OTHERS/reports/ACTA DE EMPALME.pdf' target="_blank"><i class="fas fa-caret-right"></i> Informes de empalme: </a></List.Item>
-                        <List.Item><a className='text-dark' href='https://curaduria1bucaramanga.com/public_docs/OTHERS/AUDITORIA.pdf' target="_blank"><i class="fas fa-caret-right"></i> Informes de gestión, evaluación y auditoría</a></List.Item>
-                        <List.Item><i class="fas fa-caret-right"></i> Informe sobre Defensa Pública y Prevención del Daño Antijurídico:  <br /><b>“El Curador Urbano uno de Bucaramanga Arq. LUIS CARLOS PARRA SALAZAR, no ha sido objeto de procesos judiciales en el ejercicio como Curador urbano del Municipio de Bucaramanga.”</b></List.Item>
-                        <List.Item><i class="fas fa-caret-right"></i>  Informes trimestrales sobre acceso a información, quejas y reclamos: <br /><b>“SIN EXPEDIR.”</b></List.Item>
+                        <List.Item><a className='text-dark' href='/reports_enpalme'><i class="fas fa-caret-right"></i> Informes de empalme: </a></List.Item>
+                        <List.Item><a className='text-dark' href='/reports_control'><i class="fas fa-caret-right"></i> Informes de gestión, evaluación y auditoría</a></List.Item>
+                        <List.Item><a className='text-dark' href='/reports_defence'><i class="fas fa-caret-right"></i> Informe sobre Defensa Pública y Prevención del Daño Antijurídico</a></List.Item>
+                        <List.Item><a className='text-dark' href='/reports_pqrs'><i class="fas fa-caret-right"></i> Informes trimestrales sobre acceso a información, quejas y reclamos</a></List.Item>
                         <List.Item><i class="fas fa-caret-right"></i>  Planes de mejoramiento: <br /><b>“No se han solicitado por los entes de control o auditoría.”</b></List.Item>
                         <List.Item><i class="fas fa-caret-right"></i> Informes a Entidades de control
                             <div>
-                                {reports.map(r => 
+                                {reports.map(r =>
                                     <table className="table table-bordered table-sm table-hover text-center my-2">
                                         <thead className='table-info'>
                                             <tr>
@@ -145,3 +145,5 @@ export const Reports = (props) => {
         </div>
     </>
 }
+
+

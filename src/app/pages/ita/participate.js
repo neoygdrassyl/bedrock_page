@@ -22,7 +22,11 @@ export const Participate = (props) => {
                             </div>
                         </div>
                     </div>
-                    <hr />
+                    <br />
+                    <p className='text-justify'>El Menú Participa, es un menú destacado o principal, que debe ir alojada en la página inicial de los sitios webs de las entidades públicas a fin de garantizarles a los ciudadanos la información sobre los mecanismos que ofrece cada entidad pública, para una participación efectiva, por tanto, esto es un nuevo impulso para el ejercicio ciudadano participativo.</p>
+                    <p className='text-justify'>El Curador Urbano es un particular encargado de estudiar, tramitar y expedir licencias urbanísticas en sus distintas modalidades  y de que trata el artículo 2.2.6.1.1.2 y siguientes del decreto 1077 de 2015; reconocimiento de edificaciones que regula el artículo 2.2.6.4.1.1 y siguientes del decreto y otras disposiciones relacionadas con la expedición de licencias señaladas en el artículo 2.2.6.1.3.1 del mencionado decreto 1077; esto conforme a las normas urbanísticas vigentes de ordena nacional, municipal, al igual que las normas de sismoresistencia.</p>
+                    <p className='text-justify'>Estas actuaciones administrativas se realizan en cumplimiento del debido proceso, estableciéndose en el Decreto 1077 de 2015, el procedimiento para ello, tales como, comunicación a vecinos colindantes personalmente o mediante publicación de periódico de amplia circulación y pagina web, publicación de valla informativa para intervención de terceros en los predios objeto de tramites, publicación de los actos administrativos que resuelvan las diferentes solicitudes que realizan los titulares tramites los cuales se notifican personalmente a quienes se hayan hecho parte de la actuación, así como por periódico de amplia circulación y pagina web. De la misma forma, los Curadores Urbanos, cuentan con un repositorio de licencias urbanística y otras actuaciones para ser consultado por los ciudadanos y entidades públicas.</p>
+                    <br />
                     <PanelGroup accordion defaultActiveKey={0} bordered >
                         <Panel header="1. Consulta Ciudadana" eventKey={1} id="panel1">
                             <ul>
