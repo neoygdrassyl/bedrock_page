@@ -535,7 +535,7 @@ export default function App() {
 
                         <Route path='/liquidator'
                           render={(props) => (
-                            <Liquidator {...props} versioni={'2023'}
+                            <Liquidator {...props} versioni={'2024'}
                               translation={t("liquidator.liquidator", { returnObjects: true })}
                               swaMsg={t("swa_messages", { returnObjects: true })}
                               breadCrums={t("breadCrums", { returnObjects: true })}

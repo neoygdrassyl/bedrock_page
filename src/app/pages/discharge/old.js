@@ -53,7 +53,8 @@ class File extends Component {
         //list_00.index = 10 
         response.data.map((item, i) => {
           if (item.type == 'lu' || item.type == 'Actos administrativos' || item.type == 'Resoluciones' || item.type == 'res' || item.type == 'Otras actuaciones' || item.type == 'oa' || item.type == 'mpr' || item.type == 'MPR') {
-            if (item.publish == true) {
+            //if (item.publish == true) {
+              if (true) {
               //console.log(item)
               const date = moment(item.date).format('yyyy');
               if (list_00[date]) list_00[date].push(item); else {

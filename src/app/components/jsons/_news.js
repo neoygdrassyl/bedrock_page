@@ -9,7 +9,43 @@ import { Link } from 'react-router-dom'
 import { Button_navigation } from '../button.component'
 
 export const _news = [
-    
+    {
+        id: 'news9',
+        title: 'AVISO IMPORTANTE',
+        icon_folder: <i class="fas fa-folder " style={{ color: '#107ABC' }}></i>,
+        icon_date: <i class="fas fa-clock " style={{ color: '#107ABC' }}></i>,
+        category: 'Aviso',
+        date: '01/12/2023',
+        summary: 'Modificación del horario para el dia 7, 22 y 29 por las festividades.',
+        link: 'Ver mas',
+        image: NEW_AVIS,
+        url: '/news/?newsId=news9',
+        noticia:
+            <div className='container'>
+                <div class="row align-items-center py-1">
+                    <div class="col-12 px-4 border border-info py-4 m-3" style={{ backgroundColor: ' #f9f9f9 ', borderRadius: '2px', border: '1px' }}>
+                        <div className="px-4 py-1">
+                            <h3 className="text-center" id='news9'>AVISO IMPORTANTE {<Button_navigation Iddown={'news6'} Idup={null} />}</h3>
+                            <div className="py-1">
+                                <label><label className="px-1" style={{ color: 'gray' }}><i class="fas fa-clock text-info"></i> 01/12/2023 </label> <label className="px-1" style={{ color: 'gray' }}><i class="fas fa-user text-info"></i> Curaduria 1 de Bucaramanga</label> <label className="px-1" style={{ color: 'gray' }}><i class="fas fa-folder text-info"></i> Noticias</label>   </label>
+                            </div>
+                            <div className='container'>
+                                <div class="row justify-content-start">
+                                    <div className='col-lg-12'>
+                                        <p className='text-justify fw-normal'>
+                                            Se informa a la comunidad en general que, con ocasión a las festividades de dia de velitas, navidad y fin de año, se modifica temporalmente el horario de atención al público del despacho del curador urbano uno de Bucaramanga para los días <b>siete (7), veintidós (22) y veintinueve (29) de diciembre del dos mil veintitrés (2023) el cual será de siete de la mañana (7:00 a.m.) a tres de la tarde (3:00 p.m.) en jornada continua</b>.
+                                            <br />
+                                            Bucaramanga, 1 de diciembre de 2023.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    },
     {
         id: 'news8',
         title: 'AVISO IMPORTANTE',
@@ -34,7 +70,7 @@ export const _news = [
                                 <div class="row justify-content-start">
                                     <div className='col-lg-12'>
                                         <p className='text-justify fw-normal'>
-                                            Se informa a la comuniad en general que, con ocasión a la semana santa, se expidió la Resolución 00888 del 27 de marzo de 2023, por la cual se modifica temporalmente el horario de trabajo y de atención al público del despacho del curador urbano uno de Bucaramanga para el miércoles <b>cinco (05) de abril de dos mi veintitrés (2023), el cual será de siete de la mañana (7:00 a.m.) a tres de la tarde (3:00 p.m.) jornada continua.</b>
+                                            Se informa a la comunidad en general que, con ocasión a la semana santa, se expidió la Resolución 00888 del 27 de marzo de 2023, por la cual se modifica temporalmente el horario de trabajo y de atención al público del despacho del curador urbano uno de Bucaramanga para el miércoles <b>cinco (05) de abril de dos mi veintitrés (2023), el cual será de siete de la mañana (7:00 a.m.) a tres de la tarde (3:00 p.m.) jornada continua.</b>
                                             <br />
                                             Bucaramanga, 28 de marzo de 2023.
                                         </p>
@@ -46,7 +82,8 @@ export const _news = [
 
                 </div>
             </div>
-    },{
+    },
+    {
         id: 'news7',
         title: 'AVISO IMPORTANTE',
         icon_folder: <i class="fas fa-folder " style={{ color: '#107ABC' }}></i>,
