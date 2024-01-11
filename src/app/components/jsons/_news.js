@@ -8,6 +8,8 @@ import REPARTO from '../../img/Reparto.png'
 import { Link } from 'react-router-dom'
 import { Button_navigation } from '../button.component'
 
+const icon_folder = <i class="fas fa-folder " style={{ color: '#107ABC' }}></i>;
+
 const bodyStructure = (id,title,icon_folder ) => {
 
 }
