@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { MDBBreadcrumb, MDBBreadcrumbItem } from 'mdb-react-ui-kit';
 import { Link } from "react-router-dom";
-import { _news } from '../../components/jsons/_news.js';
+import { _news } from '../../components/jsons/news/_news.js';
 import { useParams } from 'react-router-dom';
 
 export default function NEWS(props) {

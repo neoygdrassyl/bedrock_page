@@ -24,11 +24,14 @@ import Modal from 'react-modal';
 import './home.css'
 import { infoCud } from '../components/jsons/vars';
 import Map from '../components/map';
-import { _news } from '../components/jsons/_news';
+import { _news } from '../components/jsons/news/_news.js';
 
 import { IconButton, ButtonToolbar, ButtonGroup, Row, Col, Panel, FlexboxGrid } from 'rsuite';
 import ArrowDownIcon from '@rsuite/icons/ArrowDown';
 import { Button_navigation } from '../components/button.component';
+// src\app\components\jsons\news\newsBodyHomePage.js
+import { News_Home_Structure } from '../components/jsons/news/newsBodyHomePage.js';
+
 //import { useLocation } from 'react-router-dom';
 //const location = useLocation();
 
@@ -352,12 +355,18 @@ class Home extends Component {
               </div>
 
               <hr className='bg-info'></hr>
+
               <h2 className='text-center' id='news'>Noticias importantes {<Button_navigation Iddown={'ubicacion'} Idup={'process'} />}</h2>
               <div className='col-lg col-mb-10 justify-content-center d-flex mx-0 px-0 ' style={{ backgroundColor: ' ' }}>
-                <div class="row align-items-center px-4 py-4 mx-">
-                  {_news.filter((data, index) => index <= 3).map(function (value) {
+                <div class="column align-items-center px-4 py-4 my-">
+
+                  {/* CREAR COMPONENTE */}
+                  {_news.filter((data, index) => index <= 2).map(function (value) {
                     return <>
-                      <div class="col-3 align-items-center">
+                      <div class="py-3">
+                        <News_Home_Structure title={value.title} date={value.date} summary={value.summary} url={value.url} image={value.image} />
+                      </div>
+                      {/* <div class="col-3 align-items-center">
                         <div class="card align-items-center">
                           <img src={value.image} class="card-img-top" alt="Noticias y avisos importantes de la curaduria." style={{ height: '160px' }} />
                           <div class="card-body">
@@ -367,11 +376,13 @@ class Home extends Component {
                             <label className="px-1" style={{ color: 'gray' }}>{value.icon_date} {value.date}</label>
                           </div>
                         </div>
-                      </div>
+                      </div>   */}
                     </>
                   })}
                 </div>
               </div>
+
+
               {/*
               <MDBRow className="mt-5">
                 <MDBCol md="4">

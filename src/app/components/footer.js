@@ -10,6 +10,8 @@ class Footer extends Component {
     const { translation } = this.props;
     const FOOTER_URL = 'https://www.curaduria1bucaramanga.com/public_docs/OTHERS/footer/'
     return (
+      
+     
       <div className="Footer" style={{ backgroundColor: '#7A7A7A', color: '#e5e5e5' }}>
         <footer class="">
           <div class="container pt-3">
@@ -21,7 +23,7 @@ class Footer extends Component {
                   <li><p>
                     <span class="fa-stack fa-lg">
                       <i class="fas fa-map-marked-alt"></i>
-                    </span>
+                    </span> 
                     Localización de la entidad: {translation.str_item_1}</p>
                   </li>
                   <li><p>
