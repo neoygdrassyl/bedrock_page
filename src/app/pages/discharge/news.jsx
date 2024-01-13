@@ -26,20 +26,20 @@ export default function NEWS(props) {
       </MDBBreadcrumb>
       <div className='container'>
         <div className='col-lg-12'>
-          <div className='' style={{ backgroundColor: '#1b83c4', borderRadius: '2px' }}>
+          <div className='d-flex justify-content-center' style={{ backgroundColor: '#1b83c4', borderRadius: '2px' }}>
             <div class="row justify-content-center px-4 mx-2">
-              <div class="col-11 text-center py-1" style={{ color: ' white ' }}>
-                <h2 className='px-2 py-0 fw-normal'>NOTICIAS Y AVISOS IMPORTANTES</h2>
-              </div>
+              <div class="col-11 text-center py-2 " style={{ color: ' white ', whiteSpace: 'nowrap' }}>
+              <h2 className='px-2 py-0 fw-normal mb-0'>NOTICIAS Y AVISOS IMPORTANTES</h2>
             </div>
           </div>
-          {_news.map(function (value) {
-            return <>
-              {value.noticia}
-            </>
-          })}
         </div>
+        {_news.map(function (value) {
+          return <>
+            {value.noticia}
+          </>
+        })}
       </div>
     </div>
+  </div >
   </>
 }

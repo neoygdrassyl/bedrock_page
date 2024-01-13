@@ -14,7 +14,7 @@ export function News_Home_Structure({ title, date, summary, image, url, }) {
                 <div className="news-card-info">
                     <h3 className="news-card__title"> {icon_folder} {title}
                     </h3>
-                    <p className="news-card__content">{summary}</p>
+                    <div className="news-card__content">{summary}</div>
                     <div className="news-card__date">
                         {icon_date} {date}
                     </div>
