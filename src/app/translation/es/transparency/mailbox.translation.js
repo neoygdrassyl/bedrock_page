@@ -11,7 +11,7 @@ const MAILBOX_T = {
     subTitle_5: "Horario de atencion",
     text_11: "Calle 36 # 31-39 Local 101, Bucaramanga, Santander",
     text_12: "Centro Empresarial Chicamocha",
-    text_13: "Lunes a Viernes: 07:00 - 12:30pm y 1:00pm - 4:00pm",
+    text_13: "Lunes a Viernes: 07:00 a.m - 12:30 p.m y 1:00 p.m - 4:00 p.m",
     text_14: "Bucaramanga, Santander",
     subTitle_2: "A Distancia",
     text_21: "Cel: (+57) 316 279 5010",

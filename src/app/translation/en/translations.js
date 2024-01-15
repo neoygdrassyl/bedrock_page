@@ -48,7 +48,7 @@ export const TRANSLATIONS_EN = {
       str_item_2: "680 3596",
       str_item_3: "316 279 5010",
       str_item_4: "curaduriaurbana1@gmail.com",
-      str_item_5: "Moonday to Friday: 07:00 - 12:30pm and 1:00pm -5:00pm",
+      str_item_5: "Moonday to Friday: 07:00 am - 12:30 pm and 1:00pm -5:00pm",
       str_p_1: "The Urban Curatorship Nr.1 of Bucaramanga offers the service of the Colombian sign language.",
       str_p_2: "Need help? Chat with us through WhatsApp",
       str_btn: "Chat online",

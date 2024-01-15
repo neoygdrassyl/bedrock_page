@@ -310,7 +310,7 @@ class Home extends Component {
                 {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-calendar-check fa-5x fa-lg-4 text-white"></i>, "Agendamiento de citas", '/scheduling')}
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-pdf fa-5x fa-lg-4 text-white"></i>, "Certificacion en linea", '/certificacion')}
+                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-pdf fa-5x fa-lg-4 text-white"></i>, "Certificacion en línea", '/certificacion')}
               </FlexboxGrid.Item>
             </FlexboxGrid>
 

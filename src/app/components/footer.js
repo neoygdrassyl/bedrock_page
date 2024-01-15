@@ -116,7 +116,7 @@ class Footer extends Component {
           </div>
 
           <div class="text-center p-1">
-            © {moment().format('YYYY')} Curaduría Urbana No.1 de Bucaramanga. Desarrollado po
+            © {moment().format('YYYY')} Curaduría Urbana No.1 de Bucaramanga. Desarrollado por
             <a target="_blank" href="//devnatriana.com" className="text-white"> Nestor Triana</a>
           </div>
         </footer>
