@@ -45,7 +45,6 @@
   text-align: justify;
 }
 
-
 .news-card__content p {
   font-size: 1.25rem;
 }
@@ -107,5 +106,20 @@
   }
   .news-card__content {
     display: none;
+  }
+  @media (max-width: 450px) {
+    .news-card {
+      width: 100%;
+    }
+    .news-card__content {
+      display: none;
+    }
+    .news-card .news-card-image {
+      margin-right: 0px;
+    }
+    .news-card-image {
+      height: 140px;
+      width: 140px;
+    }
   }
 }
