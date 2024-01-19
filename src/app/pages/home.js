@@ -181,28 +181,6 @@ class Home extends Component {
         */}
 
           <div class="container pt-2" id="hanging-icons">
-            <div className='' style={{ backgroundColor: '#1b83c4', borderRadius: '2px' }}>
-              <div class="row justify-content-center px-4 mx-2">
-
-
-                <div class="col-7 d-flex justify-content-center align-items-center text-start py-1" style={{ color: ' white ' }}>
-                  <h5 className='px-4 py-0 fw-normal'><i class="fas fa-calendar-alt text-light"></i> Horario: {infoCud.schedule}</h5>
-                  <h5 className='px-4 py-0 fw-normal'><i class="fas fa-calendar-alt text-light"></i> Consulta horarios especiales y atencion especializada, click <Link className='text-light' to={'/mailbox'}>Aqui <i class="far fa-hand-point-left"></i></Link></h5>
-                </div>
-                <div class="col-7 d-flex justify-content-center align-items-center text-start py-1">
-                  <div class="px-0">
-                    <span className='col-lg-12 bg-white'>
-                      <h5 className='fw-normal'> <a style={{ color: 'white' }} href='https://www.google.es/maps/place/Curaduria+Urbana+No.+1+de+Bucaramanga/@7.1236512,-73.1155874,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683f0ec6e6ea35:0xd99c4a977df44614!8m2!3d7.1236459!4d-73.1133987?hl=es' target="_blank" > <i class="fas fa-map-marker-alt text-light"></i> {infoCud.address}</a> </h5>
-                    </span>
-                  </div>
-
-                  <h5 className='fw-normal' style={{ color: 'white' }}><a href="https://web.whatsapp.com/send?phone=+573162795010" style={{ color: 'white' }} target="_blank" > <i class="fas fa-mobile-alt text-light"></i> Whatsapp: {infoCud.number1}</a> <i class="fas fa-envelope text-light"></i> Correo: curaduriaurbana1@gmail.com</h5>
-                    
-                </div>
-
-              </div>
-            </div>
-
             <div class="container py-2">
               <div class="row align-items-start">
                 <div className='col-lg-9 px-0 ' style={{ height: '280px' }}>
@@ -250,7 +228,6 @@ class Home extends Component {
                   </div>
                 </div>
 
-
                 <div className='col-lg-3 py-1' >
                   <div className='py-1'>
                     <Link style={{ color: 'white', backgroundImage: 'white' }} to="/normogram">
@@ -292,6 +269,28 @@ class Home extends Component {
               </div>
             </div>
 
+            <div className='' style={{ backgroundColor: '#1b83c4', borderRadius: '2px' }}>
+              <div class="row justify-content-center px-4 mx-2">
+
+
+                <div class="col-7 d-flex justify-content-center align-items-center text-start py-1" style={{ color: ' white ' }}>
+                  <h5 className='px-4 py-0 fw-normal'><i class="fas fa-calendar-alt text-light"></i> Horario: {infoCud.schedule}</h5>
+                  <h5 className='px-4 py-0 fw-normal'><i class="fas fa-calendar-alt text-light"></i> Consulta horarios especiales y atencion especializada, click <Link className='text-light' to={'/mailbox'}>Aqui <i class="far fa-hand-point-left"></i></Link></h5>
+                </div>
+                <div class="col-7 d-flex justify-content-center align-items-center text-start py-1">
+                  <div class="px-0">
+                    <span className='col-lg-12 bg-white'>
+                      <h5 className='fw-normal'> <a style={{ color: 'white' }} href='https://www.google.es/maps/place/Curaduria+Urbana+No.+1+de+Bucaramanga/@7.1236512,-73.1155874,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683f0ec6e6ea35:0xd99c4a977df44614!8m2!3d7.1236459!4d-73.1133987?hl=es' target="_blank" > <i class="fas fa-map-marker-alt text-light"></i> {infoCud.address}</a> </h5>
+                    </span>
+                  </div>
+
+                  <h5 className='fw-normal' style={{ color: 'white' }}><a href="https://web.whatsapp.com/send?phone=+573162795010" style={{ color: 'white' }} target="_blank" > <i class="fas fa-mobile-alt text-light"></i> Whatsapp: {infoCud.number1}</a> <i class="fas fa-envelope text-light"></i> Correo: curaduriaurbana1@gmail.com</h5>
+
+                </div>
+
+              </div>
+            </div>
+
             <hr className='bg-info py-0'></hr>
             <h2 className='text-center' id='services'>Servicios <Button_navigation Iddown={'process'} Idup={null} /> </h2>
 
@@ -315,7 +314,7 @@ class Home extends Component {
                 {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-calendar-check fa-5x fa-lg-4 text-white"></i>, "Agendamiento de citas", '/scheduling')}
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-pdf fa-5x fa-lg-4 text-white"></i>, "Certificacion profesional", '/certificacion')}
+                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-pdf fa-5x fa-lg-4 text-white"></i>, "Certificacion profesional en linea", '/certificacion')}
               </FlexboxGrid.Item>
             </FlexboxGrid>
 
