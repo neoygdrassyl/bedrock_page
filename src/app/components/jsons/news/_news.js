@@ -2,8 +2,8 @@ import NEW_3_ING from '../../../img/news_certificate.jpg'
 import NEW_2_ING from '../../../img/news_inclusivity.jpg'
 import NEW_ING from '../../../img/news1.jpg'
 import NEW_AVIS from '../../../img/aviso.jpg'
-import NEW_AVIS2 from '../../../img/aviso2.jpg'
-import REPARTO from '../../../img/Reparto.png'
+import REPARTO from '../../..//img/Reparto.png'
+import AVISO_HORARIO from '../../../img/news/Aviso_Horario.png'
 
 import { Link } from 'react-router-dom'
 import { Button_navigation } from '../../button.component'
@@ -120,8 +120,8 @@ export const _news = [
         category: 'Noticias',
         date: '01/01/2024',
         summary: <p>
-            Durante el año 2024 la Curaduría Urbana <br />N°1 de Bucaramanga está <br />
-            encargada de hacer el reparto.
+            Durante el año 2024 la Curaduría Urbana N°1 de Bucaramanga está
+            encargada de hacer el reparto
         </p>,
         image: REPARTO,
         url: '/news/?newsId=news6',
@@ -144,9 +144,9 @@ export const _news = [
         category: 'Aviso',
         date: '6/06/2022',
         summary:
-            <p>El horario general de atención<br /> al público del despacho del<br /> curador urbano uno de Bucaramanga</p>,
+            <p>El horario general de atención al público del despacho del curador urbano uno de Bucaramanga</p>,
         link: 'Ver mas',
-        image: NEW_AVIS2,
+        image: AVISO_HORARIO,
         url: '/news/?newsId=news5',
         noticia:
             // eslint-disable-next-line react/jsx-pascal-case
@@ -155,7 +155,7 @@ export const _news = [
                 title={'Modificación horario general'}
                 category={'Aviso'}
                 date={'6/06/2022'}
-                image={NEW_AVIS2}
+                image={AVISO_HORARIO}
                 info={info5}
                 key={'news5'}
             />
@@ -166,7 +166,7 @@ export const _news = [
         title: 'Certificación para profesionales',
         category: 'Noticia',
         date: '15/12/2021',
-        summary: <p>La Curaduria Urbana N°1 de Bucaramanga <br />ofrece a los profesionales certificaciones <br />en sus proyectos de licenciamiento</p>,
+        summary: <p>La Curaduria Urbana N°1 de Bucaramanga ofrece a los profesionales certificaciones en sus proyectos de licenciamiento</p>,
         link: 'Ver mas',
         image: NEW_3_ING,
         url: '/news/?newsId=news4',
@@ -188,7 +188,8 @@ export const _news = [
         title: 'Prórroga de licencias y revalidaciones',
         category: 'Aviso',
         date: '12/05/2022',
-        summary: 'El Decreto 1783 De 2021 que modificó el Decreto 1077 de 2015 en el artículo 2.2.6.1.2.4.1.',
+        summary: <p>El Decreto 1783 De 2021 que modificó el Decreto 1077 de 2015
+        </p>,
         link: 'Ver mas',
         image: NEW_AVIS,
         url: '/news/?newsId=news3',

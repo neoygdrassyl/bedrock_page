@@ -361,28 +361,17 @@ class Home extends Component {
               <hr className='bg-info'></hr>
 
               <h2 className='text-center' id='news'>Noticias importantes {<Button_navigation Iddown={'ubicacion'} Idup={'process'} />}</h2>
-              <div className='col-lg col-mb-10 justify-content-center d-flex mx-0 px-0 ' style={{ backgroundColor: ' ' }}>
-                <div class="column align-items-center px-4 py-4 my-">
-                  {_news.filter((data, index) => index <= 2).map(function (value) {
-                    return <>
-                      <div class="py-3">
-                        <News_Home_Structure title={value.title} date={value.date} summary={value.summary} url={value.url} image={value.image} />
-                      </div>
-                      {/* <div class="col-3 align-items-center">
-                        <div class="card align-items-center">
-                          <img src={value.image} class="card-img-top" alt="Noticias y avisos importantes de la curaduria." style={{ height: '160px' }} />
-                          <div class="card-body">
-                            <label className="text-start fw-normal" style={{ color: 'gray' }}>{value.icon_folder} {value.category}</label>
-                            <h5 class="card-title fw-normal "><b>{value.title}</b></h5>
-                            <Link to={value.url} class="text-dark"><p class="card-text fw-normal">{value.summary} <p className='text-info'> {value.link}</p></p></Link>
-                            <label className="px-1" style={{ color: 'gray' }}>{value.icon_date} {value.date}</label>
-                          </div>
-                        </div>
-                      </div>   */}
-                    </>
-                  })}
-                </div>
+              <div className='row justify-content-center mx-0 px-0'>
+                {_news.filter((data, index) => index <= 3).map((value, index) => (
+                  <div key={index} className='col-lg col-md-6 col-sm-12'>
+                    <div className='column align-items-center px-4 py-4 my-3'>
+                      <News_Home_Structure title={value.title} date={value.date} summary={value.summary} url={value.url} image={value.image} />
+                    </div>
+                  </div>
+                ))}
               </div>
+
+
 
 
               {/*

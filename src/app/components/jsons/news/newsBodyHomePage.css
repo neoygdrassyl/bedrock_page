@@ -3,9 +3,9 @@
   --border-radius: 0.75rem;
   --primary-color: #3f87da;
   --secondary-color: #3c3852;
-  width: 100%;
+  max-width: 100%;
   /* max-width: fit-content; */
-  height: 260px;
+  height: 245px;
   font-family: "Arial";
   padding: 1.2rem;
   cursor: pointer;
@@ -27,9 +27,6 @@
   overflow: hidden;
 }
 
-.news-card .news-card-image {
-  margin-right: 25px;
-}
 .news-card .news-card-info {
   display: flex;
   flex-direction: column;
@@ -43,17 +40,19 @@
 
   white-space: normal;
   text-align: justify;
+  text-wrap: pretty;
 }
 
 .news-card__content p {
-  font-size: 1.25rem;
+  font-size: 0.99rem;
 }
 
 .news-card .news-card__title {
   padding: 0;
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 7px;
+  text-wrap: stable;
 }
 
 .news-card .news-card__date {
@@ -94,12 +93,26 @@
 }
 /* Media query's para pantallas más pequeñas que 1200px de ancho */
 
-@media (max-width: 1200px), (max-width: 1000px) {
+@media (max-width: 1400px), (max-width: 1200px), (max-width: 1000px) {
   .news-card {
     height: auto;
   }
 }
 
+@media (max-width: 1200px) {
+  .news-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .news-card .news-card-image-section {
+    margin-bottom: 6px;
+  }
+  .news-card__content {
+    display: none;
+  }
+}
 @media (max-width: 750px) {
   .news-card {
     height: auto;
@@ -107,19 +120,31 @@
   .news-card__content {
     display: none;
   }
-  @media (max-width: 450px) {
+
+  @media (max-width: 650px) {
     .news-card {
       width: 100%;
     }
     .news-card__content {
       display: none;
     }
-    .news-card .news-card-image {
-      margin-right: 0px;
+    .news-card .news-card-image-section {
+      height: 142px;
+      width: 142px;
+      margin-bottom: 6px;
     }
     .news-card-image {
-      height: 140px;
-      width: 140px;
+      height: 142px;
+      width: 142px;
+    }
+    .news-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .news-card__title {
+      display: none;
     }
   }
 }
