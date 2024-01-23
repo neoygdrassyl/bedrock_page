@@ -150,11 +150,7 @@ export default function App() {
 
                 <div class="bg-image">
                   <div class="bg-image-gr">
-                    <div class="overlay-container container-primary" style={{
-                      width: '100%',
-                      maxWidth: '1700px', // Puedes ajustar el ancho máximo según tus preferencias
-                      margin: '0 auto',
-                    }}>
+                    <div id="form"class="overlay-container container-primary">
 
                       <Route render={(props) => (
                         <Title {...props} translation={t("title", { returnObjects: true })}
