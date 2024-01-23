@@ -97,6 +97,9 @@
   .news-card {
     height: auto;
   }
+  .news-card__content {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -129,14 +132,13 @@
       display: none;
     }
     .news-card .news-card-image-section {
+      width: 100%;
+      height: auto;
+    }
+    /* .news-card-image {
       height: 142px;
       width: 142px;
-      margin-bottom: 6px;
-    }
-    .news-card-image {
-      height: 142px;
-      width: 142px;
-    }
+    } */
     .news-card {
       display: flex;
       flex-direction: column;
@@ -144,6 +146,9 @@
       justify-content: center;
     }
     .news-card__title {
+      display: none;
+    }
+    .news-card__date {
       display: none;
     }
   }
