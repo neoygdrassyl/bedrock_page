@@ -147,9 +147,15 @@ export default function App() {
                   style={{ position: 'relative', zIndex: '3' }} />
                 <BtnStart />
                 <BtnChat translation={t("misc.btn_chat", { returnObjects: true })} />
+
                 <div class="bg-image">
                   <div class="bg-image-gr">
-                    <div class="container container-primary p-0" >
+                    <div class="overlay-container container-primary" style={{
+                      width: '100%',
+                      maxWidth: '1700px', // Puedes ajustar el ancho máximo según tus preferencias
+                      margin: '0 auto',
+                    }}>
+
                       <Route render={(props) => (
                         <Title {...props} translation={t("title", { returnObjects: true })}
                           swaMsg={t("swa_messages", { returnObjects: true })}
@@ -609,7 +615,7 @@ export default function App() {
           </ThemeProvider>
         </ThemeProvider>
       </Router>
-    </ProvideAuth>
+    </ProvideAuth >
   );
 }
 
