@@ -29,8 +29,12 @@ import { _news } from '../components/jsons/news/_news.js';
 import { IconButton, ButtonToolbar, ButtonGroup, Row, Col, Panel, FlexboxGrid } from 'rsuite';
 import ArrowDownIcon from '@rsuite/icons/ArrowDown';
 import { Button_navigation } from '../components/button.component';
-// src\app\components\jsons\news\newsBodyHomePage.js
 import { News_Home_Structure } from '../components/jsons/news/newsBodyHomePage.js';
+
+import ImageCarousel from '../components/carousel.js';
+import MainButton from '../components/mainButton/MainButton.js';
+
+
 
 //import { useLocation } from 'react-router-dom';
 //const location = useLocation();
@@ -183,87 +187,20 @@ class Home extends Component {
           <div class="container pt-2" id="hanging-icons">
             <div class="container py-2">
               <div class="row align-items-start">
-                <div className='col-lg-9 px-0 ' style={{ height: '280px' }}>
-                  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style={{ height: '280px' }}>
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="11000" style={{ height: '275px' }}>
-                        <img src={COLOMBIA} class="d-block w-100" alt="Bucaramanga santander y sus hermosos paisajes." style={{ height: '275px' }} />
-                        <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
-                          <p className='text-light  text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: Daniel Beltran</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="9000" style={{ height: '275px' }}>
-                        <img src={IMG1} class="d-block w-100" alt="Bucaramanga santander y sus hermosos paisajes." style={{ height: '275px' }} />
-                        <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
-                          <p className='text-light text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="9000" style={{ height: '275px' }}>
-                        <img src={IMG2} class="d-block w-100" alt="Bucaramanga santander la ciudad de los parques." style={{ height: '275px' }} />
-                        <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
-                          <p className='text-light text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="9000" style={{ height: '275px' }}>
-                        <img src={IMG3} class="d-block w-100" alt="Bucaramanga santander la ciudad bonita." style={{ height: '275px' }} />
-                        <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
-                          <p className='text-light text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                </div>
+                <ImageCarousel />
 
-                <div className='col-lg-3 py-1' >
-                  <div className='py-1'>
-                    <Link style={{ color: 'white', backgroundImage: 'white' }} to="/normogram">
-                      <div className='text-start px-4 border border-dark' style={{ backgroundColor: '#1B83C4 ', borderRadius: '20px' }}>
-                        <div className='mx-0 px-0 py-2'>
-                          <h4 className='fw-normal'><i class="fas fa-file-invoice fa-2x"></i>   Consulta Normatividad</h4>
-                        </div>
-                      </div>
-                    </Link>
+                <div className='col-lg-3 mx-1.2 py-2 ' >
+                  <div className='py-2'>
+                    <MainButton logo=<i class="fas fa-file-invoice fa-2x"></i> info="Consulta Normatividad" link={"/normogram"} />
                   </div>
-                  <div className='py-1'>
-                    <Link style={{ color: 'white', backgroundImage: 'white' }} to="/status">
-                      <div className='text-start px-4 border border-dark' style={{ backgroundColor: '#1B83C4 ', borderRadius: '20px' }}>
-                        <div className='mx-0 px-0 py-2'>
-                          <h4 className='fw-normal'><i class="fas fa-search fa-2x"></i>    Consulta Procesos</h4>
-                        </div>
-                      </div>
-                    </Link>
+                  <div className='py-2'>
+                    <MainButton logo=<i class="fas fa-search fa-2x"></i> info="Consulta Procesos" link={"/status"} />
                   </div>
-                  <div className='py-1'>
-                    <Link style={{ color: 'white', backgroundImage: 'white' }} to="/administrative">
-                      <div className='text-start px-4 border border-dark' style={{ backgroundColor: '#1B83C4 ', borderRadius: '20px' }}>
-                        <div className='mx-0 px-0 py-2'>
-                          <h4 className='fw-normal'><i class="fas fa-list-alt fa-2x"></i>    Consulta publicaciones</h4>
-                        </div>
-                      </div>
-                    </Link>
+                  <div className='py-2'>
+                    <MainButton logo=<i class="fas fa-list-alt fa-2x"></i> info="Consulta publicaciones" link={"/administrative"} />
                   </div>
-                  <div className='py-1'>
-                    <Link style={{ color: 'white', backgroundImage: 'white' }} to="/old">
-                      <div className='text-start px-4 border border-dark' style={{ backgroundColor: '#1B83C4 ', borderRadius: '20px' }}>
-                        <div className='mx-0 px-0 py-2'>
-                          <h4 className='fw-normal'><i class="fas fa-folder-minus fa-2x"></i> Consulta repositorio</h4>
-                        </div>
-                      </div>
-                    </Link>
+                  <div className='py-2'>
+                    <MainButton logo=<i class="fas fa-folder-minus fa-2x"></i> info="Consulta repositorio" link={"/old"} />
                   </div>
                 </div>
               </div>
@@ -302,7 +239,7 @@ class Home extends Component {
                 {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-sign-language fa-5x fa-lg-4 text-white"></i>, "Curaduria inclusiva", '/inclusivity')}
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-alt fa-5x fa-lg-4 text-white"></i>, "Instrumentos de apoyo", '/file')}
+                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-alt fa-5x fa-lg-4 text-white"></i>, "Instrumentos y formatos", '/file')}
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
                 {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-calculator fa-5x fa-lg-4 text-white"></i>, "Calculadora de expensa", '/liquidator')}
