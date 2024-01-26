@@ -110,7 +110,6 @@ import { ReportsEnpalem } from './pages/ita/report_empalme';
 import { ReportsControl } from './pages/ita/report_control';
 import { ReportsDefence } from './pages/ita/report_defense';
 import { ReportsPQRS } from './pages/ita/report_pqrs';
-import { getWidth } from 'rsuite/esm/DOMHelper';
 
 
 const MySwal = withReactContent(Swal);
@@ -147,15 +146,13 @@ export default function App() {
                   style={{ position: 'relative', zIndex: '3' }} />
                 <BtnStart />
                 <BtnChat translation={t("misc.btn_chat", { returnObjects: true })} />
-
                 <div class="bg-image">
                   <div class="bg-image-gr">
-                    <div id="form"class="overlay-container container-primary">
-
+                    <div class="container container-primary p-0">
                       <Route render={(props) => (
                         <Title {...props} translation={t("title", { returnObjects: true })}
                           swaMsg={t("swa_messages", { returnObjects: true })}
-                          breadCrums={t("breadCrums", { returnObjects: true })} />
+                          breadCrums={t("breadCrums", { returnObjects: true })} />  
                       )} />
                       <Navbar1 />
                       <Switch>
@@ -611,7 +608,7 @@ export default function App() {
           </ThemeProvider>
         </ThemeProvider>
       </Router>
-    </ProvideAuth >
+    </ProvideAuth>
   );
 }
 

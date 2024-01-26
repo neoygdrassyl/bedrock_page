@@ -191,28 +191,26 @@ class Home extends Component {
 
                 <div className='col-lg-3 mx-1.2 py-2 ' >
                   <div className='py-2'>
-                    <MainButton logo=<i class="fas fa-file-invoice fa-2x"></i> info="Consulta Normatividad" link={"/normogram"} />
+                    <MainButton logo="fas fa-file-invoice fa-2x" info="Consulta Normatividad" link={"/normogram"} />
                   </div>
                   <div className='py-2'>
-                    <MainButton logo=<i class="fas fa-search fa-2x"></i> info="Consulta Procesos" link={"/status"} />
+                    <MainButton logo="fas fa-search fa-2x" info="Consulta Procesos" link={"/status"} />
                   </div>
                   <div className='py-2'>
-                    <MainButton logo=<i class="fas fa-list-alt fa-2x"></i> info="Consulta publicaciones" link={"/administrative"} />
+                    <MainButton logo="fas fa-list-alt fa-2x" info="Consulta publicaciones" link={"/administrative"} />
                   </div>
                   <div className='py-2'>
-                    <MainButton logo=<i class="fas fa-folder-minus fa-2x"></i> info="Consulta repositorio" link={"/old"} />
+                    <MainButton logo="fas fa-folder-minus fa-2x" info="Consulta repositorio" link={"/old"} />
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className='' style={{ backgroundColor: '#1b83c4', borderRadius: '2px' }}>
-              <div class="row justify-content-center px-4 mx-2">
-
-
-                <div class="col-7 d-flex justify-content-center align-items-center text-start py-1" style={{ color: ' white ' }}>
-                  <h5 className='px-4 py-0 fw-normal'><i class="fas fa-calendar-alt text-light"></i> Horario: {infoCud.schedule}</h5>
-                  <h5 className='px-4 py-0 fw-normal'><i class="fas fa-calendar-alt text-light"></i> Consulta horarios especiales y atencion especializada, click <Link className='text-light' to={'/mailbox'}>Aqui <i class="far fa-hand-point-left"></i></Link></h5>
+            <div style={{ backgroundColor: '#2c6aa5', borderRadius: '2px' }}>
+              <div class="d-flex justify-content-between">
+                <div class="col-7 d-flex justify-content-center align-items-center text-start py-1" style={{ color: ' white '}}>
+                  <h5 className='px-2 py-0 fw-normal'><i class="fas fa-calendar-alt text-light"></i> Horario: {infoCud.schedule}</h5>
+                  <h5 className='px-2 py-0 fw-normal'><i class="fas fa-calendar-alt text-light"></i> Consulta horarios especiales y atencion especializada, click <Link className='text-light' to={'/mailbox'}>Aqui <i class="far fa-hand-point-left"></i></Link></h5>
                 </div>
                 <div class="col-7 d-flex justify-content-center align-items-center text-start py-1">
                   <div class="px-0">

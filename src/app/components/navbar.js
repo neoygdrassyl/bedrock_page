@@ -28,11 +28,11 @@ export default function Navbar1(props) {
   });
   const NavBarInstance = ({ onSelect, activeKey, ...props }) => {
     return (
-      <Navbar {...props} expand="lg">
-        <Nav activeKey={activeKey} className="w-100 d-flex justify-content-center align-items-center" style={{ paddingLeft: '50px', paddingRight: '50px' }}>
+      <Navbar {...props} expand="lg ">
+        <Nav activeKey={activeKey} className="w-100 d-flex justify-content-center align-items-center" style={{ paddingLeft: '50px', paddingRight: '50px', overflow: 'hidden' }}>
           <Nav.Item eventKey="1" as={MyLink} href="/home"> <i class="fas fa-home px-1"></i> <span className='fw-bold'>Inicio</span></Nav.Item>
-          <Nav.Item eventKey="2" as={MyLink} href="/transparency" ><span className='fw-bold'>Transparencia y acceso a <br/>la información pública</span></Nav.Item>
-          <Nav.Item eventKey="3" as={MyLink} href="/pqrs"><span className='fw-bold'> Atención y Servicio  <br/>a la ciudadanía</span></Nav.Item>
+          <Nav.Item eventKey="2" as={MyLink} href="/transparency" ><span className='fw-bold'>Transparencia y acceso a <br />la información pública</span></Nav.Item>
+          <Nav.Item eventKey="3" as={MyLink} href="/pqrs"><span className='fw-bold'> Atención y Servicio  <br />a la ciudadanía</span></Nav.Item>
           <Nav.Item eventKey="4" as={MyLink} href="/participate"><span className='fw-bold'>Participa</span></Nav.Item>
           <Nav.Menu pullRight title={<label><i class="fas fa-bookmark"></i> Curaduria</label>}>
             <Nav.Item eventKey="5" as={MyLink} href="/mision"> Misión y visión</Nav.Item>
@@ -64,21 +64,21 @@ export default function Navbar1(props) {
             <Nav.Item eventKey="17" as={MyLink} href="/certificacion">Certificación profesionales</Nav.Item>
           </Nav.Menu>
         </ Nav>
-        </Navbar>
+      </Navbar>
     );
-};
+  };
 
-const Demo = () => {
-  const [activeKey, setActiveKey] = useState(false);
-  return (
-    <div className="nav-wrapper">
-      <NavBarInstance activeKey={activeKey} onSelect={setActiveKey} />
-    </div>
-  );
-};
+  const Demo = () => {
+    const [activeKey, setActiveKey] = useState(false);
+    return (
+      <div className="nav-wrapper">
+        <NavBarInstance activeKey={activeKey} onSelect={setActiveKey} />
+      </div>
+    );
+  };
 
-return <>
-  {Demo()}
-</>
+  return <>
+    {Demo()}
+  </>
 
 }

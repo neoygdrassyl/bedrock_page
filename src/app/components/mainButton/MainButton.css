@@ -8,6 +8,7 @@
   width: 100%;
   height: auto;
   justify-content: left;
+  text-wrap: nowrap;
 }
 
 .main-button .main-button-span {
