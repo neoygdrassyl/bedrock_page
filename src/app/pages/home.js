@@ -206,25 +206,32 @@ class Home extends Component {
               </div>
             </div>
 
-            <div style={{ backgroundColor: '#2c6aa5', borderRadius: '2px' }}>
-              <div class="d-flex justify-content-between">
-                <div class="col-7 d-flex justify-content-center align-items-center text-start py-1" style={{ color: ' white '}}>
-                  <h5 className='px-2 py-0 fw-normal'><i class="fas fa-calendar-alt text-light"></i> Horario: {infoCud.schedule}</h5>
-                  <h5 className='px-2 py-0 fw-normal'><i class="fas fa-calendar-alt text-light"></i> Consulta horarios especiales y atencion especializada, click <Link className='text-light' to={'/mailbox'}>Aqui <i class="far fa-hand-point-left"></i></Link></h5>
-                </div>
-                <div class="col-7 d-flex justify-content-center align-items-center text-start py-1">
-                  <div class="px-0">
-                    <span className='col-lg-12 bg-white'>
-                      <h5 className='fw-normal'> <a style={{ color: 'white' }} href='https://www.google.es/maps/place/Curaduria+Urbana+No.+1+de+Bucaramanga/@7.1236512,-73.1155874,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683f0ec6e6ea35:0xd99c4a977df44614!8m2!3d7.1236459!4d-73.1133987?hl=es' target="_blank" > <i class="fas fa-map-marker-alt text-light"></i> {infoCud.address}</a> </h5>
-                    </span>
+
+            <div class="container mt-5 p-0">
+              <div style={{ backgroundColor: '#2c6aa5', borderRadius: '2px' }} class="d-flex justify-content-between">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start py-2 px-4 col-md-6" >
+                  <div class="px-2 py-1">
+                    <h5 className='px-2 py-0 fw-normal ' style={{ color: 'white' }}><i class="fas fa-calendar-alt text-light"></i> Horario: {infoCud.schedule}</h5>
+                    <h5 className='px-2 py-0 fw-normal m-0' style={{ color: 'white' }}><i class="fas fa-calendar-alt text-light"></i> Consulta horarios especiales y atención especializada, click <Link className='text-light' to={'/mailbox'}>Aquí <i class="far fa-hand-point-left"></i></Link></h5>
                   </div>
 
-                  <h5 className='fw-normal' style={{ color: 'white' }}><a href="https://web.whatsapp.com/send?phone=+573162795010" style={{ color: 'white' }} target="_blank" > <i class="fas fa-mobile-alt text-light"></i> Whatsapp: {infoCud.number1}</a> <i class="fas fa-envelope text-light"></i> Correo: curaduriaurbana1@gmail.com</h5>
-
                 </div>
 
+                <div class="d-flex flex-column justify-content-start align-items-start text-start py-2 px-4 col-md-6">
+                  <div class="px-2 py-1">
+                    <span className='col-lg-12 bg-white'>
+                      <h5 className='px-2 py-0 fw-normal '><a style={{ color: 'white' }} href='https://www.google.es/maps/place/Curaduria+Urbana+No.+1+de+Bucaramanga/@7.1236512,-73.1155874,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683f0ec6e6ea35:0xd99c4a977df44614!8m2!3d7.1236459!4d-73.1133987?hl=es' target="_blank"><i class="fas fa-map-marker-alt text-light"></i> {infoCud.address}</a></h5>
+                      <h5 className='px-2 py-0 fw-normal m-0' style={{ color: 'white' }}><a href="https://web.whatsapp.com/send?phone=+573162795010" style={{ color: 'white' }} target="_blank"><i class="fas fa-mobile-alt text-light"></i> Whatsapp: {infoCud.number1}   - </a><i class="fas fa-envelope text-light"> </i> Correo: curaduriaurbana1@gmail.com</h5>
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
+
+
+
+
+
 
             <hr className='bg-info py-0'></hr>
             <h2 className='text-center' id='services'>Servicios <Button_navigation Iddown={'process'} Idup={null} /> </h2>
