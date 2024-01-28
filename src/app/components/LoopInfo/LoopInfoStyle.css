@@ -1,0 +1,33 @@
+.info-list {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #f7f7fa;
+}
+
+.inner {
+  width: fit-content;
+  display: flex;
+  gap: 1rem;
+  animation: loop 45s linear infinite;
+  white-space: nowrap; /* En lugar de text-wrap */
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 0 0.2rem;
+  color: black;
+  font-size: 1.1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.4rem;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

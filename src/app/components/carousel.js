@@ -15,25 +15,25 @@ const ImageCarousel = () => {
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="3000" style={{ height: '310px' }}>
+                        <div class="carousel-item active" data-bs-interval="2500" style={{ height: '310px' }}>
                             <img src={COLOMBIA} class="d-block w-100" alt="Bucaramanga santander y sus hermosos paisajes." style={{ height: '310px' }} />
                             <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
                                 <p className='text-light  text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: Daniel Beltran</p>
                             </div>
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000" style={{ height: '310px' }}>
+                        <div class="carousel-item" data-bs-interval="2500" style={{ height: '310px' }}>
                             <img src={IMG1} class="d-block w-100" alt="Bucaramanga santander y sus hermosos paisajes." style={{ height: '310px' }} />
                             <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
                                 <p className='text-light text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>
                             </div>
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000" style={{ height: '310px' }}>
+                        <div class="carousel-item" data-bs-interval="2500" style={{ height: '310px' }}>
                             <img src={IMG2} class="d-block w-100" alt="Bucaramanga santander la ciudad de los parques." style={{ height: '310px' }} />
                             <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
                                 <p className='text-light text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>
                             </div>
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000" style={{ height: '310px' }}>
+                        <div class="carousel-item" data-bs-interval="2500" style={{ height: '310px' }}>
                             <img src={IMG3} class="d-block w-100" alt="Bucaramanga santander la ciudad bonita." style={{ height: '310px' }} />
                             <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
                                 <p className='text-light text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>

@@ -2,8 +2,9 @@ import NEW_3_ING from '../../../img/news_certificate.jpg'
 import NEW_2_ING from '../../../img/news_inclusivity.jpg'
 import NEW_ING from '../../../img/news1.jpg'
 import NEW_AVIS from '../../../img/aviso.jpg'
-import REPARTO from '../../..//img/Reparto.png'
 import AVISO_HORARIO from '../../../img/news/Aviso_Horario.png'
+import AVISO_REPARTO from '../../../img/news/Aviso_Reparto.jpg'
+
 
 import { Link } from 'react-router-dom'
 import { Button_navigation } from '../../button.component'
@@ -123,7 +124,7 @@ export const _news = [
             Durante el año 2024 la Curaduría Urbana N°1 de Bucaramanga está
             encargada de hacer el reparto
         </p>,
-        image: REPARTO,
+        image: AVISO_REPARTO,
         url: '/news/?newsId=news6',
         noticia:
             // eslint-disable-next-line react/jsx-pascal-case
@@ -132,7 +133,7 @@ export const _news = [
                 title={'Reparto de proyectos 2024'}
                 category={'Noticias'}
                 date={'01/01/2024'}
-                image={REPARTO}
+                image={AVISO_REPARTO}
                 info={info6}
                 key={'news6'}
             />

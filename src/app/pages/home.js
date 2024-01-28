@@ -30,6 +30,8 @@ import { IconButton, ButtonToolbar, ButtonGroup, Row, Col, Panel, FlexboxGrid } 
 import ArrowDownIcon from '@rsuite/icons/ArrowDown';
 import { Button_navigation } from '../components/button.component';
 import { News_Home_Structure } from '../components/jsons/news/newsBodyHomePage.js';
+import {LoopInfo} from '../components/LoopInfo/LoopInfo.js';
+
 
 import ImageCarousel from '../components/carousel.js';
 import MainButton from '../components/mainButton/MainButton.js';
@@ -133,57 +135,6 @@ class Home extends Component {
     return (
       <div className="Home" id='1'>
         <div className="">
-
-          {/** 
-         * 
-         * <div id="myCarousel" class="carousel slide my-2 " data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src={NEW_2_ING} class="d-block w-80" alt="..." />
-                <div class="container">
-                  <div class="carousel-caption text-start">
-                  <h2 style={{textShadow: "1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000"}}>CURADURÍA INCLUSIVA - LEY 982 DE 2005</h2>
-                    <p><a class="btn btn-lg btn-info" href="#news_1">Conocer Mas</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src={NEW_ING} class="d-block w-100" alt="..." />
-                <div class="container">
-                  <div class="carousel-caption text-end">
-                    <p><a class="btn btn-lg btn-info" href="#news_2">Conocer Mas</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src={NEW_3_ING} class="d-block w-80" alt="..." />
-                <div class="container">
-                  <div class="carousel-caption text-end">
-                  <h2 style={{textShadow: "1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000", color:'lightgray'}}>¡YA DISPONIBLE LA CERTIFICACIÓN EN LINEA!</h2>
-                    <p><a class="btn btn-lg btn-info" href="#news_3">Conocer Mas</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon text-info" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon text-info" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-         * 
-        */}
-
           <div class="container pt-2" id="hanging-icons">
             <div class="container py-2">
               <div class="row align-items-start">
@@ -205,9 +156,10 @@ class Home extends Component {
                 </div>
               </div>
             </div>
+            {/* AQUI HA DE IR EL COMPONENTE  */}
+            <LoopInfo />
 
-
-            <div class="container mt-5 p-0">
+            <div class="container mt-2 p-0">
               <div style={{ backgroundColor: '#2c6aa5', borderRadius: '2px' }} class="d-flex justify-content-between">
                 <div class="d-flex flex-column justify-content-start align-items-start text-start py-2 px-4 col-md-6" >
                   <div class="px-2 py-1">

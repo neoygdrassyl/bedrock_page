@@ -29,7 +29,7 @@ export default function Navbar1(props) {
   const NavBarInstance = ({ onSelect, activeKey, ...props }) => {
     return (
       <Navbar {...props} expand="lg ">
-        <Nav activeKey={activeKey} className="w-100 d-flex justify-content-center align-items-center" style={{ paddingLeft: '50px', paddingRight: '50px', overflow: 'hidden' }}>
+        <Nav activeKey={activeKey} className="w-100 d-flex justify-content-center align-items-center" style={{ paddingLeft: '50px', paddingRight: '50px'}}>
           <Nav.Item eventKey="1" as={MyLink} href="/home"> <i class="fas fa-home px-1"></i> <span className='fw-bold'>Inicio</span></Nav.Item>
           <Nav.Item eventKey="2" as={MyLink} href="/transparency" ><span className='fw-bold'>Transparencia y acceso a <br />la información pública</span></Nav.Item>
           <Nav.Item eventKey="3" as={MyLink} href="/pqrs"><span className='fw-bold'> Atención y Servicio  <br />a la ciudadanía</span></Nav.Item>
