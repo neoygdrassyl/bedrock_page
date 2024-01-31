@@ -30,7 +30,8 @@ import { IconButton, ButtonToolbar, ButtonGroup, Row, Col, Panel, FlexboxGrid } 
 import ArrowDownIcon from '@rsuite/icons/ArrowDown';
 import { Button_navigation } from '../components/button.component';
 import { News_Home_Structure } from '../components/jsons/news/newsBodyHomePage.js';
-import {LoopInfo} from '../components/LoopInfo/LoopInfo.js';
+import { LoopInfo } from '../components/LoopInfo/LoopInfo.js';
+import { ServiceButton } from '../components/serviceButton/serviceButton.js';
 
 
 import ImageCarousel from '../components/carousel.js';
@@ -156,7 +157,6 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-            {/* AQUI HA DE IR EL COMPONENTE  */}
             <LoopInfo />
 
             <div class="container mt-2 p-0">
@@ -186,8 +186,10 @@ class Home extends Component {
 
 
             <hr className='bg-info py-0'></hr>
-            <h2 className='text-center' id='services'>Servicios <Button_navigation Iddown={'process'} Idup={null} /> </h2>
-
+            <h2 className='text-center' id='services'> Servicios </h2>
+            <div class="d-flex justify-content-around">
+              {/* <ServiceButton link={"/administrative"} logo="fas fa-sign-language fa-5x fa-lg-4 text-#782e92" title="Hola" /> */}
+            </div>
             <FlexboxGrid justify="space-around">
               <FlexboxGrid.Item>
                 {HOME_PAGE_SERVICE_PANEL(<img src={LGOG13} height={"100px"} alt="pse" />, "Pagos PSE", '/payments')}
@@ -259,7 +261,7 @@ class Home extends Component {
                 {_news.filter((data, index) => index <= 3).map((value, index) => (
                   <div key={index} className='col-lg col-md-6 col-sm-12'>
                     <div className='column align-items-center px-4 py-4 my-3'>
-                      <News_Home_Structure title={value.title} date={value.date} summary={value.summary} url={value.url} image={value.image} />
+                      <News_Home_Structure title={value.title} date={value.date} summary={value.summary} url={value.url} image={value.image} imageTranscript={value.imageTranscript}/>
                     </div>
                   </div>
                 ))}

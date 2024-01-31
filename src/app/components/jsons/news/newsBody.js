@@ -1,4 +1,4 @@
-export function News_Structure({ id, title, category, date, image, info }) {
+export function News_Structure({ id, title, category, date, image, info,imageTranscript }) {
     return (
 
 <div className='container'>
@@ -30,7 +30,7 @@ export function News_Structure({ id, title, category, date, image, info }) {
               </div>
             </div>
             <div class="col-12 col-lg-2 h-150 w-150 d-flex align-items-center p-0 ml-lg-4">
-              <img src={image} class=" w-80 h-80" style={{ marginLeft: '20px', maxWidth: '100%' }} alt="..." />
+              <img src={image} class=" w-80 h-80" style={{ marginLeft: '20px', maxWidth: '100%' }} alt={imageTranscript} />
             </div>
           </div>
         </div>

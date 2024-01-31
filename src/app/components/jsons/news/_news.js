@@ -126,6 +126,8 @@ export const _news = [
         </p>,
         image: AVISO_REPARTO,
         url: '/news/?newsId=news6',
+        imageTranscript: 'Reparto de proyectos 2024',
+
         noticia:
             // eslint-disable-next-line react/jsx-pascal-case
             <News_Structure
@@ -136,6 +138,7 @@ export const _news = [
                 image={AVISO_REPARTO}
                 info={info6}
                 key={'news6'}
+                imageTranscript={"Reparto de proyectos 2024"}
             />
 
     },
@@ -149,6 +152,7 @@ export const _news = [
         link: 'Ver mas',
         image: AVISO_HORARIO,
         url: '/news/?newsId=news5',
+        imageTranscript: 'Importante, Horario General',
         noticia:
             // eslint-disable-next-line react/jsx-pascal-case
             <News_Structure
@@ -159,6 +163,7 @@ export const _news = [
                 image={AVISO_HORARIO}
                 info={info5}
                 key={'news5'}
+                imageTranscript={"Importante, Horario General"}
             />
 
     },
@@ -181,6 +186,7 @@ export const _news = [
                 image={NEW_3_ING}
                 info={info4}
                 key={'news4'}
+                imageTranscript={""}
             />
 
     },
@@ -194,6 +200,7 @@ export const _news = [
         link: 'Ver mas',
         image: NEW_AVIS,
         url: '/news/?newsId=news3',
+        imageTranscript: '¡Aviso Importante!',
         noticia:
             // eslint-disable-next-line react/jsx-pascal-case
             <News_Structure
@@ -204,6 +211,7 @@ export const _news = [
                 image={NEW_AVIS}
                 info={info3}
                 key={'news6'}
+                imageTranscript={"¡Aviso Importante!"}
             />
     },
     {

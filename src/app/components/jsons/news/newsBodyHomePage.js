@@ -1,6 +1,6 @@
 import './newsBodyHomePage.css';
     import { Link } from "react-router-dom";
-export function News_Home_Structure({ title, date, summary, image, url, }) {
+export function News_Home_Structure({ title, date, summary, image, url,imageTranscript }) {
 
     const icon_folder = <i class="fas fa-folder " style={{ color: '#107ABC' }}></i>;
     const icon_date = <i class="fas fa-clock " style={{ color: '#107ABC' }}></i>;
@@ -9,7 +9,7 @@ export function News_Home_Structure({ title, date, summary, image, url, }) {
         <Link to={url} class="text-decoration-none text-default ">
             <div className="news-card">
                 <aside className="news-card-image-section">
-                    <img src={image} className="news-card-image" alt="Imagen enlazada a la noticia" />
+                    <img src={image} className="news-card-image" alt={imageTranscript} />
                 </aside>
                 <div className="news-card-info">
                     <h3 className="news-card__title"> {icon_folder} {title}
