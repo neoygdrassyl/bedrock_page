@@ -25,7 +25,7 @@ export const _news = [
                 <div class="row align-items-center py-1">
                     <div class="col-12 px-4 border border-info py-4 m-3" style={{ backgroundColor: ' #f9f9f9 ', borderRadius: '2px', border: '1px' }}>
                         <div className="px-4 py-1">
-                            <h3 className="text-center" id='news9'>AVISO IMPORTANTE {<Button_navigation Iddown={'news6'} Idup={null} />}</h3>
+                            <h3 className="text-center" id='news9'>AVISO IMPORTANTE {<Button_navigation Iddown={'news8'} Idup={null} />}</h3>
                             <div className="py-1">
                                 <label><label className="px-1" style={{ color: 'gray' }}><i class="fas fa-clock text-info"></i> 01/12/2023 </label> <label className="px-1" style={{ color: 'gray' }}><i class="fas fa-user text-info"></i> Curaduria 1 de Bucaramanga</label> <label className="px-1" style={{ color: 'gray' }}><i class="fas fa-folder text-info"></i> Noticias</label>   </label>
                             </div>
