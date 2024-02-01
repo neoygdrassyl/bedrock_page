@@ -24,11 +24,21 @@ import Modal from 'react-modal';
 import './home.css'
 import { infoCud } from '../components/jsons/vars';
 import Map from '../components/map';
-import { _news } from '../components/jsons/_news';
+import { _news } from '../components/jsons/news/_news.js';
 
 import { IconButton, ButtonToolbar, ButtonGroup, Row, Col, Panel, FlexboxGrid } from 'rsuite';
 import ArrowDownIcon from '@rsuite/icons/ArrowDown';
 import { Button_navigation } from '../components/button.component';
+import { News_Home_Structure } from '../components/jsons/news/newsBodyHomePage.js';
+import { LoopInfo } from '../components/LoopInfo/LoopInfo.js';
+import { ServiceButton } from '../components/serviceButton/serviceButton.js';
+
+
+import ImageCarousel from '../components/carousel.js';
+import MainButton from '../components/mainButton/MainButton.js';
+
+
+
 //import { useLocation } from 'react-router-dom';
 //const location = useLocation();
 
@@ -126,167 +136,60 @@ class Home extends Component {
     return (
       <div className="Home" id='1'>
         <div className="">
-
-          {/** 
-         * 
-         * <div id="myCarousel" class="carousel slide my-2 " data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src={NEW_2_ING} class="d-block w-80" alt="..." />
-                <div class="container">
-                  <div class="carousel-caption text-start">
-                  <h2 style={{textShadow: "1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000"}}>CURADURÍA INCLUSIVA - LEY 982 DE 2005</h2>
-                    <p><a class="btn btn-lg btn-info" href="#news_1">Conocer Mas</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src={NEW_ING} class="d-block w-100" alt="..." />
-                <div class="container">
-                  <div class="carousel-caption text-end">
-                    <p><a class="btn btn-lg btn-info" href="#news_2">Conocer Mas</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src={NEW_3_ING} class="d-block w-80" alt="..." />
-                <div class="container">
-                  <div class="carousel-caption text-end">
-                  <h2 style={{textShadow: "1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000", color:'lightgray'}}>¡YA DISPONIBLE LA CERTIFICACIÓN EN LINEA!</h2>
-                    <p><a class="btn btn-lg btn-info" href="#news_3">Conocer Mas</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon text-info" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon text-info" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-         * 
-        */}
-
           <div class="container pt-2" id="hanging-icons">
-            <div className='' style={{ backgroundColor: '#1b83c4', borderRadius: '2px' }}>
-              <div class="row justify-content-center px-1 mx-2">
-                <div class="col-5 text-start py-1" style={{ color: ' white ' }}>
-                  <h5 className='px-4 py-0 fw-normal'><i class="fas fa-calendar-alt text-light"></i> Horario: {infoCud.schedule}</h5>
-                  <h5 className='px-4 py-0 fw-normal'><i class="fas fa-calendar-alt text-light"></i> Consulta horarios especiales y atencion especializada, click <Link className='text-light' to={'/mailbox'}>Aqui <i class="far fa-hand-point-left"></i></Link></h5>
-                </div>
-                <div class="col-7 py-1">
-                  <div class="px-0">
-                    <span className='col-lg-12 bg-white'>
-                      <h5 className='fw-normal'> <a style={{ color: 'white' }} href='https://www.google.es/maps/place/Curaduria+Urbana+No.+1+de+Bucaramanga/@7.1236512,-73.1155874,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683f0ec6e6ea35:0xd99c4a977df44614!8m2!3d7.1236459!4d-73.1133987?hl=es' target="_blank" > <i class="fas fa-map-marker-alt text-light"></i> {infoCud.address}</a> </h5>
-                    </span>
-                  </div>
-                  <h5 className='fw-normal' style={{ color: 'white' }}><a href="https://web.whatsapp.com/send?phone=+573162795010" style={{ color: 'white' }} target="_blank" > <i class="fas fa-mobile-alt text-light"></i> Whatsapp: {infoCud.number1}</a> <i class="fas fa-envelope text-light"></i> Correo: curaduriaurbana1@gmail.com</h5>
-                </div>
-              </div>
-            </div>
-
             <div class="container py-2">
               <div class="row align-items-start">
-                <div className='col-lg-9 px-0 ' style={{ height: '280px' }}>
-                  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style={{ height: '280px' }}>
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="11000" style={{ height: '275px' }}>
-                        <img src={COLOMBIA} class="d-block w-100" alt="Bucaramanga santander y sus hermosos paisajes." style={{ height: '275px' }} />
-                        <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
-                          <p className='text-light  text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: Daniel Beltran</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="9000" style={{ height: '275px' }}>
-                        <img src={IMG1} class="d-block w-100" alt="Bucaramanga santander y sus hermosos paisajes." style={{ height: '275px' }} />
-                        <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
-                          <p className='text-light text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="9000" style={{ height: '275px' }}>
-                        <img src={IMG2} class="d-block w-100" alt="Bucaramanga santander la ciudad de los parques." style={{ height: '275px' }} />
-                        <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
-                          <p className='text-light text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="9000" style={{ height: '275px' }}>
-                        <img src={IMG3} class="d-block w-100" alt="Bucaramanga santander la ciudad bonita." style={{ height: '275px' }} />
-                        <div class="carousel-caption d-none d-md-block" style={{ height: '25px' }}>
-                          <p className='text-light text-end px-2 fw-bold' style={{ width: '800px' }}>Creditos: David Alberto Arias</p>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
+                <ImageCarousel />
+
+                <div className='col-lg-3 mx-1.2 py-2 ' >
+                  <div className='py-2'>
+                    <MainButton logo="fas fa-file-invoice fa-2x" info="Consulta Normatividad" link={"/normogram"} />
+                  </div>
+                  <div className='py-2'>
+                    <MainButton logo="fas fa-search fa-2x" info="Consulta Procesos" link={"/status"} />
+                  </div>
+                  <div className='py-2'>
+                    <MainButton logo="fas fa-list-alt fa-2x" info="Consulta publicaciones" link={"/administrative"} />
+                  </div>
+                  <div className='py-2'>
+                    <MainButton logo="fas fa-folder-minus fa-2x" info="Consulta repositorio" link={"/old"} />
                   </div>
                 </div>
+              </div>
+            </div>
+            <LoopInfo />
 
+            <div class="container mt-2 p-0">
+              <div style={{ backgroundColor: '#2c6aa5', borderRadius: '2px' }} class="d-flex justify-content-between">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start py-2 px-4 col-md-6" >
+                  <div class="px-2 py-1">
+                    <h5 className='px-2 py-0 fw-normal ' style={{ color: 'white' }}><i class="fas fa-calendar-alt text-light"></i> Horario: {infoCud.schedule}</h5>
+                    <h5 className='px-2 py-0 fw-normal m-0' style={{ color: 'white' }}><i class="fas fa-calendar-alt text-light"></i> Consulta horarios especiales y atención especializada, click <Link className='text-light' to={'/mailbox'}>Aquí <i class="far fa-hand-point-left"></i></Link></h5>
+                  </div>
 
-                <div className='col-lg-3 py-1' >
-                  <div className='py-1'>
-                    <Link style={{ color: 'white', backgroundImage: 'white' }} to="/normogram">
-                      <div className='text-start px-4 border border-dark' style={{ backgroundColor: '#1B83C4 ', borderRadius: '20px' }}>
-                        <div className='mx-0 px-0 py-2'>
-                          <h4 className='fw-normal'><i class="fas fa-file-invoice fa-2x"></i>   Consulta Normatividad</h4>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                  <div className='py-1'>
-                    <Link style={{ color: 'white', backgroundImage: 'white' }} to="/status">
-                      <div className='text-start px-4 border border-dark' style={{ backgroundColor: '#1B83C4 ', borderRadius: '20px' }}>
-                        <div className='mx-0 px-0 py-2'>
-                          <h4 className='fw-normal'><i class="fas fa-search fa-2x"></i>    Consulta Procesos</h4>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                  <div className='py-1'>
-                    <Link style={{ color: 'white', backgroundImage: 'white' }} to="/administrative">
-                      <div className='text-start px-4 border border-dark' style={{ backgroundColor: '#1B83C4 ', borderRadius: '20px' }}>
-                        <div className='mx-0 px-0 py-2'>
-                          <h4 className='fw-normal'><i class="fas fa-list-alt fa-2x"></i>    Consulta publicaciones</h4>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                  <div className='py-1'>
-                    <Link style={{ color: 'white', backgroundImage: 'white' }} to="/old">
-                      <div className='text-start px-4 border border-dark' style={{ backgroundColor: '#1B83C4 ', borderRadius: '20px' }}>
-                        <div className='mx-0 px-0 py-2'>
-                          <h4 className='fw-normal'><i class="fas fa-folder-minus fa-2x"></i> Consulta repositorio</h4>
-                        </div>
-                      </div>
-                    </Link>
+                </div>
+
+                <div class="d-flex flex-column justify-content-start align-items-start text-start py-2 px-4 col-md-6">
+                  <div class="px-2 py-1">
+                    <span className='col-lg-12 bg-white'>
+                      <h5 className='px-2 py-0 fw-normal '><a style={{ color: 'white' }} href='https://www.google.es/maps/place/Curaduria+Urbana+No.+1+de+Bucaramanga/@7.1236512,-73.1155874,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683f0ec6e6ea35:0xd99c4a977df44614!8m2!3d7.1236459!4d-73.1133987?hl=es' target="_blank"><i class="fas fa-map-marker-alt text-light"></i> {infoCud.address}</a></h5>
+                      <h5 className='px-2 py-0 fw-normal m-0' style={{ color: 'white' }}><a href="https://web.whatsapp.com/send?phone=+573162795010" style={{ color: 'white' }} target="_blank"><i class="fas fa-mobile-alt text-light"></i> Whatsapp: {infoCud.number1}   - </a><i class="fas fa-envelope text-light"> </i> Correo: curaduriaurbana1@gmail.com</h5>
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <hr className='bg-info py-0'></hr>
-            <h2 className='text-center' id='services'>Servicios <Button_navigation Iddown={'process'} Idup={null} /> </h2>
 
+
+
+
+
+            <hr className='bg-info py-0'></hr>
+            <h2 className='text-center' id='services'> Servicios </h2>
+            <div class="d-flex justify-content-around">
+              {/* <ServiceButton link={"/administrative"} logo="fas fa-sign-language fa-5x fa-lg-4 text-#782e92" title="Hola" /> */}
+            </div>
             <FlexboxGrid justify="space-around">
               <FlexboxGrid.Item>
                 {HOME_PAGE_SERVICE_PANEL(<img src={LGOG13} height={"100px"} alt="pse" />, "Pagos PSE", '/payments')}
@@ -295,7 +198,7 @@ class Home extends Component {
                 {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-sign-language fa-5x fa-lg-4 text-white"></i>, "Curaduria inclusiva", '/inclusivity')}
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-alt fa-5x fa-lg-4 text-white"></i>, "Instrumentos de apoyo", '/file')}
+                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-alt fa-5x fa-lg-4 text-white"></i>, "Instrumentos y formatos", '/file')}
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
                 {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-calculator fa-5x fa-lg-4 text-white"></i>, "Calculadora de expensa", '/liquidator')}
@@ -307,7 +210,7 @@ class Home extends Component {
                 {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-calendar-check fa-5x fa-lg-4 text-white"></i>, "Agendamiento de citas", '/scheduling')}
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-pdf fa-5x fa-lg-4 text-white"></i>, "Certificacion en linea", '/certificacion')}
+                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-pdf fa-5x fa-lg-4 text-white"></i>, "Certificacion profesional en linea", '/certificacion')}
               </FlexboxGrid.Item>
             </FlexboxGrid>
 
@@ -352,26 +255,21 @@ class Home extends Component {
               </div>
 
               <hr className='bg-info'></hr>
+
               <h2 className='text-center' id='news'>Noticias importantes {<Button_navigation Iddown={'ubicacion'} Idup={'process'} />}</h2>
-              <div className='col-lg col-mb-10 justify-content-center d-flex mx-0 px-0 ' style={{ backgroundColor: ' ' }}>
-                <div class="row align-items-center px-4 py-4 mx-">
-                  {_news.filter((data, index) => index <= 3).map(function (value) {
-                    return <>
-                      <div class="col-3 align-items-center">
-                        <div class="card align-items-center">
-                          <img src={value.image} class="card-img-top" alt="Noticias y avisos importantes de la curaduria." style={{ height: '160px' }} />
-                          <div class="card-body">
-                            <label className="text-start fw-normal" style={{ color: 'gray' }}>{value.icon_folder} {value.category}</label>
-                            <h5 class="card-title fw-normal "><b>{value.title}</b></h5>
-                            <Link to={value.url} class="text-dark"><p class="card-text fw-normal">{value.summary} <p className='text-info'> {value.link}</p></p></Link>
-                            <label className="px-1" style={{ color: 'gray' }}>{value.icon_date} {value.date}</label>
-                          </div>
-                        </div>
-                      </div>
-                    </>
-                  })}
-                </div>
+              <div className='row justify-content-center mx-0 px-0'>
+                {_news.filter((data, index) => index <= 3).map((value, index) => (
+                  <div key={index} className='col-lg col-md-6 col-sm-12'>
+                    <div className='column align-items-center px-4 py-4 my-3'>
+                      <News_Home_Structure title={value.title} date={value.date} summary={value.summary} url={value.url} image={value.image} imageTranscript={value.imageTranscript}/>
+                    </div>
+                  </div>
+                ))}
               </div>
+
+
+
+
               {/*
               <MDBRow className="mt-5">
                 <MDBCol md="4">
@@ -403,7 +301,7 @@ class Home extends Component {
             </div>
 
             {/*  <h2 className="mt-5">Ultimas Noticias</h2>
-            <hr />
+            <hr />z
             <MDBRow className="d-flex justify-content-center">
               <MDBCol md="10">
 

@@ -52,7 +52,7 @@ class Title extends Component {
                             <img src={infoCud.icon} height="66px" />
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-2 mb-4 mt-3 mb-md-0">
+                    <div class="col-lg-3 col-md-2 mb-4 mt-3 mb-md-0 text-nowrap">
                         <h3 class="text-uppercase text-center pb-0" >{infoCud.titles} {infoCud.dir}</h3>
                         <h3 class="text-uppercase text-center pb-0" >CURADOR URBANO N°{infoCud.nomens} DE {infoCud.city}</h3>
                     </div>
