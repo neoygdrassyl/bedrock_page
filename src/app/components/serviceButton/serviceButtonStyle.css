@@ -1,0 +1,40 @@
+.service-button {
+  width: 135px;
+  height: 135px;
+  background: #ccc;
+  border-radius: 1.2em;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 2px 2px 2px #cecece, -2px -2px 2px #f2f2f2;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  text-wrap: pretty;
+}
+
+.service-button h5 {
+  margin: 4px;  
+  font-size: 14px;
+  color: #002A85;
+}
+
+.service-button-image-container {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  color: #8ed1fc;
+}
+.service-button:hover {
+  background: rgb(201, 201, 201);
+  /* background: linear-gradient(90deg, rgb(93, 112, 131) 0%, rgba(0, 212, 255, 1) 100%); */
+}
+
+.service-button:active {
+  transform: translate(0em, 0.2em);
+}

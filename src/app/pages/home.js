@@ -136,49 +136,48 @@ class Home extends Component {
     return (
       <div className="Home" id='1'>
         <div className="">
-          <div class="container pt-2" id="hanging-icons">
-            <div class="container py-2">
-              <div class="row align-items-start">
-                <ImageCarousel />
+          <div class="container py-2">
+            <div class="row align-items-start">
+              <ImageCarousel />
 
-                <div className='col-lg-3 mx-1.2 py-2 ' >
-                  <div className='py-2'>
-                    <MainButton logo="fas fa-file-invoice fa-2x" info="Consulta Normatividad" link={"/normogram"} />
-                  </div>
-                  <div className='py-2'>
-                    <MainButton logo="fas fa-search fa-2x" info="Consulta Procesos" link={"/status"} />
-                  </div>
-                  <div className='py-2'>
-                    <MainButton logo="fas fa-list-alt fa-2x" info="Consulta publicaciones" link={"/administrative"} />
-                  </div>
-                  <div className='py-2'>
-                    <MainButton logo="fas fa-folder-minus fa-2x" info="Consulta repositorio" link={"/old"} />
-                  </div>
+              <div className='col-lg-3 mx-1.2 py-2 ' >
+                <div className='py-2'>
+                  <MainButton logo="fas fa-file-invoice fa-2x" info="Consulta Normatividad" link={"/normogram"} />
+                </div>
+                <div className='py-2'>
+                  <MainButton logo="fas fa-search fa-2x" info="Consulta Procesos" link={"/status"} />
+                </div>
+                <div className='py-2'>
+                  <MainButton logo="fas fa-list-alt fa-2x" info="Consulta publicaciones" link={"/administrative"} />
+                </div>
+                <div className='py-2'>
+                  <MainButton logo="fas fa-folder-minus fa-2x" info="Consulta repositorio" link={"/old"} />
                 </div>
               </div>
             </div>
-            <LoopInfo />
+          </div>
+          <LoopInfo />
 
-            <div class="container mt-2 p-0">
-              <div style={{ backgroundColor: '#2c6aa5', borderRadius: '2px' }} class="d-flex justify-content-between">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start py-2 px-4 col-md-6" >
-                  <div class="px-2 py-1">
-                    <h5 className='px-2 py-0 fw-normal ' style={{ color: 'white' }}><i class="fas fa-calendar-alt text-light"></i> Horario: {infoCud.schedule}</h5>
-                    <h5 className='px-2 py-0 fw-normal m-0' style={{ color: 'white' }}><i class="fas fa-calendar-alt text-light"></i> Consulta horarios especiales y atención especializada, click <Link className='text-light' to={'/mailbox'}>Aquí <i class="far fa-hand-point-left"></i></Link></h5>
-                  </div>
-
+          <div class="container mt-2 p-0">
+            <div style={{ backgroundColor: '#2c6aa5', borderRadius: '2px' }} class="d-flex justify-content-between">
+              <div class="d-flex flex-column justify-content-start align-items-start text-start py-2 px-4 col-md-6" >
+                <div class="px-2 py-1">
+                  <h5 className='px-2 py-0 fw-normal ' style={{ color: 'white' }}><i class="fas fa-calendar-alt text-light"></i> Horario: {infoCud.schedule}</h5>
+                  <h5 className='px-2 py-0 fw-normal m-0' style={{ color: 'white' }}><i class="fas fa-calendar-alt text-light"></i> Consulta horarios especiales y atención especializada, click <Link className='text-light' to={'/mailbox'}>Aquí <i class="far fa-hand-point-left"></i></Link></h5>
                 </div>
 
-                <div class="d-flex flex-column justify-content-start align-items-start text-start py-2 px-4 col-md-6">
-                  <div class="px-2 py-1">
-                    <span className='col-lg-12 bg-white'>
-                      <h5 className='px-2 py-0 fw-normal '><a style={{ color: 'white' }} href='https://www.google.es/maps/place/Curaduria+Urbana+No.+1+de+Bucaramanga/@7.1236512,-73.1155874,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683f0ec6e6ea35:0xd99c4a977df44614!8m2!3d7.1236459!4d-73.1133987?hl=es' target="_blank"><i class="fas fa-map-marker-alt text-light"></i> {infoCud.address}</a></h5>
-                      <h5 className='px-2 py-0 fw-normal m-0' style={{ color: 'white' }}><a href="https://web.whatsapp.com/send?phone=+573162795010" style={{ color: 'white' }} target="_blank"><i class="fas fa-mobile-alt text-light"></i> Whatsapp: {infoCud.number1}   - </a><i class="fas fa-envelope text-light"> </i> Correo: curaduriaurbana1@gmail.com</h5>
-                    </span>
-                  </div>
+              </div>
+
+              <div class="d-flex flex-column justify-content-start align-items-start text-start py-2 px-4 col-md-6">
+                <div class="px-2 py-1">
+                  <span className='col-lg-12 bg-white'>
+                    <h5 className='px-2 py-0 fw-normal '><a style={{ color: 'white' }} href='https://www.google.es/maps/place/Curaduria+Urbana+No.+1+de+Bucaramanga/@7.1236512,-73.1155874,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683f0ec6e6ea35:0xd99c4a977df44614!8m2!3d7.1236459!4d-73.1133987?hl=es' target="_blank"><i class="fas fa-map-marker-alt text-light"></i> {infoCud.address}</a></h5>
+                    <h5 className='px-2 py-0 fw-normal m-0' style={{ color: 'white' }}><a href="https://web.whatsapp.com/send?phone=+573162795010" style={{ color: 'white' }} target="_blank"><i class="fas fa-mobile-alt text-light"></i> Whatsapp: {infoCud.number1}   - </a><i class="fas fa-envelope text-light"> </i> Correo: curaduriaurbana1@gmail.com</h5>
+                  </span>
                 </div>
               </div>
             </div>
+
 
 
 
@@ -261,7 +260,7 @@ class Home extends Component {
                 {_news.filter((data, index) => index <= 3).map((value, index) => (
                   <div key={index} className='col-lg col-md-6 col-sm-12'>
                     <div className='column align-items-center px-4 py-4 my-3'>
-                      <News_Home_Structure title={value.title} date={value.date} summary={value.summary} url={value.url} image={value.image} imageTranscript={value.imageTranscript}/>
+                      <News_Home_Structure title={value.title} date={value.date} summary={value.summary} url={value.url} image={value.image} imageTranscript={value.imageTranscript} />
                     </div>
                   </div>
                 ))}
