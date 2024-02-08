@@ -136,9 +136,9 @@ class Home extends Component {
     return (
       <div className="Home" id='1'>
         <div className="">
-          <div class="container py-2">
-            <div class="row align-items-start">
-              <ImageCarousel />
+          <div class="container py-3">
+            <div class="row align-items-start ">
+              <ImageCarousel /> 
 
               <div className='col-lg-3 mx-1.2 py-2 ' >
                 <div className='py-2'>
@@ -158,7 +158,7 @@ class Home extends Component {
           </div>
           <LoopInfo />
 
-          <div class="container mt-2 p-0">
+          <div class="container mt-3 p-0">
             <div style={{ backgroundColor: '#2c6aa5', borderRadius: '2px' }} class="d-flex justify-content-between">
               <div class="d-flex flex-column justify-content-start align-items-start text-start py-2 px-4 col-md-6" >
                 <div class="px-2 py-1">
