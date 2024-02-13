@@ -16,10 +16,12 @@
 }
 
 .service-button h5 {
-  margin: 4px;  
+  margin-top: 12px;
+  margin-bottom: 0;
   font-size: 14px;
   color: #002A85;
 }
+
 
 .service-button-image-container {
   width: 50%;
@@ -28,7 +30,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 4px;
-  color: #8ed1fc;
+  color: #2c6aa5;
 }
 .service-button:hover {
   background: rgb(201, 201, 201);

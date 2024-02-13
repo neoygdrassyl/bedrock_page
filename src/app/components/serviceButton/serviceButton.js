@@ -8,7 +8,7 @@ export function ServiceButton({ link, logo, title }) {
         }}>
             <button class="service-button">
                 <div class="service-button-image-container">
-                    <i class={logo}/>
+                    {title === "Pagos PSE" ? (logo) : (<i class={logo} />)}
                 </div>
                 <div class="service-button-title-container">
                     <h5>{title}</h5>

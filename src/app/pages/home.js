@@ -138,7 +138,7 @@ class Home extends Component {
         <div className="">
           <div class="container py-3">
             <div class="row align-items-start ">
-              <ImageCarousel /> 
+              <ImageCarousel />
 
               <div className='col-lg-3 mx-1.2 py-2 ' >
                 <div className='py-2'>
@@ -178,38 +178,31 @@ class Home extends Component {
               </div>
             </div>
 
-
-
-
-
-
-
             <hr className='bg-info py-0'></hr>
             <h2 className='text-center' id='services'> Servicios </h2>
             <div class="d-flex justify-content-around">
-              {/* <ServiceButton link={"/administrative"} logo="fas fa-sign-language fa-5x fa-lg-4 text-#782e92" title="Hola" /> */}
             </div>
             <FlexboxGrid justify="space-around">
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<img src={LGOG13} height={"100px"} alt="pse" />, "Pagos PSE", '/payments')}
+                <ServiceButton link={"/payments"} logo={<img src={LGOG13} height={"100px"} alt="pse" />} title="Pagos PSE" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-sign-language fa-5x fa-lg-4 text-white"></i>, "Curaduria inclusiva", '/inclusivity')}
+                <ServiceButton link={"/inclusivity"} logo={"fas fa-sign-language fa-5x fa-lg-4 text-2c6aa5"} title="Curaduria inclusiva" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-alt fa-5x fa-lg-4 text-white"></i>, "Instrumentos y formatos", '/file')}
+                <ServiceButton link={"/file"} logo={"fas fa-file-alt fa-5x fa-lg-4 text-2c6aa5"} title="Instrumentos y formatos" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-calculator fa-5x fa-lg-4 text-white"></i>, "Calculadora de expensa", '/liquidator')}
+                <ServiceButton link={"/liquidator"} logo={"fas fa-calculator fa-5x fa-lg-4 text-2c6aa5"} title="Calculadora de expensa" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-envelope-square fa-5x fa-lg-4 text-white"></i>, "Radicacion (pqrs)", '/pqrs')}
+                <ServiceButton link={"/pqrs"} logo={"fas fa-envelope-square fa-5x fa-lg-4 text-2c6aa5"} title="Radicacion PQRS" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-calendar-check fa-5x fa-lg-4 text-white"></i>, "Agendamiento de citas", '/scheduling')}
+                <ServiceButton link={"/scheduling"} logo={"fas fa-calendar-check fa-5x fa-lg-4 text-2c6aa5"} title="Agendamiento de citas" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-pdf fa-5x fa-lg-4 text-white"></i>, "Certificacion profesional en linea", '/certificacion')}
+                <ServiceButton link={"/certificacion"} logo={"fas fa-file-pdf fa-5x fa-lg-4 text-2c6aa5"} title="Certificacion profesional en linea" />
               </FlexboxGrid.Item>
             </FlexboxGrid>
 
