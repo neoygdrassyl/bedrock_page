@@ -13,10 +13,12 @@
   box-sizing: border-box;
   position: relative;
   text-wrap: pretty;
+  margin: 4px;
+  padding: 10px 10px 0px 10px;
 }
 
 .service-button h5 {
-  margin-top: 12px;
+  margin-top: 16px;
   margin-bottom: 0;
   font-size: 14px;
   color: #002A85;

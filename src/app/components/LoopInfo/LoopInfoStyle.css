@@ -25,7 +25,7 @@
 
 @keyframes loop {
   0% {
-    transform: translateX(80%);
+    transform: translateX(65%);
   }
   100% {
     transform: translateX(-100%);

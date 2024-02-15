@@ -202,7 +202,7 @@ class Home extends Component {
                 <ServiceButton link={"/scheduling"} logo={"fas fa-calendar-check fa-5x fa-lg-4 text-2c6aa5"} title="Agendamiento de citas" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                <ServiceButton link={"/certificacion"} logo={"fas fa-file-pdf fa-5x fa-lg-4 text-2c6aa5"} title="Certificacion profesional en linea" />
+                <ServiceButton link={"/certificacion"} logo={"fas fa-file-pdf fa-5x fa-lg-4 text-2c6aa5"} title="Certificacion profesional" />
               </FlexboxGrid.Item>
             </FlexboxGrid>
 
