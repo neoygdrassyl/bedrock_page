@@ -252,12 +252,12 @@ class Home extends Component {
               <div className='row justify-content-center mx-0 px-0'>
                 {_news.filter((data, index) => index <= 3).map((value, index) => (
                   <div key={index} className='col-lg col-md-6 col-sm-12'>
-                    <div className='column align-items-center px-4 py-4 my-3'>
+                    <div className='column align-items-center px-4 py-4 my-1'>
                       <News_Home_Structure title={value.title} date={value.date} summary={value.summary} url={value.url} image={value.image} imageTranscript={value.imageTranscript} />
                     </div>
                   </div>
                 ))}
-              </div>
+              </div>  
 
 
 
