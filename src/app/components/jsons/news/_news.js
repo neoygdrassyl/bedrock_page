@@ -4,6 +4,8 @@ import NEW_ING from '../../../img/news1.jpg'
 import NEW_AVIS from '../../../img/aviso.jpg'
 import AVISO_HORARIO from '../../../img/news/Aviso_Horario.png'
 import AVISO_REPARTO from '../../../img/news/Aviso_Reparto.jpg'
+import AVISO_IMPORTANTE from '../../../img/news/Aviso_Importante.png'
+
 
 
 import { Link } from 'react-router-dom'
@@ -198,7 +200,7 @@ export const _news = [
         summary: <p>El Decreto 1783 De 2021 que modificó el Decreto 1077 de 2015
         </p>,
         link: 'Ver mas',
-        image: NEW_AVIS,
+        image: AVISO_IMPORTANTE ,
         url: '/news/?newsId=news3',
         imageTranscript: '¡Aviso Importante!',
         noticia:
@@ -208,7 +210,7 @@ export const _news = [
                 title={'Prórroga de licencias y revalidaciones'}
                 category={'Aviso'}
                 date={'12/05/2022'}
-                image={NEW_AVIS}
+                image={AVISO_IMPORTANTE}
                 info={info3}
                 key={'news6'}
                 imageTranscript={"¡Aviso Importante!"}

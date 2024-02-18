@@ -136,8 +136,8 @@ class Home extends Component {
     return (
       <div className="Home" id='1'>
         <div className="">
-          <div class="container py-3">
-            <div class="row align-items-start ">
+          <div class="container py-3 align-items-md-center justify-content-center mx-auto">
+            <div class="row align-items-start">
               <ImageCarousel />
 
               <div className='col-lg-3 mx-1.2 py-2 ' >
@@ -210,13 +210,13 @@ class Home extends Component {
             <div class="px-0 py-0 my-0 text-center">
               <i class="fas fa-search-location fa-4x"></i>
               <h3 class="" id='process'>Consulta de Procesos {<Button_navigation Iddown={'news'} Idup={'services'} />}  </h3>
-              <div class="col-lg-8 mx-auto">
-                <h5 class=" fw-normal">Ingrese el ID del proceso o el número de cédula para conocer el estado del proceso</h5>
+              <div class="col-lg-8 mx-auto my-3">
+                <h5 class=" fw-normal my-2">Ingrese el <u>ID del proceso</u> o el <u>número de cédula</u> para conocer el estado del proceso</h5>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                   <div style={{ width: '33rem' }}>
                     <MDBInputGroup className='mb-3'>
                       <MDBDropdown>
-                        <MDBDropdownToggle style={{ backgroundColor: '#107ABC' }}>TIPO DE PROCESO</MDBDropdownToggle>
+                        <MDBDropdownToggle style={{ backgroundColor: '#0d65c4' }}>TIPO DE PROCESO</MDBDropdownToggle>
                         <MDBDropdownMenu>
                           <MDBDropdownItem>
                             <MDBDropdownLink onClick={() => this.inputSearch.value = '68001-1-aa-0000'}>LICENCIA</MDBDropdownLink>
@@ -234,12 +234,12 @@ class Home extends Component {
                             <MDBDropdownLink onClick={() => this.inputSearch.value = 'Naa-0000'}>NOMENCLATURA</MDBDropdownLink>
                           </MDBDropdownItem>
                           <MDBDropdownItem>
-                            <MDBDropdownLink onClick={() => this.inputSearch.value = ''}>BUSCAR POR CEDULA</MDBDropdownLink>
+                            <MDBDropdownLink onClick={() => this.inputSearch.placeholder = 'Ingrese el número de su cédula'}>CÉDULA</MDBDropdownLink>
                           </MDBDropdownItem>
                         </MDBDropdownMenu>
                       </MDBDropdown>
                       <MDBInputGroupElement type='text' label='ID del proceso' inputRef={ref => this.inputSearch = ref} />
-                      <MDBBtn style={{ backgroundColor: '#107ABC' }} onClick={() => _CHECK_STATUS()}>BUSCAR</MDBBtn>
+                      <MDBBtn style={{ backgroundColor: '#0d65c4' }} onClick={() => _CHECK_STATUS()}>BUSCAR</MDBBtn>
                     </MDBInputGroup>
                   </div>
                 </div>
@@ -357,7 +357,7 @@ class Home extends Component {
         <h2 className='text-center' id='ubicacion'> Ubicación {<Button_navigation Iddown={null} Idup={'news'} />}</h2>
         <div class="row justify-content-center px-4 mx-4 px-4 mb-5">
           <div class="col-lg-12 justify-content-center">
-            <img src={IMG_MAP} width="100%" />
+            <img src={IMG_MAP} width="50%" />
           </div>
         </div>
 

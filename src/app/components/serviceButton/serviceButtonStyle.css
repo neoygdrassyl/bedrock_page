@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 4px;
-  color: #2c6aa5;
+  color: #2362a7; /* 2c6aa5 */	
 }
 .service-button:hover {
   background: rgb(201, 201, 201);
