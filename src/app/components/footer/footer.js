@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import IMG from '../img/ita.gif'
+import IMG from '../../img/ita.gif'
 // Logos Carousel
-import CarouselLogos from '../components/carousel.component'
-import LGOG8 from '../img/contacts/Colombia.png'
+import CarouselLogos from '../carousel.component'
+import LGOG8 from '../../img/contacts/Colombia.png'
 import moment from 'moment';
+import './footerStyle.css'
 
 class Footer extends Component {
   render() {
@@ -16,8 +17,8 @@ class Footer extends Component {
         <footer class="">
           <h2 class="text-uppercase text-center pb-2 py-2">CURADOR UNO DE BUCARAMANGA - LUIS CARLOS PARRA SALAZAR</h2>
           <h3 class="text-uppercase text-center pb-2" >Información general de Contacto</h3>
-          <div class="row px-5 py-1 mb-2 justify-content-evenly fs-6">
-            <div class="col-lg-5 col-md-12 mb-6 mb-md-0 mx-0 w-25 ">
+          <div className="footer-main-div row px-5 py-1 mb-2 d-flex justify-content-evenly fs-6">
+            <div className="footer-div-1 col-lg-5 col-md-6  mb-6 mb-md-0 mx-0 w-25">
               <ul class="list-unstyled mb-0">
                 <li>
                   <span class="fa-stack fa-lg">
@@ -56,11 +57,11 @@ class Footer extends Component {
               </ul>
             </div>
 
-            <div class="col-lg-5 col-md-12 mb-6 mb-md-0 mx-0 w-25">
+            <div className="footer-div-1 col-lg-5 col-md-6 mb-6 mb-md-0 mx-0 w-25">
               <ul class="list-unstyled mb-0">
                 <li>
                   <span class="fa-stack fa-lg">
-                    <i class="fas fa-mobile-alt text-light fa-lg"></i>
+                    <i class="fas fa-mobile-alt text-light"></i>
                   </span>
                   <b class="text-light p-0 m-0 ">
                     Celular
@@ -101,7 +102,7 @@ class Footer extends Component {
                 </li>
               </ul>
             </div>
-            <div class="col-lg-5 col-md-12 mb-6 mb-md-0 mx-0 w-33">
+            <div class="footer-div-1 col-lg-5 col-md-12 mb-6 mb-md-0 mx-0 w-33">
               <ul class="list-unstyled mb-0 ">
                 {/* <li>
                   <img src={IMG} autoPlay height='75px' />
@@ -139,8 +140,8 @@ class Footer extends Component {
             </div>
           </div >
           <hr></hr>
-          <div className="text-center py-1 pt-0 mt-0 mb-0 d-flex justify-content-evenly" style={{ fontSize: '14px' }}>
-            <p style={{marginTop: '8px'}}>
+          <div className="footer-politicas text-center py-1 pt-0 mt-0 mb-0 d-flex justify-content-evenly" style={{ fontSize: '14px' }}>
+            <p style={{ marginTop: '8px' }}>
               <i class="far fa-file-alt px-2"></i>
               <a className="text-white" target="_blank" href={`${FOOTER_URL}POLÍTICA DE SEGURIDAD DE LA INFORMACIÓN (1).pdf`}>Política general de seguridad de la información</a>
             </p>

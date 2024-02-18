@@ -70,7 +70,7 @@ import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
 // Components
-import Footer from './components/footer'
+import Footer from './components/footer/footer.js'
 import Title from './components/title'
 import Navbar1 from './components/navbar'
 import BtnStart from './components/btnStart'

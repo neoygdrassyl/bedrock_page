@@ -356,7 +356,7 @@ class Home extends Component {
         <hr className='bg-info'></hr>
         <h2 className='text-center' id='ubicacion'> Ubicación {<Button_navigation Iddown={null} Idup={'news'} />}</h2>
         <div class="row justify-content-center px-4 mx-4 px-4 mb-5">
-          <div class="col-lg-12 justify-content-center">
+          <div class="col-lg-12 d-flex justify-content-center">
             <img src={IMG_MAP} width="50%" />
           </div>
         </div>
