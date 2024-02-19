@@ -146,7 +146,7 @@ class Scheduling extends Component {
         role: "ABOGADA",
         id: '2',
         daysOn: [2, 3, 4, 5],
-        hoursOn: ["1:00 pm", "1:20 pm", "1:40 pm", "2:00 pm", "2:20 pm", "2:40 pm", "3:00 pm", "3:20 pm", "3:40 pm", "4:00 pm"]
+        hoursOn: ["7:20 am", "7:40 am", "8:00 am", "8:20 am", "8:40 am", "9:00 am", "9:20 am", "9:40 am", "10:00 am", "10:20 am", "10:40 am", "11:00 am", "11:20 am", "11:40 am", "1:00 pm", "1:20 pm", "1:40 pm", "2:00 pm", "2:20 pm", "2:40 pm", "3:00 pm", "3:20 pm", "3:40 pm", "4:00 pm"]
       }
     })
     this.setCalendar()
