@@ -135,81 +135,73 @@ class Home extends Component {
     return (
       <div className="Home" id='1'>
         <div className="">
-          <div class="container pt-2" id="hanging-icons">
-            <div class="container py-2">
-              <div class="row align-items-start">
-                <ImageCarousel />
+          <div class="container py-3 align-items-md-center justify-content-center mx-auto">
+            <div class="row align-items-start">
+              <ImageCarousel />
 
-                <div className='col-lg-3 mx-1.2 py-2 ' >
-                  <div className='py-2'>
-                    <MainButton logo="fas fa-file-invoice fa-2x" info="Consulta Normatividad" link={"/normogram"} />
-                  </div>
-                  <div className='py-2'>
-                    <MainButton logo="fas fa-search fa-2x" info="Consulta Procesos" link={"/status"} />
-                  </div>
-                  <div className='py-2'>
-                    <MainButton logo="fas fa-list-alt fa-2x" info="Consulta publicaciones" link={"/administrative"} />
-                  </div>
-                  <div className='py-2'>
-                    <MainButton logo="fas fa-folder-minus fa-2x" info="Consulta repositorio" link={"/old"} />
-                  </div>
+              <div className='col-lg-3 mx-1.2 py-2 ' >
+                <div className='py-2'>
+                  <MainButton logo="fas fa-file-invoice fa-2x" info="Consulta Normatividad" link={"/normogram"} />
+                </div>
+                <div className='py-2'>
+                  <MainButton logo="fas fa-search fa-2x" info="Consulta Procesos" link={"/status"} />
+                </div>
+                <div className='py-2'>
+                  <MainButton logo="fas fa-list-alt fa-2x" info="Consulta publicaciones" link={"/administrative"} />
+                </div>
+                <div className='py-2'>
+                  <MainButton logo="fas fa-folder-minus fa-2x" info="Consulta repositorio" link={"/old"} />
                 </div>
               </div>
             </div>
-            <LoopInfo />
+          </div>
+          <LoopInfo />
 
-            <div class="container mt-2 p-0">
-              <div style={{ backgroundColor: '#2c6aa5', borderRadius: '2px' }} class="d-flex justify-content-between">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start py-2 px-4 col-md-6" >
-                  <div class="px-2 py-1">
-                    <h5 className='px-2 py-0 fw-normal ' style={{ color: 'white' }}><i class="fas fa-calendar-alt text-light"></i> Horario: {infoCud.schedule}</h5>
-                    <h5 className='px-2 py-0 fw-normal m-0' style={{ color: 'white' }}><i class="fas fa-calendar-alt text-light"></i> Consulta horarios especiales y atención especializada, click <Link className='text-light' to={'/mailbox'}>Aquí <i class="far fa-hand-point-left"></i></Link></h5>
-                  </div>
-
+          <div class="container mt-3 p-0">
+            <div style={{ backgroundColor: '#2c6aa5', borderRadius: '2px' }} class="d-flex justify-content-between">
+              <div class="d-flex flex-column justify-content-start align-items-start text-start py-2 px-4 col-md-6" >
+                <div class="px-2 py-1">
+                  <h5 className='px-2 py-0 fw-normal ' style={{ color: 'white' }}><i class="fas fa-calendar-alt text-light"></i> Horario: {infoCud.schedule}</h5>
+                  <h5 className='px-2 py-0 fw-normal m-0' style={{ color: 'white' }}><i class="fas fa-calendar-alt text-light"></i> Consulta horarios especiales y atención especializada, click <Link className='text-light' to={'/mailbox'}>Aquí <i class="far fa-hand-point-left"></i></Link></h5>
                 </div>
 
-                <div class="d-flex flex-column justify-content-start align-items-start text-start py-2 px-4 col-md-6">
-                  <div class="px-2 py-1">
-                    <span className='col-lg-12 bg-white'>
-                      <h5 className='px-2 py-0 fw-normal '><a style={{ color: 'white' }} href='https://www.google.es/maps/place/Curaduria+Urbana+No.+1+de+Bucaramanga/@7.1236512,-73.1155874,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683f0ec6e6ea35:0xd99c4a977df44614!8m2!3d7.1236459!4d-73.1133987?hl=es' target="_blank"><i class="fas fa-map-marker-alt text-light"></i> {infoCud.address}</a></h5>
-                      <h5 className='px-2 py-0 fw-normal m-0' style={{ color: 'white' }}><a href="https://web.whatsapp.com/send?phone=+573162795010" style={{ color: 'white' }} target="_blank"><i class="fas fa-mobile-alt text-light"></i> Whatsapp: {infoCud.number1}   - </a><i class="fas fa-envelope text-light"> </i> Correo: curaduriaurbana1@gmail.com</h5>
-                    </span>
-                  </div>
+              </div>
+
+              <div class="d-flex flex-column justify-content-start align-items-start text-start py-2 px-4 col-md-6">
+                <div class="px-2 py-1">
+                  <span className='col-lg-12 bg-white'>
+                    <h5 className='px-2 py-0 fw-normal '><a style={{ color: 'white' }} href='https://www.google.es/maps/place/Curaduria+Urbana+No.+1+de+Bucaramanga/@7.1236512,-73.1155874,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683f0ec6e6ea35:0xd99c4a977df44614!8m2!3d7.1236459!4d-73.1133987?hl=es' target="_blank"><i class="fas fa-map-marker-alt text-light"></i> {infoCud.address}</a></h5>
+                    <h5 className='px-2 py-0 fw-normal m-0' style={{ color: 'white' }}><a href="https://web.whatsapp.com/send?phone=+573162795010" style={{ color: 'white' }} target="_blank"><i class="fas fa-mobile-alt text-light"></i> Whatsapp: {infoCud.number1}   - </a><i class="fas fa-envelope text-light"> </i> Correo: curaduriaurbana1@gmail.com</h5>
+                  </span>
                 </div>
               </div>
             </div>
-
-
-
-
-
 
             <hr className='bg-info py-0'></hr>
             <h2 className='text-center' id='services'> Servicios </h2>
             <div class="d-flex justify-content-around">
-              {/* <ServiceButton link={"/administrative"} logo="fas fa-sign-language fa-5x fa-lg-4 text-#782e92" title="Hola" /> */}
             </div>
             <FlexboxGrid justify="space-around">
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<img src={LGOG13} height={"100px"} alt="pse" />, "Pagos PSE", '/payments')}
+                <ServiceButton link={"/payments"} logo={<img src={LGOG13} height={"100px"} alt="pse" />} title="Pagos PSE" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-sign-language fa-5x fa-lg-4 text-white"></i>, "Curaduria inclusiva", '/inclusivity')}
+                <ServiceButton link={"/inclusivity"} logo={"fas fa-sign-language fa-5x fa-lg-4 text-2c6aa5"} title="Curaduria inclusiva" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-alt fa-5x fa-lg-4 text-white"></i>, "Instrumentos y formatos", '/file')}
+                <ServiceButton link={"/file"} logo={"fas fa-file-alt fa-5x fa-lg-4 text-2c6aa5"} title="Instrumentos y formatos" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-calculator fa-5x fa-lg-4 text-white"></i>, "Calculadora de expensa", '/liquidator')}
+                <ServiceButton link={"/liquidator"} logo={"fas fa-calculator fa-5x fa-lg-4 text-2c6aa5"} title="Calculadora de expensa" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-envelope-square fa-5x fa-lg-4 text-white"></i>, "Radicacion (pqrs)", '/pqrs')}
+                <ServiceButton link={"/pqrs"} logo={"fas fa-envelope-square fa-5x fa-lg-4 text-2c6aa5"} title="Radicacion PQRS" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-calendar-check fa-5x fa-lg-4 text-white"></i>, "Agendamiento de citas", '/scheduling')}
+                <ServiceButton link={"/scheduling"} logo={"fas fa-calendar-check fa-5x fa-lg-4 text-2c6aa5"} title="Agendamiento de citas" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                {HOME_PAGE_SERVICE_PANEL(<i class="fas fa-file-pdf fa-5x fa-lg-4 text-white"></i>, "Certificacion profesional en linea", '/certificacion')}
+                <ServiceButton link={"/certificacion"} logo={"fas fa-file-pdf fa-5x fa-lg-4 text-2c6aa5"} title="Certificacion profesional" />
               </FlexboxGrid.Item>
             </FlexboxGrid>
 
@@ -217,13 +209,13 @@ class Home extends Component {
             <div class="px-0 py-0 my-0 text-center">
               <i class="fas fa-search-location fa-4x"></i>
               <h3 class="" id='process'>Consulta de Procesos {<Button_navigation Iddown={'news'} Idup={'services'} />}  </h3>
-              <div class="col-lg-8 mx-auto">
-                <h5 class=" fw-normal">Ingrese el ID del proceso o el número de cédula para conocer el estado del proceso</h5>
+              <div class="col-lg-8 mx-auto my-3">
+                <h5 class=" fw-normal my-2">Ingrese el <u>ID del proceso</u> o el <u>número de cédula</u> para conocer el estado del proceso</h5>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                   <div style={{ width: '33rem' }}>
                     <MDBInputGroup className='mb-3'>
                       <MDBDropdown>
-                        <MDBDropdownToggle style={{ backgroundColor: '#107ABC' }}>TIPO DE PROCESO</MDBDropdownToggle>
+                        <MDBDropdownToggle style={{ backgroundColor: '#0d65c4' }}>TIPO DE PROCESO</MDBDropdownToggle>
                         <MDBDropdownMenu>
                           <MDBDropdownItem>
                             <MDBDropdownLink onClick={() => this.inputSearch.value = '68001-1-aa-0000'}>LICENCIA</MDBDropdownLink>
@@ -241,12 +233,12 @@ class Home extends Component {
                             <MDBDropdownLink onClick={() => this.inputSearch.value = 'Naa-0000'}>NOMENCLATURA</MDBDropdownLink>
                           </MDBDropdownItem>
                           <MDBDropdownItem>
-                            <MDBDropdownLink onClick={() => this.inputSearch.value = ''}>BUSCAR POR CEDULA</MDBDropdownLink>
+                            <MDBDropdownLink onClick={() => this.inputSearch.placeholder = 'Ingrese el número de su cédula'}>CÉDULA</MDBDropdownLink>
                           </MDBDropdownItem>
                         </MDBDropdownMenu>
                       </MDBDropdown>
                       <MDBInputGroupElement type='text' label='ID del proceso' inputRef={ref => this.inputSearch = ref} />
-                      <MDBBtn style={{ backgroundColor: '#107ABC' }} onClick={() => _CHECK_STATUS()}>BUSCAR</MDBBtn>
+                      <MDBBtn style={{ backgroundColor: '#0d65c4' }} onClick={() => _CHECK_STATUS()}>BUSCAR</MDBBtn>
                     </MDBInputGroup>
                   </div>
                 </div>
@@ -259,12 +251,12 @@ class Home extends Component {
               <div className='row justify-content-center mx-0 px-0'>
                 {_news.filter((data, index) => index <= 3).map((value, index) => (
                   <div key={index} className='col-lg col-md-6 col-sm-12'>
-                    <div className='column align-items-center px-4 py-4 my-3'>
-                      <News_Home_Structure title={value.title} date={value.date} summary={value.summary} url={value.url} image={value.image} imageTranscript={value.imageTranscript}/>
+                    <div className='column align-items-center px-4 py-4 my-1'>
+                      <News_Home_Structure title={value.title} date={value.date} summary={value.summary} url={value.url} image={value.image} imageTranscript={value.imageTranscript} />
                     </div>
                   </div>
                 ))}
-              </div>
+              </div>  
 
 
 
@@ -363,8 +355,8 @@ class Home extends Component {
         <hr className='bg-info'></hr>
         <h2 className='text-center' id='ubicacion'> Ubicación {<Button_navigation Iddown={null} Idup={'news'} />}</h2>
         <div class="row justify-content-center px-4 mx-4 px-4 mb-5">
-          <div class="col-lg-12 justify-content-center">
-            <img src={IMG_MAP} width="100%" />
+          <div class="col-lg-12 d-flex justify-content-center">
+            <img src={IMG_MAP} width="50%" />
           </div>
         </div>
 
