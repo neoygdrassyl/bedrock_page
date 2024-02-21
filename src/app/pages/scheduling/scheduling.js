@@ -208,12 +208,41 @@ class Scheduling extends Component {
         role: "INGENIERO",
         id: '7',
         daysOn: [1, 3, 4],
-        hoursOn: ["7:00 am", "7:20 am", "7:40 am", "8:00 am", "11:30 am", "11:50 am", "12:10 pm", "12:30 pm",],
+        hoursOn: ["7:00 am", "7:20 am", "7:40 am", "8:00 am", "8:20 am", "8:40 am", "9:00 am", "9:30 am", "10:00 am", "10:30 am", "11:00 am", "11:30 am", "11:50 am", "12:10 pm", "12:30 pm",  "1:00 pm", "1:20 pm", "1:40 pm", "2:00 pm", "2:20 pm", "2:40 pm", "3:00 pm", "3:20 pm", "3:40 pm"],
         blockOffHours: true,
       }
     })
     this.setCalendar()
   }
+  setUser9 = () => {
+    this.setState({
+      operator: {
+        name: 'XIMENA FLOREZ',
+        role: "ARQUITECTA",
+        id: '21',
+        daysOn: [1, 2, 3, 4, 5],
+        hoursOn: ["7:00 am", "7:20 am", "7:40 am", "8:00 am", "8:20 am", "8:40 am", "9:00 am", "9:30 am", "10:00 am", "10:30 am", "11:00 am", "11:30 am", "11:50 am", "12:10 pm", "12:30 pm",  "1:00 pm", "1:20 pm", "1:40 pm", "2:00 pm", "2:20 pm", "2:40 pm", "3:00 pm", "3:20 pm", "3:40 pm"],
+        blockOffHours: true,
+      }
+    })
+    
+    this.setCalendar()
+  }
+  setUser10 = () => {
+    this.setState({
+      operator: {
+        name: 'STEFANNY GOMEZ',
+        role: "ABOGADA",
+        id: '20',
+        daysOn: [1, 2, 3, 4, 5],
+        hoursOn: ["7:00 am", "7:20 am", "7:40 am", "8:00 am", "8:20 am", "8:40 am", "9:00 am", "9:30 am", "10:00 am", "10:30 am", "11:00 am", "11:30 am", "11:50 am", "12:10 pm", "12:30 pm",  "1:00 pm", "1:20 pm", "1:40 pm", "2:00 pm", "2:20 pm", "2:40 pm", "3:00 pm", "3:20 pm", "3:40 pm"],
+        blockOffHours: true,
+      }
+    })
+    
+    this.setCalendar()
+  }
+
   setCalendar = () => {
     this.setState({
       calendarValue: new Date(),
@@ -533,19 +562,19 @@ class Scheduling extends Component {
                       <tbody>
                         <tr>
                           <td scope="row" rowSpan="2" className="text-center"><i class="fas fa-user-tie fa-5x" style={{ color: "MediumVioletRed" }}></i></td >
-                          <td><h4>{translation.text_c_5_1}</h4></td>
+                          <td><h4>Stefanny Gomez</h4></td>
                         </tr>
                         <tr>
-                          <td><h4>{translation.text_c_5_2}</h4></td>
+                          <td><h4>Abogada</h4></td>
                         </tr>
                         <tr>
-                          <td colSpan="3"><h4>{translation.text_c_5_3}</h4></td>
+                          <td colSpan="3"><h4>Abogada revisora de proyectos</h4></td>
                         </tr>
                       </tbody>
                     </tabla>
                   </MDBCardBody>
                   <MDBCardFooter className='text-end'>
-                    <MDBBtn style={{ backgroundColor: '#1B83C4' }} onClick={this.setUser5} >
+                    <MDBBtn style={{ backgroundColor: '#1B83C4' }} onClick={this.setUser10} >
                       <h4 className="pt-2"><i class="far fa-calendar-check"></i> {translation.form_btn_1}</h4>
                     </MDBBtn>
                   </MDBCardFooter>
@@ -558,19 +587,19 @@ class Scheduling extends Component {
                       <tbody>
                         <tr>
                           <td scope="row" rowSpan="2" className="text-center"><i class="fas fa-user-tie fa-5x" style={{ color: "#58c1b8" }}></i></td >
-                          <td><h4>{'Lina Rocha'}</h4></td>
+                          <td><h4>{'Ximena Florez'}</h4></td>
                         </tr>
                         <tr>
-                          <td><h4>{translation.text_c_6_2}</h4></td>
+                          <td><h4>Arquitecta</h4></td>
                         </tr>
                         <tr>
-                          <td colSpan="3"><h4>{translation.text_c_6_3}</h4></td>
+                          <td colSpan="3"><h4>Arquitecta revisora de proyectos</h4></td>
                         </tr>
                       </tbody>
                     </tabla>
                   </MDBCardBody>
                   <MDBCardFooter className='text-end'>
-                    <MDBBtn style={{ backgroundColor: '#1B83C4' }} onClick={this.setUser6} >
+                    <MDBBtn style={{ backgroundColor: '#1B83C4' }} onClick={this.setUser9} >
                       <h4 className="pt-2"><i class="far fa-calendar-check"></i> {translation.form_btn_1}</h4>
                     </MDBBtn>
                   </MDBCardFooter>
@@ -580,9 +609,9 @@ class Scheduling extends Component {
 
             <MDBRow className="mt-3">
               <MDBCol>
-                <MDBCard className="border border-dark" style={{ backgroundColor: ' #f5f5f5 ' }}>
+                <MDBCard className="border border-dark" style={{ backgroundColor: ' gainsboro ' }}>
                   <MDBCardBody>
-                    <tabla className="table table align-middle table-sm">
+                    <tabla className="table table align-middle table-sm" >
                       <tbody>
                         <tr>
                           <td scope="row" rowSpan="2" className="text-center"><i class="fas fa-user-tie fa-5x" style={{ color: "#fecf6a" }}></i></td >
@@ -598,7 +627,7 @@ class Scheduling extends Component {
                     </tabla>
                   </MDBCardBody>
                   <MDBCardFooter className='text-end'>
-                    <MDBBtn style={{ backgroundColor: '#1B83C4' }} onClick={this.setUser7} >
+                    <MDBBtn style={{ backgroundColor: 'gainsboro' }} onClick={() => {}} >
                       <h4 className="pt-2"><i class="far fa-calendar-check"></i> {translation.form_btn_1}</h4>
                     </MDBBtn>
                   </MDBCardFooter>
