@@ -5,19 +5,21 @@
   footer .footer-div-1 {
     width: 100% !important;
   }
-
 }
 @media (max-width: 500px) {
-    footer .footer-main-div {
-      display: block !important;
-    }
-    footer .footer-div-1 p,b,i{
-      width: 100% !important;
-      font-size: 16px !important;
-
-    }
-    footer .footer-politicas p,i{
-      font-size: 12px;
-      justify-content: space-between;
-    }
+  footer .footer-main-div {
+    display: block !important;
   }
+  footer .footer-div-1 p,
+  footer .footer-div-1 b,
+  footer .footer-div-1 i {
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+
+  footer .footer-politicas p,
+  footer .footer-politicas i {
+    font-size: 12px;
+    justify-content: space-between;
+  }
+}
