@@ -3,7 +3,7 @@ import { MDBBreadcrumb, MDBBreadcrumbItem } from 'mdb-react-ui-kit'
 import { Link } from 'react-router-dom'
 import { Panel, PanelGroup, Placeholder, List } from 'rsuite';
 
-export const Open_data = (props) => {
+export const    Open_data = (props) => {
     const { breadCrums } = props;
     const url = "https://curaduria1bucaramanga.com/public_docs/OTHERS/open/"
     return <>
@@ -19,7 +19,7 @@ export const Open_data = (props) => {
                     <div className='' style={{ backgroundColor: '#1b83c4', borderRadius: '2px' }}>
                         <div class="row justify-content-center px-4 mx-2">
                             <div class="col-11 text-center py-1" style={{ color: ' white ' }}>
-                                <h2 className='px-2 py-0 fw-normal'>Datos abiertos.</h2>
+                                <h2 className='px-2 py-0 fw-normal'>Datos abiertos</h2>
                             </div>
                         </div>
                     </div>
