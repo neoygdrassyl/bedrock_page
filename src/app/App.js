@@ -148,14 +148,21 @@ export default function App() {
                 <BtnChat translation={t("misc.btn_chat", { returnObjects: true })} />
                 <div class="bg-image">
                   <div class="bg-image-gr">
-                    <div id="form"class="overlay-container container-primary">
+                    <div id="form" class="overlay-container container-primary">
                       <Route render={(props) => (
                         <Title {...props} translation={t("title", { returnObjects: true })}
                           swaMsg={t("swa_messages", { returnObjects: true })}
-                          breadCrums={t("breadCrums", { returnObjects: true })} />  
+                          breadCrums={t("breadCrums", { returnObjects: true })} />
+
                       )} />
-                      <Navbar1 />
-                      <Switch>
+                      <Route render={(props) => (
+                        <Navbar1 {...props} translation={t("title", { returnObjects: true })}
+                          swaMsg={t("swa_messages", { returnObjects: true })}
+                          breadCrums={t("breadCrums", { returnObjects: true })} />
+
+                      )} />
+
+                      < Switch >
 
                         <Route path='/home'
                           render={(props) => (
@@ -608,7 +615,7 @@ export default function App() {
           </ThemeProvider>
         </ThemeProvider>
       </Router>
-    </ProvideAuth>
+    </ProvideAuth >
   );
 }
 
