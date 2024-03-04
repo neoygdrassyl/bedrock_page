@@ -15,14 +15,6 @@ class Title extends Component {
     }
     render() {
         const { translation } = this.props;
-        const styles = {
-            width: 230,
-            marginBottom: 0
-        };
-        let _CHECK_STATUS = () => {
-            let searchValue = this.inputSearch.value;
-            this.props.history.push('/search/' + searchValue);
-        }
         return <>
 
             <div className="Title container-primary">
@@ -35,14 +27,6 @@ class Title extends Component {
                             </a>
                         </div>
 
-                    </div>
-                    <div className='col-3 px-0 pt-1 text-right'>
-                        <InputGroup inside style={styles}>
-                            <Input size="xs" inputRef={ref => this.inputSearch = ref} />
-                            <button className=' btn-white btn-sm' onClick={() => _CHECK_STATUS()} >
-                                <SearchIcon />
-                            </button>
-                        </InputGroup>
                     </div>
                 </div>
 
