@@ -116,7 +116,34 @@ const info1 =
         de Lunes a Viernes de 07:00 am a 12:30 pm y 1:00 pm a 5:00 pm. (<Link to={'/news/?newsId=news5  '
         }>Revisar horarios actuales </Link>)</p>
 
+
+        const info7 = <p>Se informa por medio de la Resolución 074 del 11 de marzo de 2024, la cual modifica temporalmente el horario de trabajo y de atención al público del despacho del Curador Urbano uno de Bucaramanga en jornada continua de 7:00 am a 3:00 pm los dias Dia Martes 26 y Miércoles 27 de Marzo</p>
+
 export const _news = [
+    {
+        id: 'news7',
+        title: 'Modificación horario general',
+        category: 'Aviso',
+        date: '21/03/2024',
+        summary: "HORARIO SEMANA SANTA 2024",
+        link: 'Ver mas',
+        image: AVISO_HORARIO,
+        url: '/news/?newsId=news7',
+        imageTranscript: 'Importante, Horario General',
+        noticia:
+            // eslint-disable-next-line react/jsx-pascal-case
+            <News_Structure
+                id={'news7'}
+                title={'Modificación horario general'}
+                category={'Aviso'}
+                date={'21/03/2024'}
+                image={AVISO_HORARIO}
+                info={info7}
+                key={'news7'}
+                imageTranscript={"Importante, Horario General"}
+            />
+
+    },
     {
         id: 'news6',
         title: 'Reparto de proyectos 2024',

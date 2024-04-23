@@ -790,7 +790,7 @@ class Liquidator extends Component {
 
               </tbody>
             </table>
-            <h3 className='text-center'>Tabla de impuestos 2023</h3>
+            <h3 className='text-center'>Tabla de impuestos 2024</h3>
             <table className="table table-bordered table-sm table-hover text-center">
               <thead>
                 <tr className='table-warning'>
@@ -939,12 +939,12 @@ class Liquidator extends Component {
                 <tr>
                   <td>Estrato 3 y 4</td>
                   <td>Por M²</td>
-                  <td>$ 1.160</td>
+                  <td>$ 1.300</td>
                 </tr>
                 <tr>
                   <td>Estrato 5 y 6</td>
                   <td>Por M²</td>
-                  <td>$ 2.320</td>
+                  <td>$ 2.600</td>
                 </tr>
                 <tr>
                   <td colSpan={3}>Estrato 3 y 4 el 1/1000 del SMLM, Estrato 5 y 6 el 2/1000</td>
