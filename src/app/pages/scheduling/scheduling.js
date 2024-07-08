@@ -609,7 +609,7 @@ class Scheduling extends Component {
 
             <MDBRow className="mt-3">
               <MDBCol>
-                <MDBCard className="border border-dark" style={{ backgroundColor: ' gainsboro ' }}>
+                <MDBCard className="border border-dark" style={{ backgroundColor: ' #f5f5f5 ' }}>
                   <MDBCardBody>
                     <tabla className="table table align-middle table-sm" >
                       <tbody>
@@ -627,7 +627,7 @@ class Scheduling extends Component {
                     </tabla>
                   </MDBCardBody>
                   <MDBCardFooter className='text-end'>
-                    <MDBBtn style={{ backgroundColor: 'gainsboro' }} onClick={() => {}} >
+                    <MDBBtn style={{ backgroundColor: '#1B83C4' }} onClick={this.setUser7} >
                       <h4 className="pt-2"><i class="far fa-calendar-check"></i> {translation.form_btn_1}</h4>
                     </MDBBtn>
                   </MDBCardFooter>

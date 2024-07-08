@@ -111,15 +111,15 @@ class PQRS_PUBLIC_NEW extends Component {
         });
     }
 
-    async GET_LAST_ID(e) {
+    GET_LAST_ID(e) {
         try {
             e.preventDefault();
 
             
             const recaptchaValue = recaptchaRef.current ? recaptchaRef.current.getValue() : true;
 
-            if (!recaptchaValue) {
-            // if (false) {
+            // if (!recaptchaValue) {
+            if (false) {
                 MySwal.fire({
                     toast: true,
                     position: 'center-center',
@@ -132,13 +132,15 @@ class PQRS_PUBLIC_NEW extends Component {
                 });
                 return 1;
             }
-            this.generatePQRS()
             MySwal.fire({
                 title: this.props.swaMsg.title_wait,
                 text: this.props.swaMsg.text_wait,
                 icon: 'info',
                 showConfirmButton: false,
             });
+
+            this.generatePQRS()
+            
         } catch (e) {
             MySwal.fire({
                 title: this.props.swaMsg.generic_eror_title,
@@ -150,7 +152,7 @@ class PQRS_PUBLIC_NEW extends Component {
         }
     }
 
-    async generatePQRS() {
+    generatePQRS() {
         var formData = new FormData();
 
         let array_form = [];
@@ -287,27 +289,27 @@ class PQRS_PUBLIC_NEW extends Component {
         let fun_person = document.getElementById("pqrs_public_4_3").value;
         formData.set('fun_person', fun_person);
 
-
         // GET DATA OF ATTACHS
         let files = document.getElementsByName("files") ? document.getElementsByName("files") : [];
         //if (this.files.length <= 0) return;
         formData.set('attachs_length', this.state.attachs);
         for (var i = 0; i < this.state.attachs; i++) {
-            if (files[i].enctype != 'jpg' || files[i].enctype != 'jpeg' || files[i].enctype != 'png' || files[i].enctype != 'pdf' || files[i].enctype != 'pln' || files[i].enctype != 'dwg' || files[i].enctype != 'rvp') {
-                MySwal.fire({
-                    toast: true,
-                    position: 'center-center',
-                    timer: 3000,
-                    timerProgressBar: true,
+            let file = files[i].files[0]
+            let file_type = file.type.split('/')[1];
+            if (file_type != 'jpg' && file_type != 'jpeg' && file_type != 'png' && file_type != 'pdf' && file_type != 'pln' && file_type != 'dwg' && file_type != 'rvp') {
+                return MySwal.fire({
+                    // toast: true,
+                    // position: 'center-center',
+                    // timer: 3000,
+                    // timerProgressBar: true,
                     title: "ARCHIVO ANEXO NO ADMITIDO",
                     text: "Uno o más de los archivos anexos no es un tipo de archivo permitido.",
                     icon: 'warning',
-                    showConfirmButton: false,
+                    showConfirmButton: this.props.swaMsg.text_btn,
                 });
-                return 1;
             }
-            if (files[i].files[0].length < 10485760) {
-                formData.append('file', files[i].files[0], "pqrs_" + files[i].files[0].name)
+            if (file.size < 10485760) {
+                formData.append('file', file, "pqrs_" + file.name)
             } else {
                 return MySwal.fire({
                     title: this.props.swaMsg.generic_eror_title,
@@ -318,16 +320,22 @@ class PQRS_PUBLIC_NEW extends Component {
             }
         }
         array_html = document.getElementsByName("files_names") ? document.getElementsByName("files_names") : [];
+        console.log('array_html.length', array_html.length)
         for (var i = 0; i < array_html.length; i++) {
-            array_form.push(array_html[i].value)
+            let name = array_html[i].value
+            console.log(name)
+            if (!name){
+                name = files[i].files[0].name
+            }
+            array_form.push(name)
         }
         formData.set('files_names', array_form);
         array_form = [];
         array_html = [];
 
 
-
-        await PQRS_Service.create_public(formData)
+        console.log('here 2')
+        PQRS_Service.create_public(formData)
             .then(response => {
                 if (response.data === 'OK') {
                     MySwal.fire({
