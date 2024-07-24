@@ -118,8 +118,8 @@ class PQRS_PUBLIC_NEW extends Component {
             
             const recaptchaValue = recaptchaRef.current ? recaptchaRef.current.getValue() : true;
 
-            // if (!recaptchaValue) {
-            if (false) {
+            if (!recaptchaValue) {
+            // if (false) {
                 MySwal.fire({
                     toast: true,
                     position: 'center-center',

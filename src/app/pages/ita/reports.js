@@ -50,7 +50,21 @@ export const Reports = (props) => {
                 ],
                 contralria: '/2022/INFORME CONTRALORIA AÑO 2022.xlsx',
                 planeacion: '/2022/SEC PLANEACION 2022.xlsx',
-            }
+            },
+        },
+        {
+            year: 2023, reports: {
+                camacol: '/2023/Reporte General CAMACOL 2023.xlsx',
+                dane: '/2023/INFORME GENERAL DANE 2023.xlsx',
+                planeacion: '/2023/INFORME GENERAL PLANEACIÓN 2023.ods',
+                minvivienda: [
+                    '/2023/Plantilla Carga Masiva20231206.xlsm',
+                    '/2023/Plantilla Carga Masiva Q2-2023.xlsm',
+                    '/2023/Plantilla Carga Masiva Q3.xlsm',
+                    false,
+                ],
+
+            },
         },
     ]
     return <>
@@ -94,29 +108,57 @@ export const Reports = (props) => {
                                             <tr className='table-warning'>
                                                 <th colSpan={2}>CAMACOL</th>
                                             </tr>
-                                            {r.reports.camacol.map((item, i) =>
+                                            {Array.isArray(r.reports.camacol) ?
+                                                <>
+                                                    {r.reports.camacol?.map((item, i) =>
+                                                        <tr>
+                                                            <td>{months[i]}</td>
+                                                            <td>{item ? <a href={baseURL + item} target="_blank" className='btn btn-sm btn-danger' ><i class="fas fa-cloud-download-alt"></i> DESCARGAR</a> : 'SIN EXPEDIR'}</td>
+                                                        </tr>)}
+                                                </>
+                                                :
                                                 <tr>
-                                                    <td>{months[i]}</td>
-                                                    <td>{item ? <a href={baseURL + item} target="_blank" className='btn btn-sm btn-danger' ><i class="fas fa-cloud-download-alt"></i> DESCARGAR</a> : 'SIN EXPEDIR'}</td>
-                                                </tr>)}
+                                                    <td>ANUAL</td>
+                                                    <td>{r.reports.camacol ? <a href={baseURL + r.reports.camacol} target="_blank" className='btn btn-sm btn-danger' ><i class="fas fa-cloud-download-alt"></i> DESCARGAR</a> : 'SIN EXPEDIR'}</td>
+                                                </tr>
+                                            }
 
                                             <tr className='table-warning'>
                                                 <th colSpan={2}>DANE</th>
                                             </tr>
-                                            {r.reports.dane.map((item, i) =>
+                                            {Array.isArray(r.reports.dane) ?
+                                                <>
+                                                    {r.reports.dane?.map((item, i) =>
+                                                        <tr>
+                                                            <td>{months[i]}</td>
+                                                            <td>{item ? <a href={baseURL + item} target="_blank" className='btn btn-sm btn-danger' ><i class="fas fa-cloud-download-alt"></i> DESCARGAR</a> : 'SIN EXPEDIR'}</td>
+                                                        </tr>)}
+                                                </>
+                                                :
                                                 <tr>
-                                                    <td>{months[i]}</td>
-                                                    <td>{item ? <a href={baseURL + item} target="_blank" className='btn btn-sm btn-danger' ><i class="fas fa-cloud-download-alt"></i> DESCARGAR</a> : 'SIN EXPEDIR'}</td>
-                                                </tr>)}
+                                                    <td>ANUAL</td>
+                                                    <td>{r.reports.dane ? <a href={baseURL + r.reports.dane} target="_blank" className='btn btn-sm btn-danger' ><i class="fas fa-cloud-download-alt"></i> DESCARGAR</a> : 'SIN EXPEDIR'}</td>
+                                                </tr>
+                                            }
+
 
                                             <tr className='table-warning'>
                                                 <th colSpan={2}>MINISTERIO DE VIVIENDA</th>
                                             </tr>
-                                            {r.reports.minvivienda.map((item, i) =>
+                                            {Array.isArray(r.reports.minvivienda) ?
+                                                <>
+                                                    {r.reports.minvivienda?.map((item, i) =>
+                                                        <tr>
+                                                            <td>{quaters[i]}</td>
+                                                            <td>{item ? <a href={baseURL + item} target="_blank" className='btn btn-sm btn-danger' ><i class="fas fa-cloud-download-alt"></i> DESCARGAR</a> : 'SIN EXPEDIR'}</td>
+                                                        </tr>)}
+                                                </>
+                                                :
                                                 <tr>
-                                                    <td>{quaters[i]}</td>
-                                                    <td>{item ? <a href={baseURL + item} target="_blank" className='btn btn-sm btn-danger' ><i class="fas fa-cloud-download-alt"></i> DESCARGAR</a> : 'SIN EXPEDIR'}</td>
-                                                </tr>)}
+                                                    <td>ANUAL</td>
+                                                    <td>{r.reports.minvivienda ? <a href={baseURL + r.reports.minvivienda} target="_blank" className='btn btn-sm btn-danger' ><i class="fas fa-cloud-download-alt"></i> DESCARGAR</a> : 'SIN EXPEDIR'}</td>
+                                                </tr>
+                                            }
 
                                             <tr className='table-warning'>
                                                 <th colSpan={2}>CONTRALORIA</th>
