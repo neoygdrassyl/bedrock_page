@@ -183,25 +183,25 @@ class Home extends Component {
             </div>
             <FlexboxGrid justify="space-around">
               <FlexboxGrid.Item>
-                <ServiceButton link={"/payments"} logo={<img src={LGOG13} height={"100px"} alt="pse" />} title="Pagos PSE" />
+                <ServiceButton link={"/payments"} logo={<img src={LGOG13} height={"90px"} alt="pse" />} title="Pagos PSE" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                <ServiceButton link={"/inclusivity"} logo={"fas fa-sign-language fa-5x fa-lg-4 text-2c6aa5"} title="Curaduria inclusiva" />
+                <ServiceButton link={"/inclusivity"} logo={"fas fa-sign-language fa-4x fa-lg-4 text-2c6aa5"} title="Curaduria inclusiva" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                <ServiceButton link={"/file"} logo={"fas fa-file-alt fa-5x fa-lg-4 text-2c6aa5"} title="Instrumentos y formatos" />
+                <ServiceButton link={"/file"} logo={"fas fa-file-alt fa-4x fa-lg-4 text-2c6aa5"} title="Instrumentos y formatos" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                <ServiceButton link={"/liquidator"} logo={"fas fa-calculator fa-5x fa-lg-4 text-2c6aa5"} title="Calculadora de expensa" />
+                <ServiceButton link={"/liquidator"} logo={"fas fa-calculator fa-4x fa-lg-4 text-2c6aa5"} title="Calculadora de expensa" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                <ServiceButton link={"/pqrs"} logo={"fas fa-envelope-square fa-5x fa-lg-4 text-2c6aa5"} title="Radicacion PQRS" />
+                <ServiceButton link={"/pqrs"} logo={"fas fa-envelope-square fa-4x fa-lg-4 text-2c6aa5"} title="Radicacion PQRS" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                <ServiceButton link={"/scheduling"} logo={"fas fa-calendar-check fa-5x fa-lg-4 text-2c6aa5"} title="Agendamiento de citas" />
+                <ServiceButton link={"/scheduling"} logo={"fas fa-calendar-check fa-4x fa-lg-4 text-2c6aa5"} title="Agendamiento de citas" />
               </FlexboxGrid.Item>
               <FlexboxGrid.Item>
-                <ServiceButton link={"/certificacion"} logo={"fas fa-file-pdf fa-5x fa-lg-4 text-2c6aa5"} title="Certificacion profesional" />
+                <ServiceButton link={"/certificacion"} logo={"fas fa-file-pdf fa-4x fa-lg-4 text-2c6aa5"} title="Certificacion profesional" />
               </FlexboxGrid.Item>
             </FlexboxGrid>
 
@@ -256,7 +256,7 @@ class Home extends Component {
                     </div>
                   </div>
                 ))}
-              </div>  
+              </div>
 
 
 
@@ -354,11 +354,24 @@ class Home extends Component {
         </div>
         <hr className='bg-info'></hr>
         <h2 className='text-center' id='ubicacion'> Ubicación {<Button_navigation Iddown={null} Idup={'news'} />}</h2>
-        <div class="row justify-content-center px-4 mx-4 px-4 mb-5">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <img src={IMG_MAP} width="50%" />
+        <div class="container mt-3 mb-5">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="embed-responsive embed-responsive-16by9" style={{ "height": "500px" }}>
+                <iframe
+                  title="Mapa de Curaduría Urbana No. 1 de Bucaramanga"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1177.0236335389252!2d-73.11362457312843!3d7.123700403208245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683f0ec6e6ea35%3A0xd99c4a977df44614!2sCuraduria%20Urbana%20No.%201%20de%20Bucaramanga!5e0!3m2!1ses-419!2sco!4v1727281400144!5m2!1ses-419!2sco"
+                  class="embed-responsive-item"
+                  allowfullscreen
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  sandbox="allow-same-origin allow-scripts">
+                </iframe>
+              </div>
+            </div>
           </div>
         </div>
+
 
 
         {/*<Modal contentLabel="FRONT PAGE MODAL"

@@ -2,9 +2,9 @@
   width: 135px;
   height: 135px;
   background: #ccc;
-  border-radius: 1.2em;
+  border-radius: 0.4em;
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow: 2px 2px 2px #cecece, -2px -2px 2px #f2f2f2;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: flex;
   flex-direction: column;
@@ -13,17 +13,15 @@
   box-sizing: border-box;
   position: relative;
   text-wrap: pretty;
-  margin: 4px;
+  margin: 8px;
   padding: 10px 10px 0px 10px;
 }
-
 .service-button h5 {
   margin-top: 16px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #002A85;
+  color: #002a85;
 }
-
 
 .service-button-image-container {
   width: 50%;
@@ -32,10 +30,10 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 4px;
-  color: #2362a7; /* 2c6aa5 */	
+  color: #2362a7; /* 2c6aa5 */
 }
 .service-button:hover {
-  background: rgb(201, 201, 201);
+  background: #e2e2e2;
   /* background: linear-gradient(90deg, rgb(93, 112, 131) 0%, rgba(0, 212, 255, 1) 100%); */
 }
 
