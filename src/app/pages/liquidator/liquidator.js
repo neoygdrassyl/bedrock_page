@@ -48,6 +48,7 @@ class Liquidator extends Component {
       '2022': { value: 38004, units: 'UVT', name: 'UNIDAD DE VALOR TRIBUTARIO', cfi: 10.01, cvi: 20.02 },
       '2023': { value: 42412, units: 'UVT', name: 'UNIDAD DE VALOR TRIBUTARIO', cfi: 10.01, cvi: 20.02 },
       '2024': { value: 47065, units: 'UVT', name: 'UNIDAD DE VALOR TRIBUTARIO', cfi: 10.01, cvi: 20.02 },
+      '2025': { value: 49799, units: 'UVT', name: 'UNIDAD DE VALOR TRIBUTARIO', cfi: 10.01, cvi: 20.02 },
     }
     var smmv = values[version].value; // Mininum wage
     const m = infoCud.m; // Factor m
