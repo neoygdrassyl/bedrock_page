@@ -149,18 +149,14 @@ export default function App() {
                 <div class="bg-image">
                   <div class="bg-image-gr">
                     <div id="form" class="overlay-container container-primary">
-                      <Route render={(props) => (
-                        <Title {...props} translation={t("title", { returnObjects: true })}
+                      
+                      <Title translation={t("title", { returnObjects: true })}
                           swaMsg={t("swa_messages", { returnObjects: true })}
                           breadCrums={t("breadCrums", { returnObjects: true })} />
 
-                      )} />
-                      <Route render={(props) => (
-                        <Navbar1 {...props} translation={t("title", { returnObjects: true })}
+                      <Navbar1 translation={t("title", { returnObjects: true })}
                           swaMsg={t("swa_messages", { returnObjects: true })}
                           breadCrums={t("breadCrums", { returnObjects: true })} />
-
-                      )} />
 
                       < Switch >
 

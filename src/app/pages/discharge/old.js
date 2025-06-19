@@ -22,7 +22,7 @@ class File extends Component {
       Open: false,
     };
   }
-   componentDidMount() {
+  componentDidMount() {
     this.repositoryList();
     {/* 
     const HOMEPATH = 'https://www.curaduria1bucaramanga.com'
@@ -54,7 +54,7 @@ class File extends Component {
         response.data.map((item, i) => {
           if (item.type == 'lu' || item.type == 'Actos administrativos' || item.type == 'Resoluciones' || item.type == 'res' || item.type == 'Otras actuaciones' || item.type == 'oa' || item.type == 'mpr' || item.type == 'MPR') {
             //if (item.publish == true) {
-              if (true) {
+            if (true) {
               //console.log(item)
               const date = moment(item.date).format('yyyy');
               if (list_00[date]) list_00[date].push(item); else {
@@ -82,6 +82,7 @@ class File extends Component {
         return;
       }
       this.setState({ [index + '_mes']: state });
+      this.setState({ [index + '_search']: '' })
     };
 
     const handleFillClick2 = (state, index) => {
@@ -89,6 +90,7 @@ class File extends Component {
         return;
       }
       this.setState({ [index]: state });
+      this.setState({ [index + '_search']: '' })
     };
 
 
@@ -113,7 +115,7 @@ class File extends Component {
     let _SET_ITEMS = (_ITEMS, _PATH) => {
       var _COMPONENT = [];
 
-      if(_ITEMS == undefined){
+      if (_ITEMS == undefined) {
         return <div></div>
       }
       for (var j = 0; j < _ITEMS.length; j++) {
@@ -225,7 +227,9 @@ class File extends Component {
         List.push(objec)
       }
       return List.map((item) => { return x(item) })
+
     }
+
     const _LIST = (year, ID) => {
       const columns = [
         {
@@ -265,8 +269,14 @@ class File extends Component {
             <span class="input-group-text bg-info text-white">
               <i class="fas fa-search"></i>
             </span>
-            <input type='text' className='form-control' placeholder='Busqueda...' onChange={(e) => this.setState({ [year + ID]: e.target.value })} />
+            <input type='text' className='form-control' placeholder='Busqueda...' id={[year + ID]} />
+            <button className='btn-info btn' onClick={(e) => {
+              this.setState({ [year + '_mes']: false });
+              this.setState({ [year]: false });
+              this.setState({ [year + ID]: document.getElementById([year + ID]).value})
+            }}>BUSCAR</button>
           </div>
+
         );
       }
 
@@ -276,29 +286,29 @@ class File extends Component {
         }
         return (
           _items.filter(item => {
-            var search = (this.state[year + ID] ?? '').toLowerCase();
-            var field1 = (item.id_public ?? '').toLowerCase();
-            var field2 = removeAccents(item.detail ?? '' + item.subdetail ?? '').toLowerCase();
-            return field1.includes(search) || field2.includes(search)
-          })
-            .filter(item => {
+            let con_search = true;
+            let con_mes = true;
+            let con_type = true
+            if(this.state[year + ID]){
+              var search = (this.state[year + ID] ?? '').toLowerCase();
+              var field1 = (item.id_publico ?? '').toLowerCase();
+              var field2 = removeAccents(item.detail ?? '' + item.subdetail ?? '').toLowerCase();
+              con_search = field1.includes(search) || field2.includes(search)
+            }
+            if (this.state[year]) {
               if (this.state[year] == 1) {
-                return item.type == 'lu' || item.type == 'Resoluciones' || item.type == 'Licencias urbanisticas'
+                con_mes = item.type == 'lu' || item.type == 'Resoluciones' || item.type == 'Licencias urbanisticas'
               } else if (this.state[year] == 2) {
-                return item.type == 'oa' || item.type == 'Otras actuaciones'
+                con_mes =  item.type == 'oa' || item.type == 'Otras actuaciones'
               } else if (this.state[year] == 3) {
-                return item.type == 'mpr'
-              } else {
-                return true
-              }
-            })
-            .filter(item => {
-              if (this.state[year + '_mes']) {
-                return moment(item.date, 'YYYY-MM-DD').format('M') == this.state[year + '_mes']
-              } else {
-                return true
-              }
-            })
+                con_mes = item.type == 'mpr'
+              } 
+            }
+            if (this.state[year + '_mes']){
+              con_type = moment(item.date, 'YYYY-MM-DD').format('M') == this.state[year + '_mes']
+            }
+            return con_search && con_mes && con_type;
+          })
         )
       }
       var COMPONENT = <DataTable

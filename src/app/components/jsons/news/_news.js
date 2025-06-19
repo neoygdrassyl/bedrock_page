@@ -63,7 +63,7 @@ const info5 = <p>El horario general de atención al público del despacho del cu
 </p>
 
 
-const info7 = <>
+const info8 = <>
     <h3>La Superintendencia de Notariado y Registro</h3>
     <p>
         <strong>informa</strong> a todos los ciudadanos que es la entidad encargada de atender las <strong>peticiones, quejas y reclamos</strong> relacionados con la función pública ejercida por los Curadores Urbanos en el territorio nacional.
@@ -77,7 +77,7 @@ const info7 = <>
     <p>
         ¡Su participación es fundamental para mejorar el servicio y garantizar la transparencia!
     </p>
-     <p className='text-center'><a href={ANEXO_NEWS_7} target='_blank'>ANEXO</a></p>
+    <p className='text-center'><a href={ANEXO_NEWS_7} target='_blank'>ANEXO</a></p>
 </>
 
 const info4 = <p>La Curaduria Urbana N°1 de Bucaramanga ofrece a
@@ -132,9 +132,12 @@ const info1 =
         de Lunes a Viernes de 07:00 am a 12:30 pm y 1:00 pm a 5:00 pm. (<Link to={'/news/?newsId=news5  '
         }>Revisar horarios actuales </Link>)</p>
 
+
+const info7 = <p>Se informa por medio de la Resolución 074 del 11 de marzo de 2024, la cual modifica temporalmente el horario de trabajo y de atención al público del despacho del Curador Urbano uno de Bucaramanga en jornada continua de 7:00 am a 3:00 pm los dias Dia Martes 26 y Miércoles 27 de Marzo</p>
+
 export const _news = [
     {
-        id: 'news7',
+        id: 'news8',
         title: 'Reclamos ante la Superintendencia 2025',
         category: 'Aviso',
         date: '18/06/2025',
@@ -142,22 +145,45 @@ export const _news = [
             Aviso Importante para quejas, reclamos y solicitudes ante la Superintendencia.
         </p>,
         image: NEWS_7_ING,
-        url: '/news/?newsId=news7',
+        url: '/news/?newsId=news8',
         imageTranscript: 'Reparto de proyectos 2024',
 
         noticia:
             // eslint-disable-next-line react/jsx-pascal-case
             <News_Structure
-                id={'news7'}
+                id={'news8'}
                 title={'Aviso Importante Superintendencia'}
                 category={'Aviso'}
                 date={'18/06/2025'}
                 image={NEWS_7_ING}
                 info={info7}
-                key={'news7'}
+                key={'news8'}
                 imageTranscript={'Aviso Importante Superintendencia'}
             />
 
+    },
+    {
+        id: 'news7',
+        title: 'Modificación horario general',
+        category: 'Aviso',
+        date: '21/03/2024',
+        summary: "HORARIO SEMANA SANTA 2024",
+        link: 'Ver mas',
+        image: AVISO_HORARIO,
+        url: '/news/?newsId=news7',
+        imageTranscript: 'Importante, Horario General',
+        noticia:
+            // eslint-disable-next-line react/jsx-pascal-case
+            <News_Structure
+                id={'news7'}
+                title={'Modificación horario general'}
+                category={'Aviso'}
+                date={'21/03/2024'}
+                image={AVISO_HORARIO}
+                info={info7}
+                key={'news7'}
+                imageTranscript={"Importante, Horario General"}
+            />
     },
     {
         id: 'news6',

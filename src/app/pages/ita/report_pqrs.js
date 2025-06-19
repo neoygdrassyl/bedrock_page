@@ -40,6 +40,13 @@ export const ReportsPQRS = (props) => {
                         <List.Item><a className='text-dark' href={`${baseURL}AÑO 2023.pdf`} target="_blank"><i class="fas fa-caret-right"></i> AÑO 2023</a></List.Item>
                         <List.Item><a className='text-dark' href={`${baseURL}1 Trimestre 2023.pdf`} target="_blank"><i class="fas fa-caret-right"></i> 1 Trimestre 2023</a></List.Item>
                         <List.Item><a className='text-dark' href={`${baseURL}2 Trimestre 2023.pdf`} target="_blank"><i class="fas fa-caret-right"></i> 2 Trimestre 2023</a></List.Item>
+                        <List.Item><a className='text-dark' href={`${baseURL}3 TRIMESTRE 2023.pdf`} target="_blank"><i class="fas fa-caret-right"></i> 3 Trimestre 2023</a></List.Item>
+                        <List.Item><a className='text-dark' href={`${baseURL}4 TRIMESTRE 2023.pdf`} target="_blank"><i class="fas fa-caret-right"></i> 4 Trimestre 2023</a></List.Item>
+
+                        <List.Item><i class="fas fa-caret-right"></i> AÑO 2024</List.Item>
+                        <List.Item><a className='text-dark' href={`${baseURL}1 TRIMESTRE 2024.pdf`} target="_blank"><i class="fas fa-caret-right"></i> 1 Trimestre 2024</a></List.Item>
+                        <List.Item><a className='text-dark' href={`${baseURL}2 TRIMESTRE 2024.pdf`} target="_blank"><i class="fas fa-caret-right"></i> 2 Trimestre 2024</a></List.Item>
+                        
                     </List>
                 </div>
             </div>
