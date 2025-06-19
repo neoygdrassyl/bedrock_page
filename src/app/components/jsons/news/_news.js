@@ -1,12 +1,13 @@
 import NEW_3_ING from '../../../img/news_certificate.jpg'
 import NEW_2_ING from '../../../img/news_inclusivity.jpg'
+import NEWS_7_ING from '../../../img/news/news7.PNG'
 import NEW_ING from '../../../img/news1.jpg'
 import NEW_AVIS from '../../../img/aviso.jpg'
 import AVISO_HORARIO from '../../../img/news/Aviso_Horario.png'
 import AVISO_REPARTO from '../../../img/news/Aviso_Reparto.jpg'
 import AVISO_IMPORTANTE from '../../../img/news/Aviso_Importante.png'
 
-
+import ANEXO_NEWS_7 from '../../../img/news/Anexo Resolucion Aviso Funciones IVC (1).pdf'
 
 import { Link } from 'react-router-dom'
 import { Button_navigation } from '../../button.component'
@@ -62,7 +63,22 @@ const info5 = <p>El horario general de atención al público del despacho del cu
 </p>
 
 
-
+const info7 = <>
+    <h3>La Superintendencia de Notariado y Registro</h3>
+    <p>
+        <strong>informa</strong> a todos los ciudadanos que es la entidad encargada de atender las <strong>peticiones, quejas y reclamos</strong> relacionados con la función pública ejercida por los Curadores Urbanos en el territorio nacional.
+    </p>
+    <p>
+        <strong>Asimismo,</strong> esta entidad es la responsable de la aplicación del régimen disciplinario a dichos particulares, garantizando el cumplimiento de la normativa y la adecuada prestación del servicio.
+    </p>
+    <p>
+        Para presentar sus solicitudes o denuncias, puede comunicarse a través de los canales oficiales de la Superintendencia de Notariado y Registro, esto es, al correo <strong>correspondencia@supernotariado.gov.co</strong>
+    </p>
+    <p>
+        ¡Su participación es fundamental para mejorar el servicio y garantizar la transparencia!
+    </p>
+     <p className='text-center'><a href={ANEXO_NEWS_7} target='_blank'>ANEXO</a></p>
+</>
 
 const info4 = <p>La Curaduria Urbana N°1 de Bucaramanga ofrece a
     los profesionales que figuran en las actuaciones urbanísticas,
@@ -117,6 +133,32 @@ const info1 =
         }>Revisar horarios actuales </Link>)</p>
 
 export const _news = [
+    {
+        id: 'news7',
+        title: 'Reclamos ante la Superintendencia 2025',
+        category: 'Aviso',
+        date: '18/06/2025',
+        summary: <p>
+            Aviso Importante para quejas, reclamos y solicitudes ante la Superintendencia.
+        </p>,
+        image: NEWS_7_ING,
+        url: '/news/?newsId=news7',
+        imageTranscript: 'Reparto de proyectos 2024',
+
+        noticia:
+            // eslint-disable-next-line react/jsx-pascal-case
+            <News_Structure
+                id={'news7'}
+                title={'Aviso Importante Superintendencia'}
+                category={'Aviso'}
+                date={'18/06/2025'}
+                image={NEWS_7_ING}
+                info={info7}
+                key={'news7'}
+                imageTranscript={'Aviso Importante Superintendencia'}
+            />
+
+    },
     {
         id: 'news6',
         title: 'Reparto de proyectos 2024',
@@ -200,7 +242,7 @@ export const _news = [
         summary: <p>El Decreto 1783 De 2021 que modificó el Decreto 1077 de 2015
         </p>,
         link: 'Ver mas',
-        image: AVISO_IMPORTANTE ,
+        image: AVISO_IMPORTANTE,
         url: '/news/?newsId=news3',
         imageTranscript: '¡Aviso Importante!',
         noticia:
