@@ -49,7 +49,7 @@ export const TRANSLATIONS_ES = {
       str_item_2: "(607) 680 3596",
       str_item_3: "(+57) 316 279 5010",
       str_item_4: "curaduriaurbana1@gmail.com",
-      str_item_5: "Lunes a Viernes: 07:00 a.m - 12:30 p.m y 1:00 p.m - 4:00 p.m",
+      str_item_5: "Lunes a Viernes: 07:30 a.m - 12:30 p.m y 1:30 p.m - 4:30 p.m",
       str_p_1: "La Curaduría Urbana No.1 de Bucaramanga cuenta con el servicio de interpretación de lengua de señas Colombiana.",
       str_p_2: "¿Necesitas ayuda? Comunícate con nosotros por WhatsApp",
       str_btn: "Chat en línea",

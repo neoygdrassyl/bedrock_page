@@ -37,6 +37,21 @@ class Liquidator extends Component {
     }
 
 
+    const values_impuestos = [
+      { uso: "Residencial Estrato 1", est: "1", value: "558", cpsm: "10%" },
+      { uso: "Residencial Estrato 2", est: "2", value: "831", cpsm: "10%" },
+      { uso: "Residencial Estrato 3", est: "3", value: "1098", cpsm: "10%" },
+      { uso: "Residencial Estrato 4", est: "4", value: "1659", cpsm: "10%" },
+      { uso: "Residencial Estrato 5", est: "5", value: "2406", cpsm: "10%" },
+      { uso: "Residencial Estrato 6", est: "6", value: "3598", cpsm: "10%" },
+      { uso: "Industrial", est: "", value: "1098", cpsm: "10%" },
+      { uso: "Comercio", est: "", value: "1934", cpsm: "10%" },
+      { uso: "Institucional", est: "", value: "1934", cpsm: "10%" },
+      { uso: "Area suburbana", est: "", value: "1098", cpsm: "10%" },
+      { uso: "Area rural", est: "", value: "558", cpsm: "10%" },
+      { uso: "Zona Centro", est: "", value: "107", cpsm: "5%" },
+      { uso: "Zona Norte", est: "", value: "221", cpsm: "5%" },
+    ]
     /* WORKING VARIABLES FOR THE LIQUIDATOR
     EXPENSES CALCULATION
     e = (cf * i x m) + (cv * i * j * m)
@@ -66,8 +81,8 @@ class Liquidator extends Component {
       {
         title: 'Licencia de subdivisión 2.2.6.6.8.10', list: [
           { name: 'Urbana y Rural, Sin rango. m2', const: { '2021': [1], '2022': [25.02], '2023': [25.02], '2024': [25.02], '2025': [25.02], } },
-          { name: 'Reloteo, Área útil urbanizable (0 a 1000m2)', const: { '2021': [2 / 30, 'SMLD', 2], '2022': [1.67], '2023': [1.67], '2024': [1.67], '2025': [1.67],  } },
-          { name: 'Reloteo, Área útil urbanizable (1001 a 5000m2)', const: { '2021': [0.5], '2022': [12.51], '2023': [12.51], '2024': [12.51],  '2025': [12.51],} },
+          { name: 'Reloteo, Área útil urbanizable (0 a 1000m2)', const: { '2021': [2 / 30, 'SMLD', 2], '2022': [1.67], '2023': [1.67], '2024': [1.67], '2025': [1.67], } },
+          { name: 'Reloteo, Área útil urbanizable (1001 a 5000m2)', const: { '2021': [0.5], '2022': [12.51], '2023': [12.51], '2024': [12.51], '2025': [12.51], } },
           { name: 'Reloteo, Área útil urbanizable (5001 a 10000m2)', const: { '2021': [1], '2022': [25.02], '2023': [25.02], '2024': [25.02], '2025': [25.02], } },
           { name: 'Urbana y Rural, Sin rango. m2', const: { '2021': [1.5], '2022': [37.53], '2023': [37.53], '2024': [37.53], '2025': [37.53], } },
           { name: 'Urbana y Rural, Sin rango. m2', const: { '2021': [2], '2022': [50.05], '2023': [50.05], '2024': [50.05], '2025': [50.05], } },
@@ -77,7 +92,7 @@ class Liquidator extends Component {
         title: 'Prorroga o revalidación de licencia', list: [
           { name: 'Cada Una', const: { '2021': [1], '2022': [25.02], '2023': [25.02], '2024': [25.02], '2025': [25.02], } },
           { name: 'Cada Una (VIS)', const: { '2021': false, '2022': [1.67], '2023': [1.67], '2024': [1.67], '2025': [1.67], } },
-          { name: 'Segunda Prorroga o Segunda revalidación', const: { '2021': false, '2022': [50.05], '2023': [50.05], '2024': [50.05],  '2025': [50.05], } },
+          { name: 'Segunda Prorroga o Segunda revalidación', const: { '2021': false, '2022': [50.05], '2023': [50.05], '2024': [50.05], '2025': [50.05], } },
         ]
       },
       { title: model2TableStr1 },
@@ -110,10 +125,10 @@ class Liquidator extends Component {
         title: 'Movimiento de tierras y construcción de piscinas', list: [
           { name: 'Hasta 100 m3', const: { '2021': [2 * 1 / 30, 'SMLD', 2], '2022': [1.67], '2023': [1.67], '2024': [1.67], '2025': [1.67], } },
           { name: 'De 101 a 500 m3', const: { '2021': [4 * 1 / 30, 'SMLD', 4], '2022': [3.34], '2023': [3.34], '2024': [3.34], '2025': [3.34] } },
-          { name: 'De 501 a 1000 m3', const: { '2021': [1], '2022': [25.02], '2023': [25.02], '2024': [25.02], '2025': [25.02],} },
-          { name: 'De 1001 a 5000 m3', const: { '2021': [2], '2022': [50.05], '2023': [50.05], '2024': [50.05], '2025': [50.05],} },
+          { name: 'De 501 a 1000 m3', const: { '2021': [1], '2022': [25.02], '2023': [25.02], '2024': [25.02], '2025': [25.02], } },
+          { name: 'De 1001 a 5000 m3', const: { '2021': [2], '2022': [50.05], '2023': [50.05], '2024': [50.05], '2025': [50.05], } },
           { name: 'De 5001 a 10000 m3', const: { '2021': [3], '2022': [75.07], '2023': [75.07], '2024': [75.07], '2025': [75.07], } },
-          { name: 'De 10001 a 20000 m3', const: { '2021': [4], '2022': [100.09], '2023': [100.09], '2024': [100.09], '2025': [100.09],  } },
+          { name: 'De 10001 a 20000 m3', const: { '2021': [4], '2022': [100.09], '2023': [100.09], '2024': [100.09], '2025': [100.09], } },
           { name: 'Mas de 20000 m3', const: { '2021': [5], '2022': [125.11], '2023': [125.11], '2024': [125.11], '2025': [125.11], } },
         ]
       },
@@ -129,7 +144,7 @@ class Liquidator extends Component {
       },
       {
         title: 'Concepto Uso del suelo', list: [
-          { name: 'Cada Uno', const: { '2021': [2 * 1 / 30, 'SMLD', 2], '2022': [1.67], '2023': [1.67], '2024': [1.67],  '2025': [1.67], } },
+          { name: 'Cada Uno', const: { '2021': [2 * 1 / 30, 'SMLD', 2], '2022': [1.67], '2023': [1.67], '2024': [1.67], '2025': [1.67], } },
         ]
       },
     ]
@@ -792,81 +807,39 @@ class Liquidator extends Component {
 
               </tbody>
             </table>
-            <h3 className='text-center'>Tabla de impuestos 2024</h3>
+            <h3 className='text-center'>Tabla de impuestos 2025</h3>
             <table className="table table-bordered table-sm table-hover text-center">
               <thead>
                 <tr className='table-warning'>
                   <th>USO</th>
                   <th>ESTRATO</th>
                   <th>VALOR X M2</th>
+                  <th>CPSM</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Residencial</td>
-                  <td>1</td>
-                  <td>$530</td>
+                {values_impuestos.map(v =>
+                  <tr>
+                    <td>{v.uso}</td>
+                    <td>{v.est}</td>
+                    <td>$ {v.value}</td>
+                    <td>{v.cpsm}</td>
+                  </tr>
+                )}
+
+
+              </tbody>
+            </table>
+
+            <table className="table table-bordered table-sm table-hover text-center">
+              <thead>
+                <tr className='table-warning'>
+                  <th>USO</th>
+                  <th>VALOR X M2</th>
+                  <th></th>
                 </tr>
-                <tr>
-                  <td>Residencial</td>
-                  <td>2</td>
-                  <td>$790</td>
-                </tr>
-                <tr>
-                  <td>Residencial</td>
-                  <td>3</td>
-                  <td>$1044</td>
-                </tr>
-                <tr>
-                  <td>Residencial</td>
-                  <td>4</td>
-                  <td>$1577</td>
-                </tr>
-                <tr>
-                  <td>Residencial</td>
-                  <td>5</td>
-                  <td>$2287</td>
-                </tr>
-                <tr>
-                  <td>Residencial</td>
-                  <td>6</td>
-                  <td>$3420</td>
-                </tr>
-                <tr>
-                  <td>Industrial</td>
-                  <td>7</td>
-                  <td>$1044</td>
-                </tr>
-                <tr>
-                  <td>Comercio y servicios</td>
-                  <td>8</td>
-                  <td>$1838</td>
-                </tr>
-                <tr>
-                  <td>Institucional</td>
-                  <td>9</td>
-                  <td>$1838</td>
-                </tr>
-                <tr>
-                  <td>Area sub-urbana </td>
-                  <td>10</td>
-                  <td>$1044</td>
-                </tr>
-                <tr>
-                  <td>Area Rural</td>
-                  <td>11</td>
-                  <td>$530</td>
-                </tr>
-                <tr>
-                  <td>Zona centro</td>
-                  <td></td>
-                  <td>$102</td>
-                </tr>
-                <tr>
-                  <td>Zona norte</td>
-                  <td></td>
-                  <td>$210</td>
-                </tr>
+              </thead>
+              <tbody>
                 <tr>
                   <td colSpan={3}></td>
                 </tr>
@@ -929,7 +902,7 @@ class Liquidator extends Component {
                   <td colSpan={3} className='text-center fw-bold'>IMPUESTO ESTAMPILLA PRO -UIS</td>
                 </tr>
                 <tr>
-                  <td className='fw-bold'>Estampilla Pro-Uis</td>
+                  <td className='fw-bold'>Estampilla PRO-UIS</td>
                   <td></td>
                   <td className='fw-bold'>Valor</td>
                 </tr>
@@ -941,12 +914,12 @@ class Liquidator extends Component {
                 <tr>
                   <td>Estrato 3 y 4</td>
                   <td>Por M²</td>
-                  <td>$ 1.300</td>
+                  <td>$ 1.423,5</td>
                 </tr>
                 <tr>
                   <td>Estrato 5 y 6</td>
                   <td>Por M²</td>
-                  <td>$ 2.600</td>
+                  <td>$ 2.847</td>
                 </tr>
                 <tr>
                   <td colSpan={3}>Estrato 3 y 4 el 1/1000 del SMLM, Estrato 5 y 6 el 2/1000</td>
@@ -973,6 +946,8 @@ class Liquidator extends Component {
                 </tr>
               </tbody>
             </table>
+
+
             {hideInfo ? '' :
               <MDBTypography note style={{ backgroundColor: '#EDEDED' }}>
                 <h3 className="text-justify text-dark">Nota: Decreto 1077 de 2015</h3>

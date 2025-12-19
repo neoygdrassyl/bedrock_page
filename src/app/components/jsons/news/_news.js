@@ -1,6 +1,7 @@
 import NEW_3_ING from '../../../img/news_certificate.jpg'
 import NEW_2_ING from '../../../img/news_inclusivity.jpg'
 import NEWS_7_ING from '../../../img/news/news7.PNG'
+import NEWS_9_ING from '../../../img/news/news9.PNG'
 import NEW_ING from '../../../img/news1.jpg'
 import NEW_AVIS from '../../../img/aviso.jpg'
 import AVISO_HORARIO from '../../../img/news/Aviso_Horario.png'
@@ -16,7 +17,8 @@ import { News_Structure } from './newsBody'
 const icon_folder = <i class="fas fa-folder " style={{ color: '#107ABC' }}></i>;
 const icon_date = <i class="fas fa-clock " style={{ color: '#107ABC' }}></i>;
 
-
+const info9 = <p>Se informa que los dias 24 y 31 de Diciembre de 2025, El horario de atención de la Curaduria Urbana Uno será de jornada continua, de 7:00 AM a 3:00 PM
+</p>
 
 const info6 = <p>Durante el año 2024, la curaduría urbana 1 de Bucaramanga está
     encargada de hacer el reparto de los proyectos
@@ -137,6 +139,32 @@ const info7 = <p>Se informa por medio de la Resolución 074 del 11 de marzo de 2
 
 export const _news = [
     {
+        id: 'news9',
+        title: 'Información de Interés',
+        category: 'Aviso',
+        date: '18/12/2025',
+        summary: <p>
+            Aviso importante para el horario de los días 24 y 31 de Diciembre de 2025.
+        </p>,
+        image: NEWS_9_ING,
+        url: '/news/?newsId=news9',
+        imageTranscript: 'Horario atención 24 y 31 Diciembre 2025',
+
+        noticia:
+            // eslint-disable-next-line react/jsx-pascal-case
+            <News_Structure
+                id={'news9'}
+                title={'Información de Interés'}
+                category={'Aviso'}
+                date={'18/12/2025'}
+                image={NEWS_9_ING}
+                info={info9}
+                key={'news9'}
+                imageTranscript={'Horario atención 24 y 31 Diciembre 2025'}
+            />
+
+    },
+    {
         id: 'news8',
         title: 'Reclamos ante la Superintendencia 2025',
         category: 'Aviso',
@@ -185,6 +213,7 @@ export const _news = [
                 imageTranscript={"Importante, Horario General"}
             />
     },
+    /*
     {
         id: 'news6',
         title: 'Reparto de proyectos 2024',
@@ -212,6 +241,7 @@ export const _news = [
             />
 
     },
+    */
     {
         id: 'news5',
         title: 'Modificación horario general',

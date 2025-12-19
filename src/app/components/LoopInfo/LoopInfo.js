@@ -1,4 +1,6 @@
 import './LoopInfoStyle.css'
+import { infoCud } from '../../components/jsons/vars';
+
 export function LoopInfo() {
     return (
         <div class="info-list">
@@ -13,7 +15,7 @@ export function LoopInfo() {
                     Este año la Curaduria Urbana N°1 de Bucaramanga esta encargada del reparto de proyectos
                 </div>
                 <div class="tag">
-                    El horario de atención de la curaduria es de 07:00 a.m - 12:30 p.m y 1:00 p.m - 4:00 p.m 
+                    El horario de atención de la curaduria es de {infoCud.schedule}
                 </div>
 
             </div>

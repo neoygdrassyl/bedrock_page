@@ -46,7 +46,10 @@ export const ReportsPQRS = (props) => {
                         <List.Item><i class="fas fa-caret-right"></i> AÑO 2024</List.Item>
                         <List.Item><a className='text-dark' href={`${baseURL}1 TRIMESTRE 2024.pdf`} target="_blank"><i class="fas fa-caret-right"></i> 1 Trimestre 2024</a></List.Item>
                         <List.Item><a className='text-dark' href={`${baseURL}2 TRIMESTRE 2024.pdf`} target="_blank"><i class="fas fa-caret-right"></i> 2 Trimestre 2024</a></List.Item>
+                        <List.Item><a className='text-dark' href={`${baseURL}REPORTE PQRS 3 y 4 TRIMESTES 2024.pdf`} target="_blank"><i class="fas fa-caret-right"></i> 3 y 4 Trimestre 2024</a></List.Item>
                         
+                        <List.Item><i class="fas fa-caret-right"></i> AÑO 2025</List.Item>
+                        <List.Item><a className='text-dark' href={`${baseURL}REPORTE PQRS 1 Y 2 TRIMESTRE 2025.pdf`} target="_blank"><i class="fas fa-caret-right"></i> 1 y 2 Trimestre 2025</a></List.Item>
                     </List>
                 </div>
             </div>

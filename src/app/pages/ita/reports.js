@@ -13,6 +13,28 @@ export const Reports = (props) => {
     const reports = [
         // ADD NEW ONES HERE {year: 20xx, reports: {}},
         {
+            year: 2024, reports: {
+                camacol: '/2024/REPORTE GENERAL 2024.xlsx',
+                dane: '/2024/DANE 2024.xlsx',
+                planeacion: '/2024/Informe General Sec. Planeación Año 2024.xlsx',
+                minvivienda: '/2024/MINISTERIO GENERAL 2024.xlsx',
+            },
+        },
+        {
+            year: 2023, reports: {
+                camacol: '/2023/Reporte General CAMACOL 2023.xlsx',
+                dane: '/2023/INFORME GENERAL DANE 2023.xlsx',
+                planeacion: '/2023/INFORME GENERAL PLANEACIÓN 2023.ods',
+                minvivienda: [
+                    '/2023/Plantilla Carga Masiva20231206.xlsm',
+                    '/2023/Plantilla Carga Masiva Q2-2023.xlsm',
+                    '/2023/Plantilla Carga Masiva Q3.xlsm',
+                    false,
+                ],
+
+            },
+        },
+        {
             year: 2022, reports: {
                 camacol: [
                     '/2022/CAMACOL/Reporte ENERO 2022.xlsx',
@@ -52,20 +74,7 @@ export const Reports = (props) => {
                 planeacion: '/2022/SEC PLANEACION 2022.xlsx',
             },
         },
-        {
-            year: 2023, reports: {
-                camacol: '/2023/Reporte General CAMACOL 2023.xlsx',
-                dane: '/2023/INFORME GENERAL DANE 2023.xlsx',
-                planeacion: '/2023/INFORME GENERAL PLANEACIÓN 2023.ods',
-                minvivienda: [
-                    '/2023/Plantilla Carga Masiva20231206.xlsm',
-                    '/2023/Plantilla Carga Masiva Q2-2023.xlsm',
-                    '/2023/Plantilla Carga Masiva Q3.xlsm',
-                    false,
-                ],
 
-            },
-        },
     ]
     return <>
         <div className='container'>

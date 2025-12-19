@@ -22,7 +22,7 @@ class Title extends Component {
                 <div className='row mx-0' style={{ backgroundColor: '#3366CC' }}>
                     <div className='col-9 mx-0 px-0 py-2'>
                         <div className='ps-4'>
-                            <a chref="https://www.gov.co" target="_blank" rel="nofollow" >
+                            <a href="https://www.gov.co" target="_blank" rel="nofollow" >
                                 <img src={infoCud.icon2} alt="Imagen logo GovCo" style={{ height: '20px' }} class="img-responsive" />
                             </a>
                         </div>
@@ -32,9 +32,9 @@ class Title extends Component {
 
                 <div class="row justify-content-md-center d-flex align-items-center mb-3">
                     <div class="col-lg-1  d-flex justify-content-center">
-                        <a href='/home'>
+                        <Link to={"/home"}>
                             <img src={infoCud.icon} height="66px" />
-                        </a>
+                        </Link>
                     </div>
                     <div class="col-lg-3 col-md-2 mb-4 mt-3 mb-md-0 text-nowrap">
                         <h3 class="text-uppercase text-center pb-0" >{infoCud.titles} {infoCud.dir}</h3>

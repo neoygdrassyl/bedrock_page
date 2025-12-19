@@ -24,7 +24,7 @@ const info = {
         email1: 'curaduriaurbana1@gmail.com',
         email2: '',
         nit: '91239522-1',
-        schedule: 'Lunes a Viernes: 07:00 a.m - 12:30 p.m y 1:00 p.m - 4:00 p.m',
+        schedule: 'Lunes a Viernes: 07:30 a.m - 12:30 p.m y 1:30 p.m - 4:30 p.m',
         icon: Logo1,
         icon2: Logo3,
         imagen1: IMG1,

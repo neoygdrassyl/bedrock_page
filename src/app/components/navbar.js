@@ -49,34 +49,54 @@ class Navbar1 extends Component {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold ">
                 <li class="nav-item d-flex px-2 align-items-center border-box hover:">
-                  <a class="nav-link" href="/home"><span className='fw-bold'><i class="fas fa-home px-1"></i> Inicio</span></a>
+                  <Link class="nav-link" to={"/home"}>
+                    <span className='fw-bold'><i class="fas fa-home px-1"></i> Inicio</span>
+                  </Link>
                 </li>
                 <li class="nav-item d-flex px-2 align-items-center border-box">
-                  <a class="nav-link" href="/transparency">
-                    <span className='fw-bold d-flex align-items-center'>Transparencia y acceso a <br />la información pública</span></a>
+                  <Link class="nav-link" to={"/transparency"}>
+                    <span className='fw-bold d-flex align-items-center'>Transparencia y acceso a <br />la información pública</span>
+                  </Link>
                 </li>
                 <li class="nav-item d-flex px-2 align-items-center border-box">
-                  <a class="nav-link" href="/pqrs">
-                    <span className='fw-bold'>Atención y Servicio <br />a la ciudadanía</span></a>
+                  <Link class="nav-link" to={"/pqrs"}>
+                    <span className='fw-bold'>Atención y Servicio <br />a la ciudadanía</span>
+                  </Link>
                 </li>
-
                 <li class="nav-item d-flex px-2 align-items-center border-box">
-                  <a class="nav-link" href="/participate">
-                    <span className='fw-bold'>Participa</span></a>
+                  <Link class="nav-link" to={"/participate"}>
+                    <span className='fw-bold'>Participa</span>
+                  </Link>
                 </li>
                 <li class="nav-item dropdown d-flex px-2 align-items-center border-box">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <span><i class="fas fa-bookmark"></i> Curaduria</span>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/mision">Misión y visión</a></li>
-                    <li><a class="dropdown-item" href="/curator">La curaduria</a></li>
-                    <li><a class="dropdown-item" href="whatwedo">Lo que hacemos</a></li>
-                    <li><a class="dropdown-item" href="/organization">Organigrama</a></li>
-                    <li><a class="dropdown-item" href="normogram">Normatividad</a></li>
-                    <li><a class="dropdown-item" href="/kids">Curaduria para niños</a></li>
-                    <li><a class="dropdown-item" href="/inclusivity">Curaduria inclusiva</a></li>
-                    <li><a class="dropdown-item" href="/opendata">Datos Abiertos</a></li>
+                    <li>
+                      <Link class="dropdown-item" to={"/mision"}>Misión y visión</Link>
+                    </li>
+                    <li>
+                      <Link class="dropdown-item" to={"/curator"}>La curaduria</Link>
+                    </li>
+                    <li>
+                      <Link class="dropdown-item" to={"/whatwedo"}>Lo que hacemos</Link>
+                    </li>
+                    <li>
+                      <Link class="dropdown-item" to={"/organization"}>Organigrama</Link>
+                    </li>
+                    <li>
+                      <Link class="dropdown-item" to={"/normogram"}>Normatividad</Link>
+                    </li>
+                    <li>
+                      <Link class="dropdown-item" to={"/kids"}>Curaduria para niños</Link>
+                    </li>
+                    <li>
+                      <Link class="dropdown-item" to={"/inclusivity"}>Curaduria inclusiva</Link>
+                    </li>
+                    <li>
+                      <Link class="dropdown-item" to={"/opendata"}>Datos Abiertos</Link>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown d-flex px-2 align-items-center border-box">
@@ -85,9 +105,15 @@ class Navbar1 extends Component {
                     <span><i class="fas fa-envelope-open-text"></i> Publicidad actos</span>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/administrative">Publicaciones</a></li>
-                    <li><a class="dropdown-item" href="old">Repositorio</a></li>
-                    <li><a class="dropdown-item" href="/news">Noticias y avisos importantes</a></li>
+                    <li>
+                      <Link class="dropdown-item" to={"/administrative"}>Publicaciones</Link>
+                    </li>
+                    <li>
+                      <Link class="dropdown-item" to={"/old"}>Repositorio</Link>
+                    </li>
+                    <li>
+                      <Link class="dropdown-item" to={"/news"}>Noticias y avisos importantes</Link>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown d-flex px-2 align-items-center border-box">
@@ -95,18 +121,42 @@ class Navbar1 extends Component {
                     <span><i class="fas fa-clipboard"></i> Recursos y herramientas</span>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/file">Instrumentos de apoyo</a></li>
-                    <li><a class="dropdown-item" href="faq">Preguntas frecuentes</a></li>
-                    <li><a class="dropdown-item" href="/school">Escuela del curador</a></li>
-                    <li><a class="dropdown-item" href="/data">Normatividad especial</a></li>
-                    <li><a class="dropdown-item" href="/reports">Informes a organismos de inspección, vigilancia y control</a></li>
-                    <li><a class="dropdown-item" href="/liquidator">Calculadora liquidacion Expensa</a></li>
-                    <li><a class="dropdown-item" href="/pqrs">Radicacion de pqrs</a></li>
-                    <li><a class="dropdown-item" href="/scheduling">Agendamiento de citas</a></li>
-                    <li><a class="dropdown-item" href="/mailbox">Contáctenos</a></li>
-                    <li><a class="dropdown-item" href="/status">Consulta estado de proceso</a></li>
-                    <li><a class="dropdown-item" href="/entities">Diccionario de entidades</a></li>
-                    <li><a class="dropdown-item" href="/certificacion">Certificación profesionales</a></li>
+                     <li>
+                      <Link class="dropdown-item" to={"/file"}>Instrumentos de apoyo</Link>
+                    </li>
+                     <li>
+                      <Link class="dropdown-item" to={"/faq"}>Preguntas frecuentes</Link>
+                    </li>
+                     <li>
+                      <Link class="dropdown-item" to={"/school"}>Escuela del curador</Link>
+                    </li>
+                     <li>
+                      <Link class="dropdown-item" to={"/data"}>Normatividad especial</Link>
+                    </li>
+                     <li>
+                      <Link class="dropdown-item" to={"/reports"}>Informes a organismos de inspección, vigilancia y control</Link>
+                    </li>
+                     <li>
+                      <Link class="dropdown-item" to={"/liquidator"}>Calculadora liquidacion Expensa</Link>
+                    </li>
+                     <li>
+                      <Link class="dropdown-item" to={"/pqrs"}>Radicacion de pqrs</Link>
+                    </li>
+                     <li>
+                      <Link class="dropdown-item" to={"/scheduling"}>Agendamiento de citas</Link>
+                    </li>
+                     <li>
+                      <Link class="dropdown-item" to={"/mailbox"}>Contáctenos</Link>
+                    </li>
+                     <li>
+                      <Link class="dropdown-item" to={"/status"}>Consulta estado de proceso</Link>
+                    </li>
+                     <li>
+                      <Link class="dropdown-item" to={"/entities"}>Diccionario de entidades</Link>
+                    </li>
+                     <li>
+                      <Link class="dropdown-item" to={"/certificacion"}>Certificación profesionales</Link>
+                    </li>
                   </ul>
                 </li>
 

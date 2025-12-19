@@ -84,12 +84,12 @@ class Mailbox extends Component {
                         <div>
 
                           <ul>
-                            <li><b>CONSULTA CON EL CURADOR URBANO: </b>lunes a viernes de 7 a.m. a 12:30 p.m.</li>
-                            <li><b>ATENCIÓN A VECINOS / TERCEROS INTERESADOS:</b> lunes a viernes de 7 a.m. a 12:30 p.m.</li>
-                            <li><b>ENTREGA DE PLANOS PARA COPIAS Y EJECUTORIAS:</b> martes y jueves de 7 a.m. a 12:30 p.m.</li>
+                            <li><b>CONSULTA CON EL CURADOR URBANO: </b>lunes a viernes de 7:30 a.m. a 12:30 p.m.</li>
+                            <li><b>ATENCIÓN A VECINOS / TERCEROS INTERESADOS:</b> lunes a viernes de 7:30 a.m. a 12:30 p.m.</li>
+                            <li><b>ENTREGA DE PLANOS PARA COPIAS Y EJECUTORIAS:</b> martes y jueves de 7:30 a.m. a 12:30 p.m.</li>
                             <li><b>ASISTENCIA TÉCNICA CON REVISOR ESTRUCTURAL / REVISORA JURÍDICA:</b> miércoles y viernes de 2:00 p.m. a 4:00 p.m.</li>
-                            <li><b>ASISTENCIA TÉCNICA CON ARQUITECTO REVISOR (PROYECTOS RADICADOS):</b> lunes, miércoles y viernes de 7:00 a.m. a 12:30 p.m.</li>
-                            <li><b>ASISTENCIA TÉCNICA CON ARQUITECTO REVISOR (PREVIO A RADICACIÓN):</b> martes y jueves de 7:00 a.m. a 12:30 p.m.</li>
+                            <li><b>ASISTENCIA TÉCNICA CON ARQUITECTO REVISOR (PROYECTOS RADICADOS):</b> lunes, miércoles y viernes de 7:30 a.m. a 12:30 p.m.</li>
+                            <li><b>ASISTENCIA TÉCNICA CON ARQUITECTO REVISOR (PREVIO A RADICACIÓN):</b> martes y jueves de 7:30 a.m. a 12:30 p.m.</li>
                           </ul>
 
                         </div>
