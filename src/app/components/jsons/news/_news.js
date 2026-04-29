@@ -2,6 +2,7 @@ import NEW_3_ING from '../../../img/news_certificate.jpg'
 import NEW_2_ING from '../../../img/news_inclusivity.jpg'
 import NEWS_7_ING from '../../../img/news/news7.PNG'
 import NEWS_9_ING from '../../../img/news/news9.PNG'
+import NEWS_11_ING from '../../../img/news/mews_11.jpeg'
 import NEW_ING from '../../../img/news1.jpg'
 import NEW_AVIS from '../../../img/aviso.jpg'
 import AVISO_HORARIO from '../../../img/news/Aviso_Horario.png'
@@ -16,6 +17,26 @@ import { News_Structure } from './newsBody'
 
 const icon_folder = <i class="fas fa-folder " style={{ color: '#107ABC' }}></i>;
 const icon_date = <i class="fas fa-clock " style={{ color: '#107ABC' }}></i>;
+
+
+const info11 = <p>Se informa el dia 1 de Abril de 2026, El horario de atención de la Curaduria Urbana Uno será de jornada continua, de 7:00 AM a 3:00 PM
+</p>
+
+
+const info10 = <p>Durante el año 2026, la curaduría urbana 1 de Bucaramanga está
+    encargada de hacer el reparto de los proyectos
+    institucionales de la ciudad de Bucaramanga.<p /><br />
+    <p>Decreto 1077 de 2015 del Ministerio de Vivienda, Ciudad y Territorio.
+    </p><br />
+    <b>Artículo 2.2.6.6.6.1: </b> Reparto de las solicitudes de licencia
+    o de actos de reconocimiento de proyectos de las entidades estatales
+    y de vivienda de interés social individual. Las solicitudes de licencias o
+    de actos de reconocimiento que presenten las entidades estatales o los particulares
+    para proyectos de vivienda de interés social individual, deberán someterse a reparto
+    entre los distintos curadores urbanos del municipio o distrito, en estricto orden de
+    radicación de la solicitud ante el curador urbano responsable del reparto en los
+    términos previstos en este artículo.
+</p>
 
 const info9 = <p>Se informa que los dias 24 y 31 de Diciembre de 2025, El horario de atención de la Curaduria Urbana Uno será de jornada continua, de 7:00 AM a 3:00 PM
 </p>
@@ -34,6 +55,7 @@ const info6 = <p>Durante el año 2024, la curaduría urbana 1 de Bucaramanga est
     radicación de la solicitud ante el curador urbano responsable del reparto en los
     términos previstos en este artículo.
 </p>
+
 
 const info5 = <p>El horario general de atención al público del despacho del curador urbano uno de Bucaramanga,
     será de <strong>07:00 am</strong> a doce y media de la tarde <strong>12:30pm</strong> y de una de la tarde <strong>1:00pm</strong> a cuatro de la tarde <strong>4:00pm</strong>.<p /><br />
@@ -138,6 +160,59 @@ const info1 =
 const info7 = <p>Se informa por medio de la Resolución 074 del 11 de marzo de 2024, la cual modifica temporalmente el horario de trabajo y de atención al público del despacho del Curador Urbano uno de Bucaramanga en jornada continua de 7:00 am a 3:00 pm los dias Dia Martes 26 y Miércoles 27 de Marzo</p>
 
 export const _news = [
+    {
+        id: 'news11',
+        title: 'Aviso Importante',
+        category: 'Aviso',
+        date: '31/03/2026',
+        summary: <p>
+            Aviso importante para el horario del dia 1 de Abril de 2026.
+        </p>,
+        image: NEWS_11_ING,
+        url: '/news/?newsId=news11',
+        imageTranscript: 'Aviso importante para el horario del dia 1 de Abril de 2026',
+
+        noticia:
+            // eslint-disable-next-line react/jsx-pascal-case
+            <News_Structure
+                id={'news11'}
+                title={'Aviso importante para el horario del dia 1 de Abril de 2026'}
+                category={'Aviso'}
+                date={'31/03/2026'}
+                image={NEWS_11_ING}
+                info={info11}
+                key={'news11'}
+                imageTranscript={'Aviso importante para el horario del dia 1 de Abril de 2026'}
+            />
+
+    },
+    {
+        id: 'news10',
+        title: 'Reparto de proyectos 2026',
+        category: 'Noticias',
+        date: '13/01/2026',
+        summary: <p>
+            Durante el año 2026 la Curaduría Urbana N°1 de Bucaramanga está
+            encargada de hacer el reparto
+        </p>,
+        image: AVISO_IMPORTANTE,
+        url: '/news/?newsId=news10',
+        imageTranscript: 'Reparto de proyectos 2026',
+
+        noticia:
+            // eslint-disable-next-line react/jsx-pascal-case
+            <News_Structure
+                id={'news10'}
+                title={'Reparto de proyectos 2026'}
+                category={'Noticias'}
+                date={'13/01/2026'}
+                image={AVISO_IMPORTANTE}
+                info={info10}
+                key={'news10'}
+                imageTranscript={"Reparto de proyectos 2026"}
+            />
+
+    },
     {
         id: 'news9',
         title: 'Información de Interés',

@@ -191,7 +191,7 @@ class Scheduling extends Component {
   setUser7 = () => {
     this.setState({
       operator: {
-        name: 'MAYRA CEPEDEDA',
+        name: 'MAYRA CEPEDA',
         role: "ARQUITECTA",
         id: '3',
         daysOn: [1, 2, 3, 4, 5],
@@ -554,58 +554,7 @@ class Scheduling extends Component {
                 </MDBCard>
               </MDBCol>
             </MDBRow>
-            <MDBRow className="mt-3">
-              <MDBCol>
-                <MDBCard className="border border-dark" style={{ backgroundColor: ' #f5f5f5 ' }}>
-                  <MDBCardBody>
-                    <tabla className="table table align-middle table-sm">
-                      <tbody>
-                        <tr>
-                          <td scope="row" rowSpan="2" className="text-center"><i class="fas fa-user-tie fa-5x" style={{ color: "MediumVioletRed" }}></i></td >
-                          <td><h4>Stefanny Gomez</h4></td>
-                        </tr>
-                        <tr>
-                          <td><h4>Abogada</h4></td>
-                        </tr>
-                        <tr>
-                          <td colSpan="3"><h4>Abogada revisora de proyectos</h4></td>
-                        </tr>
-                      </tbody>
-                    </tabla>
-                  </MDBCardBody>
-                  <MDBCardFooter className='text-end'>
-                    <MDBBtn style={{ backgroundColor: '#1B83C4' }} onClick={this.setUser10} >
-                      <h4 className="pt-2"><i class="far fa-calendar-check"></i> {translation.form_btn_1}</h4>
-                    </MDBBtn>
-                  </MDBCardFooter>
-                </MDBCard>
-              </MDBCol>
-              <MDBCol>
-                <MDBCard className="border border-dark" style={{ backgroundColor: ' #f5f5f5 ' }}>
-                  <MDBCardBody>
-                    <tabla className="table table align-middle table-sm">
-                      <tbody>
-                        <tr>
-                          <td scope="row" rowSpan="2" className="text-center"><i class="fas fa-user-tie fa-5x" style={{ color: "#58c1b8" }}></i></td >
-                          <td><h4>{'Ximena Florez'}</h4></td>
-                        </tr>
-                        <tr>
-                          <td><h4>Arquitecta</h4></td>
-                        </tr>
-                        <tr>
-                          <td colSpan="3"><h4>Arquitecta revisora de proyectos</h4></td>
-                        </tr>
-                      </tbody>
-                    </tabla>
-                  </MDBCardBody>
-                  <MDBCardFooter className='text-end'>
-                    <MDBBtn style={{ backgroundColor: '#1B83C4' }} onClick={this.setUser9} >
-                      <h4 className="pt-2"><i class="far fa-calendar-check"></i> {translation.form_btn_1}</h4>
-                    </MDBBtn>
-                  </MDBCardFooter>
-                </MDBCard>
-              </MDBCol>
-            </MDBRow>
+           
 
             <MDBRow className="mt-3">
               <MDBCol>
