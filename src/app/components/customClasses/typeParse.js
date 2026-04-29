@@ -497,6 +497,10 @@ export function dateParser(date) {
     return momentLocale.format("LL")
 }
 
+export function getFirstLegalAndDueDays() {
+    return 29;
+}
+
 // RECIEVES A SATR DATE FORMAT YYYY-MM-DD AND AN POSITIVE INTEGER
 // RETURNS AN INTEGER STATING HOW MUCH TIME IN BUSSINES DAYS IS LEFT FOR THE startDate AND time + startDate TO BE EQUAL
 export function dateParser_timeLeft(startDate, time) {

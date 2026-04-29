@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import CustomService from '../../services/custom.service';
-import { addDecimalPoints, dateParser, dateParser_finalDate, formsParser1 } from '../../components/customClasses/typeParse';
+import { addDecimalPoints, dateParser, dateParser_finalDate, formsParser1, getFirstLegalAndDueDays } from '../../components/customClasses/typeParse';
 import VIZUALIZER from '../../components/vizualizer.component';
 import { Timeline } from 'rsuite';
 import CheckRoundIcon from '@rsuite/icons/CheckRound';
@@ -619,7 +619,7 @@ class Status extends Component {
           <p className='fw-bold my-3 text-center'>RADICACIÓN {data.state < 5 ? <label className='text-primary fb-bold'>-FASE ACTUAL-</label> : ''}</p>
           <Timeline.Item time={data.clock_payment || NF}><>Pago expensas fijas</></Timeline.Item>
           {data.state < 5 && data.clock_payment ?
-            <Timeline.Item time={dateParser_finalDate(data.clock_payment, 30)}><label className='text-danger'>Fecha limite para legal y debida forma</label></Timeline.Item>
+            <Timeline.Item time={dateParser_finalDate(data.clock_payment, getFirstLegalAndDueDays())}><label className='text-danger'>Fecha limite para legal y debida forma</label></Timeline.Item>
             : <Timeline.Item time={data.clock_legal || NF}><>Legal y debida forma</></Timeline.Item>}
 
           <p className='fw-bold my-3 text-center'>EVALUACIÓN DEL PROYECTO {data.state == 5 && !data.clock_record_p1 ? <label className='text-primary fb-bold'>-FASE ACTUAL-</label> : ''}</p>
